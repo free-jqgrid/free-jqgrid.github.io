@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="author" content="Oleg Kiriljuk">
+	<title>free jqGrid API documentation</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cerulean/bootstrap.min.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.css">
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+	<script src="https://code.jquery.com/jquery-1.12.0.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/lang-css.min.js"></script>-->
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css"></script>
+	<!--<script src="https://cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js"></script>
+	<script>
+	(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,"script","//www.google-analytics.com/analytics.js","ga");
+	
+	ga("create", "UA-353436-3", "auto");
+	ga("send", "pageview");
+	</script>-->
+	<link rel="stylesheet" href="https://rawgit.com/free-jqgrid/jqGrid/master/css/ui.jqgrid.css">
+	<style>
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	</style>
+	<script src="https://rawgit.com/free-jqgrid/jqGrid/master/js/jquery.jqgrid.min.js"></script>
+	<script>
+	$(function () {
+		$("#showImages").click(function() {
+			$(".imageExample")[$(this).is(":checked") ? "show": "hide"]()
+		});
+	});
+	</script>
+</head>
+<body>
+<header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="../index.html" class="navbar-brand">free jqGrid</a>
+			</div>
+			<nav id="bs-navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="../getting-started/index.html">Getting started</a></li>
+					<li><a href="../api-documentation/index.html">API documentation</a></li>
+					<li><a href="../examples/index.html">Examples</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="https://github.com/free-jqgrid/jqGrid/wiki">Wiki</a></li>
+					<li><a href="https://github.com/free-jqgrid/jqGrid/issues">Issues</a></li>
+					<li><a href="https://github.com/free-jqgrid/jqGrid"><span class="mega-octicon octicon-mark-github"></span>GitHub</a></li>
+				</ul>
+			</nav>
+		</div>
+	</nav>
+</header>
+
+<div class="container">
+	<label><input type="checkbox" id="showImages">&nbsp;<span>Show images which corresponds to demos.</span></label>
+	<h3>formatter: "actions"</h3>
+	<ul>
+		<li><a href="http://www.ok-soft-gmbh.com/jqGrid/OK/CustomActionButton.htm">Display additional custom buttons</a>
+			<img src="CustomActionButton.png" class="imageExample" style="display:none" alt="Display additional custom buttons" /></li>
+		<li><a href="http://www.ok-soft-gmbh.com/jqGrid/OK/CustomActionButton1.htm">Hide some actions buttons</a>
+			<img src="CustomActionButton1.png" class="imageExample" style="display:none" alt="Hide some actions buttons" />
+			<p>See <a href="http://stackoverflow.com/a/29735149/315935">the answer</a> for details</p></li>
+	</ul>
+	<h3>Select rows:</h3>
+	<ul>
+		<li><a href="http://www.ok-soft-gmbh.com/jqGrid/OK/multiPageSelection.htm">Usage of <code class="prettyprint lang-js">multiPageSelection: true</code> option</a>. It allows to maintains selection of rows over multiple pages on the grid.
+			<img src="multiPageSelection.png" class="imageExample" style="display:none" alt="Select rows using multiPageSelection option" />
+			<p>See <a href="http://stackoverflow.com/a/33021115/315935">the answer</a> for details</p></li>
+	</ul>
+	<h3>Inline editing:</h3>
+	<ul>
+		<li><a href="http://www.ok-soft-gmbh.com/jqGrid/OK/focusOfEditRow.htm">Usage of <code class="prettyprint lang-js">focusField</code> option of <code class="prettyprint lang-js">editRow</code> method</a>. It allows very easy start inline editing with setting the focus on the cell clicked by the user. 
+			<img src="focusOfEditRow.png" class="imageExample" style="display:none" alt="Usage of focusField option of editRow" />
+			<p>See <a href="http://stackoverflow.com/a/31162434/315935">the answer</a> for details</p></li>
+	</ul>
+	<h3>jqGrid options:</h3>
+	<ul>
+		<li><a href="http://www.ok-soft-gmbh.com/jqGrid/OK/hasSubrgid.htm">Usage of <code class="prettyprint lang-js">hasSubgrid</code> callback of <code class="prettyprint lang-js">subGridOptions</code> option</a>. It allows to display "+" subgrid icon on rows which have subgrids only.
+			<img src="multiPageSelection.png" class="imageExample" style="display:none" alt="Usage of hasSubgrid callback of subGridOptions" />
+			<p>See <a href="http://stackoverflow.com/a/32744570/315935">the answer</a> for details</p></li>
+		<li><a href="http://www.ok-soft-gmbh.com/jqGrid/OK/3stateSort.htm">Usage of <code class="prettyprint lang-js">threeStateSort: true</code> option</a>. It allows to change the behavior of multiple clicks on the column header. Instead of standard 2-state behavior jqGrid will use 3-state behavior where the third click on the column header implies displaying unsorted grid.
+			<p>See <a href="https://github.com/free-jqgrid/jqGrid/pull/141">the pull request</a> for details</p></li>
+	</ul>
+	<h3>navGrid options:</h3>
+	<ul>
+		<li><a href="http://www.ok-soft-gmbh.com/jqGrid/OK/navButtons0-fa4.htm">Usage of <code class="prettyprint lang-js">navGrid</code> method with icons in combination with Font Awesome 4</a>. The icons of the navigator bar will be automatically wrapped on the next line.
+			<img src="navButtons0-fa4.png" class="imageExample" style="display:none" alt="Usage navGrid with icons" />
+		<li><a href="http://www.ok-soft-gmbh.com/jqGrid/OK/navButtons1-fa4.htm">Usage of <code class="prettyprint lang-js">navGrid</code> method with icons and texts</a>.
+			<img src="navButtons1-fa4.png" class="imageExample" style="display:none" alt="Usage navGrid with icons and texts" />
+		<li><a href="http://www.ok-soft-gmbh.com/jqGrid/OK/navButtons2-fa4.htm">Usage of <code class="prettyprint lang-js">navGrid</code> method with icons, texts and <code class="prettyprint lang-js">iconsOverText: true</code></a>.
+			<img src="navButtons2-fa4.png" class="imageExample" style="display:none" alt="Usage navGrid with icons, texts and iconsOverText: true" />
+	</ul>
+	<h3>Common purpose examples</h3>
+	<ul>
+		<li><a href="http://www.ok-soft-gmbh.com/jqGrid/OK/ColumnChooserAndLocalStorage2_singleSelect.htm">Usage of <code class="prettyprint lang-js">remapColumnsByName</code> method to modify the old way to persist jqGrid state in localStorage of web browser</a>.
+			<p>See <a href="http://stackoverflow.com/a/31663268/315935">the answer</a>, <a href="http://stackoverflow.com/a/8547852/315935">this one</a> and <a href="http://stackoverflow.com/a/8436273/315935">this the oldest one</a> for details</p></li>
+	</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,1346 @@
+[
+	{
+		"base": "$.fn.fmatter",
+		"methodType": "standard",
+		"name": "actions",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.fn.fmatter.actions",
+		"methodType": "standard",
+		"name": "pageFinalization",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.fn.fmatter",
+		"methodType": "standard",
+		"name": "checkbox",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.fn.fmatter.checkbox",
+		"methodType": "standard",
+		"name": "getCellBuilder",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.fn.fmatter",
+		"methodType": "standard",
+		"name": "checkboxFontAwesome4",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.fn.fmatter.checkboxFontAwesome4",
+		"methodType": "standard",
+		"name": "getCellBuilder",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.fn.fmatter.checkboxFontAwesome4",
+		"methodType": "standard",
+		"name": "unformat",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.fn.fmatter",
+		"methodType": "standard",
+		"name": "currency",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.fn.fmatter.currency",
+		"methodType": "standard",
+		"name": "getCellBuilder",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.fn.fmatter",
+		"methodType": "standard",
+		"name": "date",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.fn.fmatter.date",
+		"methodType": "standard",
+		"name": "getCellBuilder",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.fn.fmatter",
+		"methodType": "standard",
+		"name": "defaultFormat",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.fn.fmatter",
+		"methodType": "standard",
+		"name": "email",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.fn.fmatter",
+		"methodType": "standard",
+		"name": "getCellBuilder",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.fn.fmatter",
+		"methodType": "standard",
+		"name": "integer",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.fn.fmatter.integer",
+		"methodType": "standard",
+		"name": "getCellBuilder",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.fn.fmatter",
+		"methodType": "standard",
+		"name": "link",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.fn.fmatter",
+		"methodType": "standard",
+		"name": "number",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.fn.fmatter.number",
+		"methodType": "standard",
+		"name": "getCellBuilder",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.fn.fmatter",
+		"methodType": "standard",
+		"name": "rowactions",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.fn.fmatter",
+		"methodType": "standard",
+		"name": "select",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.fn.fmatter.select",
+		"methodType": "standard",
+		"name": "getCellBuilder",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.fn.fmatter",
+		"methodType": "standard",
+		"name": "showlink",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.fn.fmatter.showlink",
+		"methodType": "standard",
+		"name": "getCellBuilder",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.fn.fmatter.showlink",
+		"methodType": "standard",
+		"name": "pageFinalization",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.fn",
+		"methodType": "static",
+		"name": "jqDrag",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn",
+		"methodType": "standard",
+		"name": "jqFilter",
+		"addChildNode": ["constructor", "helper", "searching"]
+	},
+	{
+		"base": "$.fn.jqFilter",
+		"methodType": "standard",
+		"name": "addFilter",
+		"addChildNode": ["helper", "searching", "internal"]
+	},
+	{
+		"base": "$.fn.jqFilter",
+		"methodType": "standard",
+		"name": "filterData",
+		"addChildNode": ["helper", "searching", "internal"]
+	},
+	{
+		"base": "$.fn.jqFilter",
+		"methodType": "standard",
+		"name": "getParameter",
+		"addChildNode": ["helper", "searching", "internal"]
+	},
+	{
+		"base": "$.fn.jqFilter",
+		"methodType": "standard",
+		"name": "resetFilter",
+		"addChildNode": ["helper", "searching", "internal"]
+	},
+	{
+		"base": "$.fn.jqFilter",
+		"methodType": "standard",
+		"name": "toSQLString",
+		"addChildNode": ["helper", "searching", "internal"]
+	},
+	{
+		"base": "$.fn",
+		"methodType": "standard",
+		"name": "jqGrid",
+		"addChildNode": ["constructor"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "abortAjaxRequest",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "addRow",
+		"category": ["editing", "inline-editing"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "addRowData",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "addSubGrid",
+		"category": ["subgrid", "internal"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "addSubGridCell",
+		"category": ["subgrid", "internal"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "autoResizeAllColumns",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "autoResizeColumn",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "bindKeys",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "clearBeforeUnload",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "clearGridData",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "collapseNode",
+		"category": ["helper", "tree-grid", "internal"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "collapseRow",
+		"category": ["helper", "tree-grid", "internal"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "collapseSubGridRow",
+		"category": ["subgrid"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "collectChildrenSortTree",
+		"category": ["helper", "tree-grid", "internal"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "columnChooser",
+		"category": ["helper", "jquery-ui"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "delGridRow",
+		"category": ["editing", "form-editing"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "delRowData",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "delTreeNode",
+		"category": ["helper", "tree-grid", "internal"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "destroyFilterToolbar",
+		"category": ["searching"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "destroyFrozenColumns",
+		"category": ["frozen-columns"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "destroyGroupHeader",
+		"category": ["grouping", "header-grouping"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "editCell",
+		"category": ["editing", "cell-editing"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "editGridRow",
+		"category": ["editing", "form-editing"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "editRow",
+		"category": ["editing", "inline-editing"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "excelExport",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "expandNode",
+		"category": ["helper", "tree-grid", "internal"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "expandRow",
+		"category": ["helper", "tree-grid", "internal"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "expandSubGridRow",
+		"category": ["subgrid"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "filterToolbar",
+		"category": ["searching"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "footerData",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "FormToGrid",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "getAutoResizableWidth",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "getCell",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "getChangedCells",
+		"category": ["editing", "cell-editing"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "getCol",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "getColProp",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "getDataIDs",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "getFullTreeNode",
+		"category": ["helper", "tree-grid", "internal"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "getGridParam",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "getGridRes",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "getGridRowById",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "getGuiStyles",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "getInd",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "getLocalRow",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "getNodeAncestors",
+		"category": ["helper", "tree-grid", "internal"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "getNodeChildren",
+		"category": ["helper", "tree-grid", "internal"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "getNodeDepth",
+		"category": ["helper", "tree-grid", "internal"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "getNodeParent",
+		"category": ["helper", "tree-grid", "internal"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "getRootNodes",
+		"category": ["helper", "tree-grid", "internal"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "getRowData",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "GridDestroy",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "gridDnD",
+		"category": ["helper", "jquery-ui"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "GridNav",
+		"category": ["editing", "cell-editing"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "gridResize",
+		"category": ["helper", "jquery-ui"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "GridToForm",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "jqPivot",
+		"category": ["pivot"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "pivotSetup",
+		"category": ["pivot", "helper", "internal"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "saveRow",
+		"category": ["editing", "inline-editing"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "restoreRow",
+		"category": ["editing", "inline-editing"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "inlineNav",
+		"category": ["editing", "inline-editing", "navigation-bar"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "showAddEditButtons",
+		"category": ["editing", "inline-editing", "helper", "internal"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "searchGrid",
+		"category": ["searching", "form-searching"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "viewGridRow",
+		"category": ["editing", "form-editing"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "navGrid",
+		"category": ["editing", "form-editing", "navigation-bar"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "navButtonAdd",
+		"category": ["navigation-bar"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "navSeparatorAdd",
+		"category": ["navigation-bar"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "setColProp",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "sortGrid",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "GridUnload",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "setGridState",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "setGroupHeaders",
+		"category": ["grouping", "header-grouping"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "setFrozenColumns",
+		"category": ["frozen-columns"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "groupingSetup",
+		"category": ["grouping", "internal", "data-grouping"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "groupingPrepare",
+		"category": ["grouping", "internal", "data-grouping"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "groupingToggle",
+		"category": ["grouping", "data-grouping"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "groupingRender",
+		"category": ["grouping", "internal", "data-grouping"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "groupingGroupBy",
+		"category": ["grouping", "data-grouping"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "groupingRemove",
+		"category": ["grouping", "data-grouping"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "groupingCalculations",
+		"category": ["grouping", "internal", "data-grouping"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "setSubGrid",
+		"category": ["subgrid", "internal"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "toggleSubGridRow",
+		"category": ["subgrid"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "showModal",
+		"category": ["dialog"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "closeModal",
+		"category": ["dialog"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "hideModal",
+		"category": ["dialog"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "findPos",
+		"category": ["dialog", "internal"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static-this-grid",
+		"name": "createModal",
+		"category": ["dialog"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static-this-grid",
+		"name": "info_dialog",
+		"category": ["dialog"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static-this-grid",
+		"name": "bindEv",
+		"category": ["dialog"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static-this-grid",
+		"name": "createEl",
+		"category": ["dialog"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "checkDate",
+		"category": ["dialog", "internal"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "isEmpty",
+		"category": ["dialog", "internal"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "checkTime",
+		"category": ["dialog", "internal"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static-this-grid",
+		"name": "checkValues",
+		"category": ["dialog", "internal"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "htmlDecode",
+		"category": ["internal"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "htmlEncode",
+		"category": ["internal"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "clearArray",
+		"category": ["internal"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "format",
+		"category": ["internal"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "template",
+		"category": ["internal"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "msiever",
+		"category": ["internal"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "fixMaxHeightOfDiv",
+		"category": ["internal"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "getCellIndex",
+		"category": ["internal"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "stripHtml",
+		"category": ["internal"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "stripPref",
+		"category": ["internal"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "parse",
+		"category": ["internal"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "getRes",
+		"category": ["internal"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "parseDate",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "parseDateToNumber",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "jqID",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "getGridComponentId",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "getGridComponentIdSelector",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "isHTMLElement",
+		"category": ["internal"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "getGridComponent",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "fixScrollOffsetAndhBoxPadding",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "mergeCssClasses",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "hasOneFromClasses",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "detectRowEditing",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "getDataFieldOfCell",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "enumEditableCells",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "getEditedValue",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "randId",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "getAccessor",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "getXmlData",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "cellWidth",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "isCellClassHidden",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "from",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "serializeFeedback",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "fullBoolFeedback",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "feedback",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "getIconRes",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "builderSortIcons",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "builderFmButon",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "convertOnSaveLocally",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "parseDataToHtml",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "getMethod",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "extend",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "setGridParam",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "setSelection",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "resetSelection",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "setRowData",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "showHideCol",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "hideCol",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "showCol",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "remapColumns",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "remapColumnsByName",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "setGridWidth",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "setGridHeight",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "setCaption",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "setLabel",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "setCell",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "getCell",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "unbindKeys",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "progressBar",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "setColWidth",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "sortableColumns",
+		"category": ["helper", "jquery-ui"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "sortableRows",
+		"category": ["helper", "jquery-ui"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "isObject",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "isNumber",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "isValue",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "isEmpty",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "NumberFormat",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "setTreeNode",
+		"category": ["helper", "tree-grid", "internal"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "setTreeGrid",
+		"category": ["helper", "tree-grid", "internal"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "isVisibleNode",
+		"category": ["helper", "tree-grid", "internal"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "isNodeLoaded",
+		"category": ["helper", "tree-grid", "internal"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "SortTree",
+		"category": ["helper", "tree-grid", "internal"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "setTreeRow",
+		"category": ["helper", "tree-grid", "internal"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "setTreeRow",
+		"addChildNode": ["helper", "tree-grid", "internal"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "saveCell",
+		"category": ["editing", "cell-editing"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "restoreCell",
+		"category": ["editing", "cell-editing"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "nextCell",
+		"category": ["editing", "cell-editing"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "prevCell",
+		"category": ["editing", "cell-editing"]
+	},
+	{
+		"base": "$.fn",
+		"methodType": "static",
+		"name": "jqResize",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "jqGridImport",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn.jqGrid",
+		"methodType": "standard",
+		"name": "jqGridExport",
+		"category": ["helper"]
+	},
+	{
+		"base": "$.fn",
+		"methodType": "static",
+		"name": "jqm",
+		"category": ["helper", "dialog"]
+	},
+	{
+		"base": "$.fn",
+		"methodType": "static",
+		"name": "jqmAddClose",
+		"category": ["helper", "dialog"]
+	},
+	{
+		"base": "$.fn",
+		"methodType": "static",
+		"name": "jqmAddTrigger",
+		"category": ["helper", "dialog"]
+	},
+	{
+		"base": "$.fn",
+		"methodType": "static",
+		"name": "jqmShow",
+		"category": ["helper", "dialog"]
+	},
+	{
+		"base": "$.fn",
+		"methodType": "static",
+		"name": "jqmHide",
+		"category": ["helper", "dialog"]
+	},
+	{
+		"base": "$.jgrid",
+		"methodType": "static",
+		"name": "viewModal",
+		"category": ["dialog"]
+	},
+	{
+		"base": "$",
+		"methodType": "static-this-grid",
+		"name": "unformat",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.unformat",
+		"methodType": "static-this-grid",
+		"name": "select",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "$.unformat",
+		"methodType": "static-this-grid",
+		"name": "date",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "window",
+		"methodType": "static",
+		"name": "tableToGrid",
+		"category": ["helper"]
+	},
+	{
+		"base": "window.xmlJsonClass",
+		"methodType": "static",
+		"name": "escape",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "window.xmlJsonClass",
+		"methodType": "static",
+		"name": "innerXml",
+		"category": ["helper"]
+	},
+	{
+		"base": "window.xmlJsonClass",
+		"methodType": "static",
+		"name": "json2xml",
+		"category": ["helper"]
+	},
+	{
+		"base": "window.xmlJsonClass",
+		"methodType": "static",
+		"name": "removeWhite",
+		"category": ["helper", "internal"]
+	},
+	{
+		"base": "window.xmlJsonClass",
+		"methodType": "static",
+		"name": "toJson",
+		"category": ["helper"]
+	},
+	{
+		"base": "window.xmlJsonClass",
+		"methodType": "static",
+		"name": "toObj",
+		"category": ["helper"]
+	},
+	{
+		"base": "window.xmlJsonClass",
+		"methodType": "static",
+		"name": "xml2json",
+		"category": ["helper"]
+	}
+]
