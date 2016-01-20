@@ -120,12 +120,13 @@ You can try to do the same with the grid above because it's real working grid.</
 <div style="margin-left: 2px; width: 415px; height: 140px; overflow: hidden">
 <img src="sorting-resizing.gif" style="margin-left: -2px;" alt="sorting and resizing of grid" />
 </div>
-<p>The full HTML page from the above example can look as following:</p>
+<p id="the_first_grid_code">The full HTML page from the above example can look as following:</p>
 <pre-html><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Your page title</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.12.0/css/ui.jqgrid.min.css">
@@ -157,6 +158,7 @@ You can try to do the same with the grid above because it's real working grid.</
 </body>
 </html>
 </pre-html>
+<p>You can try the example on <a href="https://jsfiddle.net/OlegKi/pqL7d004/">JSFiddle</a>.</p>
 <p>It's important to understand that the empty <l-html><table></l-html> will be converted to relatively complex
 structure of divs and tables. One can use, for example, Developer Tools of Chrome to examine the grid after creating:</p>
 <img src="grid-internal.png" class="imageExample" alt="grid internals" />
@@ -200,7 +202,7 @@ specific for the current locale. The default locale included in <l-html>jquery.j
 <pre-html><script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.12.0/js/i18n/grid.locale-de.min.js"></script>
 </pre-html>
 <p>in the head of the page (before of after <l-html>jquery.jqgrid.min.js</l-html>).</p>
-<p>Below is an example of the JavaScript code, which uses some features described above:</p>
+<p id="type_of_data_code">Below is an example of the JavaScript code, which uses some features described above:</p>
 <pre-html><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -257,6 +259,7 @@ specific for the current locale. The default locale included in <l-html>jquery.j
 </body>
 </html>
 </pre-html>
+<p>You can try the example on <a href="https://jsfiddle.net/OlegKi/5w5h2Lgw/">JSFiddle</a>.</p>
 <p>The above code uses `iconSet: "fontAwesome"` and includes <a href="http://fontawesome.io/">Font Awesome 4.5.0</a>
 `font-awesome.min.css` additionally to CSSs included in the previous examples. You can see the resulting grid below:</p>
 <table id="grid1"></table>

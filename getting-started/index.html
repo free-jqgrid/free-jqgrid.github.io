@@ -168,12 +168,13 @@ You can try to do the same with the grid above because it's real working grid.</
 <div style="margin-left: 2px; width: 415px; height: 140px; overflow: hidden">
 <img src="sorting-resizing.gif" style="margin-left: -2px;" alt="sorting and resizing of grid" />
 </div>
-<p>The full HTML page from the above example can look as following:</p>
+<p id="the_first_grid_code">The full HTML page from the above example can look as following:</p>
 <pre class="prettyprint lang-html"><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
     &lt;meta charset=&quot;utf-8&quot;&gt;
     &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;title&gt;Your page title&lt;/title&gt;
     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css&quot;&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.12.0/css/ui.jqgrid.min.css&quot;&gt;
@@ -205,6 +206,7 @@ You can try to do the same with the grid above because it's real working grid.</
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
+<p>You can try the example on <a href="https://jsfiddle.net/OlegKi/pqL7d004/">JSFiddle</a>.</p>
 <p>It's important to understand that the empty <code class="prettyprint lang-html">&lt;table&gt;</code> will be converted to relatively complex
 structure of divs and tables. One can use, for example, Developer Tools of Chrome to examine the grid after creating:</p>
 <img src="grid-internal.png" class="imageExample" alt="grid internals" />
@@ -248,7 +250,7 @@ specific for the current locale. The default locale included in <code class="pre
 <pre class="prettyprint lang-html"><code>&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.12.0/js/i18n/grid.locale-de.min.js&quot;&gt;&lt;/script&gt;
 </code></pre>
 <p>in the head of the page (before of after <code class="prettyprint lang-html">jquery.jqgrid.min.js</code>).</p>
-<p>Below is an example of the JavaScript code, which uses some features described above:</p>
+<p id="type_of_data_code">Below is an example of the JavaScript code, which uses some features described above:</p>
 <pre class="prettyprint lang-html"><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -305,6 +307,7 @@ specific for the current locale. The default locale included in <code class="pre
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
+<p>You can try the example on <a href="https://jsfiddle.net/OlegKi/5w5h2Lgw/">JSFiddle</a>.</p>
 <p>The above code uses <code class="prettyprint lang-js">iconSet: &quot;fontAwesome&quot;</code> and includes <a href="http://fontawesome.io/">Font Awesome 4.5.0</a>
 <code class="prettyprint lang-js">font-awesome.min.css</code> additionally to CSSs included in the previous examples. You can see the resulting grid below:</p>
 <table id="grid1"></table>

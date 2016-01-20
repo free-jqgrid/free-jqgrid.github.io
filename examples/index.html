@@ -39,7 +39,12 @@
 	<script>
 	$(function () {
 		$("#showImages").click(function() {
-			$(".imageExample")[$(this).is(":checked") ? "show": "hide"]()
+			var show = $(this).is(":checked");
+			$(".imageExample")[show ? "show": "hide"]();
+			$(".showImage").prop("checked", show);
+		});
+		$(".showImage").click(function() {
+			$(this).closest("li").find(".imageExample")[$(this).is(":checked") ? "show": "hide"]();
 		});
 	});
 	</script>
@@ -77,23 +82,27 @@
 	<label><input type="checkbox" id="showImages">&nbsp;<span>Show images which corresponds to demos.</span></label>
 	<h3>formatter: "actions"</h3>
 	<ul>
-		<li><a href="http://www.ok-soft-gmbh.com/jqGrid/OK/CustomActionButton.htm">Display additional custom buttons</a>
+		<li><a id="CustomActionButton" href="http://www.ok-soft-gmbh.com/jqGrid/OK/CustomActionButton.htm">Display additional custom buttons</a>
+			<p><label><input type="checkbox" class="showImage">&nbsp;<span>Show image, which corresponds to the demo.</span></label></p>
 			<img src="CustomActionButton.png" class="imageExample" style="display:none" alt="Display additional custom buttons" /></li>
-		<li><a href="http://www.ok-soft-gmbh.com/jqGrid/OK/CustomActionButton1.htm">Hide some actions buttons</a>
-			<img src="CustomActionButton1.png" class="imageExample" style="display:none" alt="Hide some actions buttons" />
+		<li><a id="CustomActionButton1" href="http://www.ok-soft-gmbh.com/jqGrid/OK/CustomActionButton1.htm">Hide some actions buttons</a>
+			<p><label><input type="checkbox" class="showImage" >&nbsp;<span>Show image, which corresponds to the demo.</span></label></p>
+			<p><img src="CustomActionButton1.png" class="imageExample" style="display:none" alt="Hide some actions buttons" /></p>
 			<p>See <a href="http://stackoverflow.com/a/29735149/315935">the answer</a> for details</p></li>
 	</ul>
-	<h3>Select rows:</h3>
+	<h3 id="selectRows">Select rows:</h3>
 	<ul>
-		<li><a href="http://www.ok-soft-gmbh.com/jqGrid/OK/multiPageSelection.htm">Usage of <code class="prettyprint lang-js">multiPageSelection: true</code> option</a>. It allows to maintains selection of rows over multiple pages on the grid.
+		<li><a id="multiPageSelection" href="http://www.ok-soft-gmbh.com/jqGrid/OK/multiPageSelection.htm">Usage of <code class="prettyprint lang-js">multiPageSelection: true</code> option</a>. It allows to maintains selection of rows over multiple pages on the grid.
 			<img src="multiPageSelection.png" class="imageExample" style="display:none" alt="Select rows using multiPageSelection option" />
-			<p>See <a href="http://stackoverflow.com/a/33021115/315935">the answer</a> for details</p></li>
+			<p>See <a href="http://stackoverflow.com/a/33021115/315935">the answer</a> for details</p>
+			<p><label><input type="checkbox" class="showImage">&nbsp;<span>Show image, which corresponds to the demo.</span></label></p></li>
 	</ul>
 	<h3>Inline editing:</h3>
 	<ul>
-		<li><a href="http://www.ok-soft-gmbh.com/jqGrid/OK/focusOfEditRow.htm">Usage of <code class="prettyprint lang-js">focusField</code> option of <code class="prettyprint lang-js">editRow</code> method</a>. It allows very easy start inline editing with setting the focus on the cell clicked by the user. 
+		<li><a id="focusOfEditRow" href="http://www.ok-soft-gmbh.com/jqGrid/OK/focusOfEditRow.htm">Usage of <code class="prettyprint lang-js">focusField</code> option of <code class="prettyprint lang-js">editRow</code> method</a>. It allows very easy start inline editing with setting the focus on the cell clicked by the user. 
 			<img src="focusOfEditRow.png" class="imageExample" style="display:none" alt="Usage of focusField option of editRow" />
-			<p>See <a href="http://stackoverflow.com/a/31162434/315935">the answer</a> for details</p></li>
+			<p>See <a href="http://stackoverflow.com/a/31162434/315935">the answer</a> for details</p>
+			<p><label><input type="checkbox" class="showImage">&nbsp;<span>Show image, which corresponds to the demo.</span></label></p></li>
 	</ul>
 	<h3>jqGrid options:</h3>
 	<ul>
