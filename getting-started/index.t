@@ -158,7 +158,7 @@ You can try to do the same with the grid above because it's real working grid.</
 </body>
 </html>
 </pre-html>
-<p>You can try the example on <a href="https://jsfiddle.net/OlegKi/pqL7d004/">JSFiddle</a>.</p>
+<p>You can try the example on <a href="https://jsfiddle.net/OlegKi/pqL7d004/2/">JSFiddle</a>.</p>
 <p>It's important to understand that the empty <l-html><table></l-html> will be converted to relatively complex
 structure of divs and tables. One can use, for example, Developer Tools of Chrome to examine the grid after creating:</p>
 <img src="grid-internal.png" class="imageExample" alt="grid internals" />
@@ -259,7 +259,7 @@ specific for the current locale. The default locale included in <l-html>jquery.j
 </body>
 </html>
 </pre-html>
-<p>You can try the example on <a href="https://jsfiddle.net/OlegKi/5w5h2Lgw/">JSFiddle</a>.</p>
+<p>You can try the example on <a href="https://jsfiddle.net/OlegKi/5w5h2Lgw/3/">JSFiddle</a>.</p>
 <p>The above code uses `iconSet: "fontAwesome"` and includes <a href="http://fontawesome.io/">Font Awesome 4.5.0</a>
 `font-awesome.min.css` additionally to CSSs included in the previous examples. You can see the resulting grid below:</p>
 <table id="grid1"></table>
