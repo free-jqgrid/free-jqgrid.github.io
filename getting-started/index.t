@@ -7,8 +7,10 @@
 	<meta name="author" content="Oleg Kiriljuk">
 	<title>Getting started free jqGrid</title>
 <!--@@commonHeadIncludes-->
-	<link rel="stylesheet" href="https://rawgit.com/free-jqgrid/jqGrid/master/css/ui.jqgrid.css">
-	<script src="https://rawgit.com/free-jqgrid/jqGrid/master/js/jquery.jqgrid.src.js"></script>
+	<!--<link rel="stylesheet" href="https://rawgit.com/free-jqgrid/jqGrid/master/css/ui.jqgrid.css">
+	<script src="https://rawgit.com/free-jqgrid/jqGrid/master/js/jquery.jqgrid.src.js"></script>-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/free-jqgrid/4.13.0/css/ui.jqgrid.min.css">
+	<script src="https://cdn.jsdelivr.net/free-jqgrid/4.13.0/js/jquery.jqgrid.min.js"></script>
 <style>
 img.imageExample {
 	max-width: 100%;
@@ -118,7 +120,7 @@ to change the selected row or one can click the previously selected row to unsel
 One can resize the columns additionally in the intuitive way, which one see on the below GIF.
 You can try to do the same with the grid above because it's real working grid.</p>
 <div style="margin-left: 2px; width: 415px; height: 140px; overflow: hidden">
-<img src="sorting-resizing.gif" style="margin-left: -2px;" alt="sorting and resizing of grid" />
+<img id="sorting-resizing" src="sorting-resizing.gif" style="margin-left: -2px;" alt="sorting and resizing of grid" />
 </div>
 <p id="the_first_grid_code">The full HTML page from the above example can look as following:</p>
 <pre-html><!DOCTYPE html>
