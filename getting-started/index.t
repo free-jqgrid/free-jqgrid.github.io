@@ -7,10 +7,10 @@
 	<meta name="author" content="Oleg Kiriljuk">
 	<title>Getting started free jqGrid</title>
 <!--@@commonHeadIncludes-->
-	<!--<link rel="stylesheet" href="https://rawgit.com/free-jqgrid/jqGrid/master/css/ui.jqgrid.css">
-	<script src="https://rawgit.com/free-jqgrid/jqGrid/master/js/jquery.jqgrid.src.js"></script>-->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/free-jqgrid/4.13.0/css/ui.jqgrid.min.css">
-	<script src="https://cdn.jsdelivr.net/free-jqgrid/4.13.0/js/jquery.jqgrid.min.js"></script>
+	<link rel="stylesheet" href="https://rawgit.com/free-jqgrid/jqGrid/master/css/ui.jqgrid.css">
+	<script src="https://rawgit.com/free-jqgrid/jqGrid/master/js/jquery.jqgrid.src.js"></script>
+	<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/free-jqgrid/4.13.0/css/ui.jqgrid.min.css">
+	<script src="https://cdn.jsdelivr.net/free-jqgrid/4.13.0/js/jquery.jqgrid.min.js"></script>-->
 <style>
 img.imageExample {
 	max-width: 100%;
@@ -52,6 +52,14 @@ h6 a:focus, h6 a:active, {
     display: block;
 	outline: none;
 }
+.ui-search-input > input::-ms-clear {
+    display: none;
+}
+.ui-datepicker { font-size: 76.39%; }
+.ui-datepicker select.ui-datepicker-year,
+.ui-datepicker select.ui-datepicker-month {
+	color: black
+}
 </style>
 </head>
 <body>
@@ -75,6 +83,7 @@ is the fact that free jqGrid uses HTML <l-html><table></l-html> internally. One 
 call `jQuery("#tableId").jqGrid({/*options*/});` to create the grid. Different options of
 free jqGrid provides <em>the data</em> of the table body and the information about the outer part of the grid.
 For example, the code below</p>
+<div id="the_first_grid-code-js1">
 <pre-js>$(function () {
     "use strict";
     $("#grid").jqGrid({
@@ -91,6 +100,7 @@ For example, the code below</p>
         ]
     });
 });</pre-js>
+</div>
 <p>creates the simple grid</p>
 <table id="grid"></table>
 <script>
@@ -122,7 +132,8 @@ You can try to do the same with the grid above because it's real working grid.</
 <div style="margin-left: 2px; width: 415px; height: 140px; overflow: hidden">
 <img id="sorting-resizing" src="sorting-resizing.gif" style="margin-left: -2px;" alt="sorting and resizing of grid" />
 </div>
-<p id="the_first_grid_code">The full HTML page from the above example can look as following:</p>
+<p>The full HTML page from the above example can look as following:</p>
+<div id="the_first_grid_code">
 <pre-html><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -160,6 +171,7 @@ You can try to do the same with the grid above because it's real working grid.</
 </body>
 </html>
 </pre-html>
+</div>
 <p>You can try the example on <a href="https://jsfiddle.net/OlegKi/pqL7d004/2/">JSFiddle</a>.</p>
 <p>It's important to understand that the empty <l-html><table></l-html> will be converted to relatively complex
 structure of divs and tables. One can use, for example, Developer Tools of Chrome to examine the grid after creating:</p>
@@ -204,7 +216,8 @@ specific for the current locale. The default locale included in <l-html>jquery.j
 <pre-html><script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.12.1/js/i18n/grid.locale-de.min.js"></script>
 </pre-html>
 <p>in the head of the page (before of after <l-html>jquery.jqgrid.min.js</l-html>).</p>
-<p id="type_of_data_code">Below is an example of the JavaScript code, which uses some features described above:</p>
+<p>Below is an example of the JavaScript code, which uses some features described above:</p>
+<div id="type_of_data_code">
 <pre-html><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -247,6 +260,7 @@ specific for the current locale. The default locale included in <l-html>jquery.j
                 { id: "120", invdate: "2015-09-10", name: "test12", amount: "500.00", tax: "30.00", closed: false, ship_via: "FE", total: "530.00" }
             ],
             iconSet: "fontAwesome",
+            idPrefix: "g1_",
             rownumbers: true,
             sortname: "invdate",
             sortorder: "desc",
@@ -261,6 +275,7 @@ specific for the current locale. The default locale included in <l-html>jquery.j
 </body>
 </html>
 </pre-html>
+</div>
 <p>You can try the example on <a href="https://jsfiddle.net/OlegKi/5w5h2Lgw/3/">JSFiddle</a>.</p>
 <p>The above code uses `iconSet: "fontAwesome"` and includes <a href="http://fontawesome.io/">Font Awesome 4.5.0</a>
 `font-awesome.min.css` additionally to CSSs included in the previous examples. You can see the resulting grid below:</p>
@@ -299,6 +314,7 @@ $(function () {
 		//autoResizing: { compact: true },
 		//hidegrid: false,
 		iconSet: "fontAwesome",
+		idPrefix: "g1_",
 		rownumbers: true,
 		sortname: "invdate",
 		sortorder: "desc",
@@ -315,11 +331,17 @@ the button, which allows to collapse/expand the grid. If you don't want to have 
 option `hidegrid: false`. It's the main principle of jqGrid. It contains many options which allows to customize the default
 behavior. Thus if you see some element of the grid which you don't like then probably there are exist an additional option
 which allows you to remove the element or to change its behavior.</p>
+<p>The option `idPrefix: "g1_"` is important because we use the data with <em>the same `id` values</em>
+in multiple grids on the page. The `id` arrtibute of every row `<tr>` of the grid will be assign
+based on the value of `id` property of input data. The usage of `idPrefix: "g1_"` force prefixing
+of id values. As the result the rows of the grid will have rowids `"g1_10"`, `"g1_20"`, ... instead
+of `"10"`, `"20"`, ... used in the first demo. It prevents from id duplicates, prohibited
+in HTML.</p>
 <p>The `label` property defines the column header. If no `label` is defined then the `name` property will be used in
 the column header.</p>
 <p>The columns `invdate` and `ship_via` used formatters `"date"` and `"select"`. The options of the formatters are defined
 using `formatoptions`.</p>
-<p> The input data of the column `ship_via` contains the values `"FE"`, `"TN"` or `"DH"`. The values will be displayed as
+<p>The input data of the column `ship_via` contains the values `"FE"`, `"TN"` or `"DH"`. The values will be displayed as
 `"FedEx"`, `"TNT"` or `"DHL"` based on the `value` property of the `formatoptions`. The first item of data don't conatins and
 `ship_via` property and the grid displays `"DHL"` for the item based on the property `defaultValue: "DH"` of the `formatoptions`.</p>
 <p>The input data of the column `invdate` contains the date in <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a>
@@ -398,13 +420,14 @@ $(function () {
 		//autoResizing: { compact: true },
 		//hidegrid: false,
 		iconSet: "fontAwesome",
+		idPrefix: "g2_",
 		rownumbers: true,
 		sortname: "invdate",
 		sortorder: "desc",
 		toppager: true,
 		pager: true,
 		rowNum: 5,
-		caption: "The grid, which demonstrates formatters, templates and the pager"
+		caption: "The grid demonstrates formatters, templates and the pager"
 	});
 });
 //]]>
@@ -447,6 +470,7 @@ $(function () {
 		//autoResizing: { compact: true },
 		//hidegrid: false,
 		iconSet: "fontAwesome",
+		idPrefix: "g3_",
 		rownumbers: true,
 		sortname: "invdate",
 		sortorder: "desc",
@@ -455,7 +479,7 @@ $(function () {
 		rowNum: 5,
 		page: 2,
 		viewrecords: true,
-		caption: "The grid, which demonstrates formatters, templates and the pager"
+		caption: "The grid demonstrates formatters, templates and the pager"
 	});
 });
 //]]>
@@ -518,6 +542,7 @@ $(function () {
 		//autoResizing: { compact: true },
 		//hidegrid: false,
 		iconSet: "fontAwesome",
+		idPrefix: "g4_",
 		rownumbers: true,
 		sortname: "invdate",
 		sortorder: "desc",
@@ -528,18 +553,280 @@ $(function () {
 		pager: true,
 		rowNum: 5,
 		viewrecords: true,
-		caption: "The grid, which demonstrates formatters, templates and the pager"
+		caption: "The grid demonstrates formatters, templates and the pager"
 	});
 });
 //]]>
 </script>
-<p style="margin-top:.5em;">We included in the grid one more option `headertitles: true`, which creates the tooltips
-on column headers. It's practical if one </p>
-<p>There are some other advanced options like `multiSort: true`, which allows to sort by multiple columns and some options
-which customize the look of the sorting icons. The option `viewsortcols` and ovewriding `$.jgrid.builderSortIcons` method
-allows to implement more advanced scenarios.</p>
+<p style="margin-top:.5em;">We included in the grid one more option `headertitles: true`,
+which creates the tooltips on column headers. It's practical if one </p>
+<p>There are some other advanced options like `multiSort: true`, which allows to sort by
+multiple columns and some options, which customize the look of the sorting icons.
+The option `viewsortcols` and ovewriding `$.jgrid.builderSortIcons` method allows
+to implement more advanced scenarios.</p>
 <h4 id="filtering"><a class="anchor" href="#filtering"><span class="fa fa-link"></span></a>
 <a href="#filtering">Filtering</a></h4>
+<p>Filtering is very practical and powerful feature of jqGrid. One can create an additional line
+with input elements which allows to filter the grid data by specified values. One need just
+call of the method `filterToolbar`.</p>
+<table id="grid5"></table>
+<script>
+//<![CDATA[
+$(function () {
+	"use strict";
+	$("#grid5").jqGrid({
+		colModel: [
+			{ name: "name", label: "Client", width: 53 },
+			{ name: "invdate", label: "Date", width: 90, align: "center", sorttype: "date",
+				formatter: "date", formatoptions: { newformat: "d-M-Y" },
+				searchoptions: { sopt: ["eq"] } },
+			{ name: "amount", label: "Amount", width: 65, template: "number" },
+			{ name: "tax", label: "Tax", width: 41, template: "number" },
+			{ name: "total", label: "Total", width: 51, template: "number" },
+			{ name: "closed", label: "Closed", width: 59, template: "booleanCheckboxFa", firstsortorder: "desc" },
+			{ name: "ship_via", label: "Shipped via", width: 87, align: "center",
+				formatter: "select",
+				formatoptions: { value: "FE:FedEx;TN:TNT;DH:DHL", defaultValue: "DH" },
+				stype: "select",
+				searchoptions: { value: ":Any;FE:FedEx;TN:TNT;DH:DHL" } }
+		],
+		data: [
+			{ id: "10",  invdate: "2015-10-01", name: "test",   amount: "" },
+			{ id: "20",  invdate: "2015-09-01", name: "test2",  amount: "300.00", tax: "20.00", closed: false, ship_via: "DH", total: "320.00" },
+			{ id: "30",  invdate: "2015-09-01", name: "test3",  amount: "400.00", tax: "30.00", closed: false, ship_via: "FE", total: "430.00" },
+			{ id: "40",  invdate: "2015-10-04", name: "test4",  amount: "200.00", tax: "10.00", closed: true,  ship_via: "TN", total: "210.00" },
+			{ id: "50",  invdate: "2015-10-31", name: "test5",  amount: "300.00", tax: "20.00", closed: false, ship_via: "FE", total: "320.00" },
+			{ id: "60",  invdate: "2015-09-06", name: "test6",  amount: "400.00", tax: "30.00", closed: false, ship_via: "FE", total: "430.00" },
+			{ id: "70",  invdate: "2015-10-04", name: "test7",  amount: "200.00", tax: "10.00", closed: true,  ship_via: "TN", total: "210.00" },
+			{ id: "80",  invdate: "2015-10-03", name: "test8",  amount: "300.00", tax: "20.00", closed: false, ship_via: "FE", total: "320.00" },
+			{ id: "90",  invdate: "2015-09-01", name: "test9",  amount: "400.00", tax: "30.00", closed: false, ship_via: "TN", total: "430.00" },
+			{ id: "100", invdate: "2015-09-08", name: "test10", amount: "500.00", tax: "30.00", closed: true,  ship_via: "TN", total: "530.00" },
+			{ id: "110", invdate: "2015-09-08", name: "test11", amount: "500.00", tax: "30.00", closed: false, ship_via: "FE", total: "530.00" },
+			{ id: "120", invdate: "2015-09-10", name: "test12", amount: "500.00", tax: "30.00", closed: false, ship_via: "FE", total: "530.00" }
+		],
+		//cmTemplate: { autoResizable: true, align: "center" },
+		//autoResizing: { compact: true },
+		//hidegrid: false,
+		iconSet: "fontAwesome",
+		idPrefix: "g5_",
+		rownumbers: true,
+		sortname: "invdate",
+		sortorder: "desc",
+		threeStateSort: true,
+		sortIconsBeforeText: true,
+		headertitles: true,
+		toppager: true,
+		pager: true,
+		rowNum: 5,
+		viewrecords: true,
+		searching: {
+			//searchOperators: true,
+			defaultSearch: "cn"
+		},
+		caption: "The grid demonstrates formatters, templates and the pager"
+	}).jqGrid("filterToolbar");
+});
+//]]>
+</script>
+<p style="margin-top:.5em;">The code of the above example is almost the same as in the previous one.
+The following changes are made:</p>
+<ul>
+<li>The call of the method `filterToolbar` is added.</li>
+<li>The option `searching: { defaultSearch: "cn" }` is added. It sepecify the default options of
+searching. By default jqGrid filters by `"bw"` (begin with) compare operator. The option
+`defaultSearch: "cn"` changes the default behavior to "contain" operator.</li>
+<li>The property `searchoptions: { sopt: ["eq"] }` are added in the column with the date to
+change the default "contain" operator used for filtering to "equal to" operator in the column.</li>
+<li>The properties `stype: "select", searchoptions: { value: ":Any;FE:FedEx;TN:TNT;DH:DHL" }`
+are added in the last column. It creates the select in the filter toolbar with the options
+`"Any"`, `"FedEx"`, `"TNT"` and `"DHL"`, where choosing of `"Any"` will shich off the filtering
+by the column. The property `searchoptions.value` contains semicolon separated string, where
+the subtrings like `FE:FedEx` specify the value and the text of the option:
+<l-html><option value="FE">FedEx</option></l-html>. The substring `:Any` creates the option
+<l-html><option value="">Any</option></l-html> with empty value, which will be interpreted
+as no filtering.</li>
+</ul>
+<p>One can find the full code of the above demo below:</p>
+<div id="filtering-code-js1">
+<pre-js>$(function () {
+    "use strict";
+    $("#grid5").jqGrid({
+        colModel: [
+            { name: "name", label: "Client", width: 53 },
+            { name: "invdate", label: "Date", width: 90, align: "center", sorttype: "date",
+                formatter: "date", formatoptions: { newformat: "d-M-Y" },
+                searchoptions: { sopt: ["eq"] } },
+            { name: "amount", label: "Amount", width: 65, template: "number" },
+            { name: "tax", label: "Tax", width: 41, template: "number" },
+            { name: "total", label: "Total", width: 51, template: "number" },
+            { name: "closed", label: "Closed", width: 59, template: "booleanCheckboxFa", firstsortorder: "desc" },
+            { name: "ship_via", label: "Shipped via", width: 87, align: "center",
+                formatter: "select",
+                formatoptions: { value: "FE:FedEx;TN:TNT;DH:DHL", defaultValue: "DH" },
+                stype: "select",
+                searchoptions: { value: ":Any;FE:FedEx;TN:TNT;DH:DHL" } }
+        ],
+        data: [
+            { id: "10",  invdate: "2015-10-01", name: "test",   amount: "" },
+            { id: "20",  invdate: "2015-09-01", name: "test2",  amount: "300.00", tax: "20.00", closed: false, ship_via: "DH", total: "320.00" },
+            { id: "30",  invdate: "2015-09-01", name: "test3",  amount: "400.00", tax: "30.00", closed: false, ship_via: "FE", total: "430.00" },
+            { id: "40",  invdate: "2015-10-04", name: "test4",  amount: "200.00", tax: "10.00", closed: true,  ship_via: "TN", total: "210.00" },
+            { id: "50",  invdate: "2015-10-31", name: "test5",  amount: "300.00", tax: "20.00", closed: false, ship_via: "FE", total: "320.00" },
+            { id: "60",  invdate: "2015-09-06", name: "test6",  amount: "400.00", tax: "30.00", closed: false, ship_via: "FE", total: "430.00" },
+            { id: "70",  invdate: "2015-10-04", name: "test7",  amount: "200.00", tax: "10.00", closed: true,  ship_via: "TN", total: "210.00" },
+            { id: "80",  invdate: "2015-10-03", name: "test8",  amount: "300.00", tax: "20.00", closed: false, ship_via: "FE", total: "320.00" },
+            { id: "90",  invdate: "2015-09-01", name: "test9",  amount: "400.00", tax: "30.00", closed: false, ship_via: "TN", total: "430.00" },
+            { id: "100", invdate: "2015-09-08", name: "test10", amount: "500.00", tax: "30.00", closed: true,  ship_via: "TN", total: "530.00" },
+            { id: "110", invdate: "2015-09-08", name: "test11", amount: "500.00", tax: "30.00", closed: false, ship_via: "FE", total: "530.00" },
+            { id: "120", invdate: "2015-09-10", name: "test12", amount: "500.00", tax: "30.00", closed: false, ship_via: "FE", total: "530.00" }
+        ],
+        iconSet: "fontAwesome",
+        idPrefix: "g5_",
+        rownumbers: true,
+        sortname: "invdate",
+        sortorder: "desc",
+        threeStateSort: true,
+        sortIconsBeforeText: true,
+        headertitles: true,
+        toppager: true,
+        pager: true,
+        rowNum: 5,
+        viewrecords: true,
+        searching: {
+            defaultSearch: "cn"
+        },
+        caption: "The grid, which demonstrates formatters, templates and the pager"
+    }).jqGrid("filterToolbar");
+});
+</pre-js>
+</div>
+<p>Remark: we added the CSS rule</p>
+<div id="filtering-code-css1">
+<pre-css>.ui-search-input > input::-ms-clear {
+    display: none;
+}
+</pre-css>
+</div>
+<p>to remove additional "clear field", which will be displayed in `<input>` elements by default in
+Internet Explorer (see <a href="https://msdn.microsoft.com/en-us/library/windows/apps/hh465740.aspx">IE documentation</a>).</p>
+<p>We don't want to include too much details in the "Getting started" toptic. Nevertherless we
+would like to include one more small example, which shows the main way to integration any
+well-known conrols in the filter toolbar of jqGrid. One can specify `dataInit` callback
+inside of `searchoptions` property of some column. For example we can use jQuery UI Datepicker
+in the "Date" column in the following way. We need modify `searchoptions: { sopt: ["eq"] }` property
+to the following:</p>
+<div id="filtering-code-js2">
+<pre-js>searchoptions: {
+    sopt: ["eq"],
+    dataInit: function (elem, options) {
+        var self = this, $elem = $(elem),
+            filterOnSelect = function () {
+                setTimeout(function () {
+                    self.triggerToolbar();
+                }, 50);
+            },
+            triggerInputChangeOnSelect = function () {
+                $elem.change();
+            };
+        
+        setTimeout(function () {
+            $elem.datepicker({
+                dateFormat: "dd-M-yy",
+                autoSize: true,
+                changeYear: true,
+                changeMonth: true,
+                showButtonPanel: true,
+                showWeek: true,
+                onSelect: (options.mode === "filter" ? filterOnSelect : triggerInputChangeOnSelect)
+            });
+        }, 50);
+    }
+}
+</pre-js>
+</div>
+<table id="grid6"></table>
+<script>
+//<![CDATA[
+$(function () {
+	"use strict";
+	var initDatepicker = function (elem, options) {
+			var self = this, $elem = $(elem),
+				filterOnSelect = function () {
+					setTimeout(function () {
+						self.triggerToolbar();
+					}, 50);
+				},
+				triggerInputChangeOnSelect = function () {
+					$elem.change();
+				};
+
+			setTimeout(function () {
+				$elem.datepicker({
+					dateFormat: "dd-M-yy",
+					autoSize: true,
+					changeYear: true,
+					changeMonth: true,
+					showButtonPanel: true,
+					showWeek: true,
+					onSelect: (options.mode === "filter" ? filterOnSelect : triggerInputChangeOnSelect)
+				});
+			}, 50);
+		};
+
+	$("#grid6").jqGrid({
+		colModel: [
+			{ name: "name", label: "Client", width: 53 },
+			{ name: "invdate", label: "Date", width: 90, align: "center", sorttype: "date",
+				formatter: "date", formatoptions: { newformat: "d-M-Y" },
+				searchoptions: { sopt: ["eq"], dataInit: initDatepicker } },
+			{ name: "amount", label: "Amount", width: 65, template: "number" },
+			{ name: "tax", label: "Tax", width: 41, template: "number" },
+			{ name: "total", label: "Total", width: 51, template: "number" },
+			{ name: "closed", label: "Closed", width: 59, template: "booleanCheckboxFa", firstsortorder: "desc" },
+			{ name: "ship_via", label: "Shipped via", width: 87, align: "center",
+				formatter: "select",
+				formatoptions: { value: "FE:FedEx;TN:TNT;DH:DHL", defaultValue: "DH" },
+				stype: "select",
+				searchoptions: { value: ":Any;FE:FedEx;TN:TNT;DH:DHL" } }
+		],
+		data: [
+			{ id: "10",  invdate: "2015-10-01", name: "test",   amount: "" },
+			{ id: "20",  invdate: "2015-09-01", name: "test2",  amount: "300.00", tax: "20.00", closed: false, ship_via: "DH", total: "320.00" },
+			{ id: "30",  invdate: "2015-09-01", name: "test3",  amount: "400.00", tax: "30.00", closed: false, ship_via: "FE", total: "430.00" },
+			{ id: "40",  invdate: "2015-10-04", name: "test4",  amount: "200.00", tax: "10.00", closed: true,  ship_via: "TN", total: "210.00" },
+			{ id: "50",  invdate: "2015-10-31", name: "test5",  amount: "300.00", tax: "20.00", closed: false, ship_via: "FE", total: "320.00" },
+			{ id: "60",  invdate: "2015-09-06", name: "test6",  amount: "400.00", tax: "30.00", closed: false, ship_via: "FE", total: "430.00" },
+			{ id: "70",  invdate: "2015-10-04", name: "test7",  amount: "200.00", tax: "10.00", closed: true,  ship_via: "TN", total: "210.00" },
+			{ id: "80",  invdate: "2015-10-03", name: "test8",  amount: "300.00", tax: "20.00", closed: false, ship_via: "FE", total: "320.00" },
+			{ id: "90",  invdate: "2015-09-01", name: "test9",  amount: "400.00", tax: "30.00", closed: false, ship_via: "TN", total: "430.00" },
+			{ id: "100", invdate: "2015-09-08", name: "test10", amount: "500.00", tax: "30.00", closed: true,  ship_via: "TN", total: "530.00" },
+			{ id: "110", invdate: "2015-09-08", name: "test11", amount: "500.00", tax: "30.00", closed: false, ship_via: "FE", total: "530.00" },
+			{ id: "120", invdate: "2015-09-10", name: "test12", amount: "500.00", tax: "30.00", closed: false, ship_via: "FE", total: "530.00" }
+		],
+		//cmTemplate: { autoResizable: true, align: "center" },
+		//autoResizing: { compact: true },
+		//hidegrid: false,
+		iconSet: "fontAwesome",
+		idPrefix: "g6_",
+		rownumbers: true,
+		sortname: "invdate",
+		sortorder: "desc",
+		threeStateSort: true,
+		sortIconsBeforeText: true,
+		headertitles: true,
+		toppager: true,
+		pager: true,
+		rowNum: 5,
+		viewrecords: true,
+		searching: {
+			//searchOperators: true,
+			defaultSearch: "cn"
+		},
+		caption: "The grid demonstrates formatters, templates and the pager"
+	}).jqGrid("filterToolbar");
+});
+//]]>
+</script>
 <h3 id="editing_of_data"><a class="anchor" href="#editing_of_data"><span class="fa fa-link"></span></a>
 <a href="#editing_of_data">Editing of data</a></h3>
 <p></p>
