@@ -7,10 +7,8 @@
 	<meta name="author" content="Oleg Kiriljuk">
 	<title>Getting started free jqGrid</title>
 <!--@@commonHeadIncludes-->
-	<link rel="stylesheet" href="https://rawgit.com/free-jqgrid/jqGrid/master/css/ui.jqgrid.css">
-	<script src="https://rawgit.com/free-jqgrid/jqGrid/master/js/jquery.jqgrid.src.js"></script>
-	<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/free-jqgrid/4.13.0/css/ui.jqgrid.min.css">
-	<script src="https://cdn.jsdelivr.net/free-jqgrid/4.13.0/js/jquery.jqgrid.min.js"></script>-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.1/css/ui.jqgrid.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.1/js/jquery.jqgrid.min.js"></script>
 <style>
 img.imageExample {
 	max-width: 100%;
