@@ -6,6 +6,15 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="author" content="Oleg Kiriljuk">
 	<title>free jqGrid API documentation</title>
+	<link rel="prefetch" href="CustomActionButton.png">
+	<link rel="prefetch" href="CustomActionButton1.png">
+	<link rel="prefetch" href="multiPageSelection.png">
+	<link rel="prefetch" href="focusOfEditRow.png">
+	<link rel="prefetch" href="multiPageSelection.png">
+	<link rel="prefetch" href="navButtons0-fa4.png">
+	<link rel="prefetch" href="navButtons1-fa4.png">
+	<link rel="prefetch" href="navButtons2-fa4.png">
+	<link rel="subresource" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.1/css/ui.jqgrid.min.css">
 <!--@@commonHeadIncludes-->
 	<style>
 	img {
@@ -16,7 +25,7 @@
 	<!--<link rel="stylesheet" href="https://rawgit.com/free-jqgrid/jqGrid/master/css/ui.jqgrid.css">
 	<script src="https://rawgit.com/free-jqgrid/jqGrid/master/js/jquery.jqgrid.src.js"></script>-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.1/css/ui.jqgrid.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.1/js/jquery.jqgrid.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.1/js/jquery.jqgrid.min.js" defer></script>
 	<script>
 	$(function () {
 		$("#showImages").click(function() {

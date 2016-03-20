@@ -6,9 +6,14 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="author" content="Oleg Kiriljuk">
 	<title>Getting started free jqGrid</title>
+
+	<link rel="prefetch" href="sorting-resizing.gif">
+	<link rel="prefetch" href="grid-internal.png">
+	<link rel="subresource" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.1/css/ui.jqgrid.min.css">
 <!--@@commonHeadIncludes-->
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.1/css/ui.jqgrid.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.1/js/jquery.jqgrid.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.1/js/jquery.jqgrid.min.js" defer></script>
 <style>
 img.imageExample {
 	max-width: 100%;
@@ -825,8 +830,5 @@ $(function () {
 });
 //]]>
 </script>
-<h3 id="editing_of_data"><a class="anchor" href="#editing_of_data"><span class="fa fa-link"></span></a>
-<a href="#editing_of_data">Editing of data</a></h3>
-<p></p>
 </body>
 </html>
