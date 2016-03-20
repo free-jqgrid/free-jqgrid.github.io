@@ -26,18 +26,7 @@
 	<script src="https://rawgit.com/free-jqgrid/jqGrid/master/js/jquery.jqgrid.src.js"></script>-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.1/css/ui.jqgrid.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.1/js/jquery.jqgrid.min.js" defer></script>
-	<script>
-	$(function () {
-		$("#showImages").click(function() {
-			var show = $(this).is(":checked");
-			$(".imageExample")[show ? "show": "hide"]();
-			$(".showImage").prop("checked", show);
-		});
-		$(".showImage").click(function() {
-			$(this).closest("li").find(".imageExample")[$(this).is(":checked") ? "show": "hide"]();
-		});
-	});
-	</script>
+	<script src="examples.js" defer></script>
 </head>
 <body>
 <!--@@menuHeader-->

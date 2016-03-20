@@ -14,6 +14,7 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.1/css/ui.jqgrid.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.1/js/jquery.jqgrid.min.js" defer></script>
+	<script src="getting-started.js" defer></script>
 <style>
 img.imageExample {
 	max-width: 100%;
@@ -106,26 +107,6 @@ For example, the code below</p>
 </div>
 <p>creates the simple grid</p>
 <table id="grid"></table>
-<script>
-//<![CDATA[
-$(function () {
-"use strict";
-$("#grid").jqGrid({
-	colModel: [
-		{ name: "firstName" },
-		{ name: "lastName" }
-	],
-	data: [
-		{ id: 10, firstName: "Angela", lastName: "Merkel" },
-		{ id: 20, firstName: "Vladimir", lastName: "Putin" },
-		{ id: 30, firstName: "David", lastName: "Cameron" },
-		{ id: 40, firstName: "Barack", lastName: "Obama" },
-		{ id: 50, firstName: "François", lastName: "Hollande" }
-	]
-});
-});
-//]]>
-</script>
 <p style="margin-top:.5em;">In defference to the standard HTML <l-html><table></l-html> one can click on the column header to <em>sort</em>
 the rows by the content in the column. One have hovering effects for rows and the cells on the grid.
 One can click on a row of the grid to select it. One can click to another row
@@ -283,49 +264,6 @@ specific for the current locale. The default locale included in <l-html>jquery.j
 <p>The above code uses `iconSet: "fontAwesome"` and includes <a href="http://fontawesome.io/">Font Awesome 4.5.0</a>
 `font-awesome.min.css` additionally to CSSs included in the previous examples. You can see the resulting grid below:</p>
 <table id="grid1"></table>
-<script>
-//<![CDATA[
-$(function () {
-	"use strict";
-	$("#grid1").jqGrid({
-		colModel: [
-			{ name: "name", label: "Client", width: 53 },
-			{ name: "invdate", label: "Date", width: 75, align: "center", sorttype: "date",
-				formatter: "date", formatoptions: { newformat: "d-M-Y" } },
-			{ name: "amount", label: "Amount", width: 65, template: "number" },
-			{ name: "tax", label: "Tax", width: 41, template: "number" },
-			{ name: "total", label: "Total", width: 51, template: "number" },
-			{ name: "closed", label: "Closed", width: 59, template: "booleanCheckboxFa", firstsortorder: "desc" },
-			{ name: "ship_via", label: "Shipped via", width: 87, align: "center", formatter: "select",
-				formatoptions: { value: "FE:FedEx;TN:TNT;DH:DHL", defaultValue: "DH" } }
-		],
-		data: [
-			{ id: "10",  invdate: "2015-10-01", name: "test",   amount: "" },
-			{ id: "20",  invdate: "2015-09-01", name: "test2",  amount: "300.00", tax: "20.00", closed: false, ship_via: "DH", total: "320.00" },
-			{ id: "30",  invdate: "2015-09-01", name: "test3",  amount: "400.00", tax: "30.00", closed: false, ship_via: "FE", total: "430.00" },
-			{ id: "40",  invdate: "2015-10-04", name: "test4",  amount: "200.00", tax: "10.00", closed: true,  ship_via: "TN", total: "210.00" },
-			{ id: "50",  invdate: "2015-10-31", name: "test5",  amount: "300.00", tax: "20.00", closed: false, ship_via: "FE", total: "320.00" },
-			{ id: "60",  invdate: "2015-09-06", name: "test6",  amount: "400.00", tax: "30.00", closed: false, ship_via: "FE", total: "430.00" },
-			{ id: "70",  invdate: "2015-10-04", name: "test7",  amount: "200.00", tax: "10.00", closed: true,  ship_via: "TN", total: "210.00" },
-			{ id: "80",  invdate: "2015-10-03", name: "test8",  amount: "300.00", tax: "20.00", closed: false, ship_via: "FE", total: "320.00" },
-			{ id: "90",  invdate: "2015-09-01", name: "test9",  amount: "400.00", tax: "30.00", closed: false, ship_via: "TN", total: "430.00" },
-			{ id: "100", invdate: "2015-09-08", name: "test10", amount: "500.00", tax: "30.00", closed: true,  ship_via: "TN", total: "530.00" },
-			{ id: "110", invdate: "2015-09-08", name: "test11", amount: "500.00", tax: "30.00", closed: false, ship_via: "FE", total: "530.00" },
-			{ id: "120", invdate: "2015-09-10", name: "test12", amount: "500.00", tax: "30.00", closed: false, ship_via: "FE", total: "530.00" }
-		],
-		//cmTemplate: { autoResizable: true, align: "center" },
-		//autoResizing: { compact: true },
-		//hidegrid: false,
-		iconSet: "fontAwesome",
-		idPrefix: "g1_",
-		rownumbers: true,
-		sortname: "invdate",
-		sortorder: "desc",
-		caption: "The grid, which uses predefined formatters and templates"
-	});
-});
-//]]>
-</script>
 <p style="margin-top:.5em;">The meaning of the most of properties and options used in jqGrid can be guessed intuitively.</p>
 <p>The option `rownumbers: true` creates additional column with the row numbers. The input data will be sorted by
 the `invdate` column displayed the latest dates first. Such behavior are defined by the options `sortname: "invdate"` and
@@ -389,104 +327,10 @@ effective to use local paging of data instead of displaying all the items on the
 scrollbar to see the data. Placing of all the data on the HTML page takes relative much time and it makes the page very slow
 (less responsive). We can modify the above example by adding `toppager: true`, `pager: true` and `rowNum: 5` to have the following grid:</p>
 <table id="grid2"></table>
-<script>
-//<![CDATA[
-$(function () {
-	"use strict";
-	$("#grid2").jqGrid({
-		colModel: [
-			{ name: "name", label: "Client", width: 53 },
-			{ name: "invdate", label: "Date", width: 75, align: "center", sorttype: "date",
-				formatter: "date", formatoptions: { newformat: "d-M-Y" } },
-			{ name: "amount", label: "Amount", width: 65, template: "number" },
-			{ name: "tax", label: "Tax", width: 41, template: "number" },
-			{ name: "total", label: "Total", width: 51, template: "number" },
-			{ name: "closed", label: "Closed", width: 59, template: "booleanCheckboxFa", firstsortorder: "desc" },
-			{ name: "ship_via", label: "Shipped via", width: 87, align: "center", formatter: "select",
-				formatoptions: { value: "FE:FedEx;TN:TNT;DH:DHL", defaultValue: "DH" } }
-		],
-		data: [
-			{ id: "10",  invdate: "2015-10-01", name: "test",   amount: "" },
-			{ id: "20",  invdate: "2015-09-01", name: "test2",  amount: "300.00", tax: "20.00", closed: false, ship_via: "DH", total: "320.00" },
-			{ id: "30",  invdate: "2015-09-01", name: "test3",  amount: "400.00", tax: "30.00", closed: false, ship_via: "FE", total: "430.00" },
-			{ id: "40",  invdate: "2015-10-04", name: "test4",  amount: "200.00", tax: "10.00", closed: true,  ship_via: "TN", total: "210.00" },
-			{ id: "50",  invdate: "2015-10-31", name: "test5",  amount: "300.00", tax: "20.00", closed: false, ship_via: "FE", total: "320.00" },
-			{ id: "60",  invdate: "2015-09-06", name: "test6",  amount: "400.00", tax: "30.00", closed: false, ship_via: "FE", total: "430.00" },
-			{ id: "70",  invdate: "2015-10-04", name: "test7",  amount: "200.00", tax: "10.00", closed: true,  ship_via: "TN", total: "210.00" },
-			{ id: "80",  invdate: "2015-10-03", name: "test8",  amount: "300.00", tax: "20.00", closed: false, ship_via: "FE", total: "320.00" },
-			{ id: "90",  invdate: "2015-09-01", name: "test9",  amount: "400.00", tax: "30.00", closed: false, ship_via: "TN", total: "430.00" },
-			{ id: "100", invdate: "2015-09-08", name: "test10", amount: "500.00", tax: "30.00", closed: true,  ship_via: "TN", total: "530.00" },
-			{ id: "110", invdate: "2015-09-08", name: "test11", amount: "500.00", tax: "30.00", closed: false, ship_via: "FE", total: "530.00" },
-			{ id: "120", invdate: "2015-09-10", name: "test12", amount: "500.00", tax: "30.00", closed: false, ship_via: "FE", total: "530.00" }
-		],
-		//cmTemplate: { autoResizable: true, align: "center" },
-		//autoResizing: { compact: true },
-		//hidegrid: false,
-		iconSet: "fontAwesome",
-		idPrefix: "g2_",
-		rownumbers: true,
-		sortname: "invdate",
-		sortorder: "desc",
-		toppager: true,
-		pager: true,
-		rowNum: 5,
-		caption: "The grid demonstrates formatters, templates and the pager"
-	});
-});
-//]]>
-</script>
 <p style="margin-top:.5em;">The option `toppager: true` adds the pager on top of the grid, the option `pager: true` adds the bottom pager and
 `rowNum: 5` specifies the size to the page. One can use additional `viewrecords: true` option to display the status of
 the page in the right part of the pagers. One can use `page: 2` to specify the page number displayed initially:</p>
 <table id="grid3"></table>
-<script>
-//<![CDATA[
-$(function () {
-	"use strict";
-	$("#grid3").jqGrid({
-		colModel: [
-			{ name: "name", label: "Client", width: 53 },
-			{ name: "invdate", label: "Date", width: 75, align: "center", sorttype: "date",
-				formatter: "date", formatoptions: { newformat: "d-M-Y" } },
-			{ name: "amount", label: "Amount", width: 65, template: "number" },
-			{ name: "tax", label: "Tax", width: 41, template: "number" },
-			{ name: "total", label: "Total", width: 51, template: "number" },
-			{ name: "closed", label: "Closed", width: 59, template: "booleanCheckboxFa", firstsortorder: "desc" },
-			{ name: "ship_via", label: "Shipped via", width: 87, align: "center", formatter: "select",
-				formatoptions: { value: "FE:FedEx;TN:TNT;DH:DHL", defaultValue: "DH" } }
-		],
-		data: [
-			{ id: "10",  invdate: "2015-10-01", name: "test",   amount: "" },
-			{ id: "20",  invdate: "2015-09-01", name: "test2",  amount: "300.00", tax: "20.00", closed: false, ship_via: "DH", total: "320.00" },
-			{ id: "30",  invdate: "2015-09-01", name: "test3",  amount: "400.00", tax: "30.00", closed: false, ship_via: "FE", total: "430.00" },
-			{ id: "40",  invdate: "2015-10-04", name: "test4",  amount: "200.00", tax: "10.00", closed: true,  ship_via: "TN", total: "210.00" },
-			{ id: "50",  invdate: "2015-10-31", name: "test5",  amount: "300.00", tax: "20.00", closed: false, ship_via: "FE", total: "320.00" },
-			{ id: "60",  invdate: "2015-09-06", name: "test6",  amount: "400.00", tax: "30.00", closed: false, ship_via: "FE", total: "430.00" },
-			{ id: "70",  invdate: "2015-10-04", name: "test7",  amount: "200.00", tax: "10.00", closed: true,  ship_via: "TN", total: "210.00" },
-			{ id: "80",  invdate: "2015-10-03", name: "test8",  amount: "300.00", tax: "20.00", closed: false, ship_via: "FE", total: "320.00" },
-			{ id: "90",  invdate: "2015-09-01", name: "test9",  amount: "400.00", tax: "30.00", closed: false, ship_via: "TN", total: "430.00" },
-			{ id: "100", invdate: "2015-09-08", name: "test10", amount: "500.00", tax: "30.00", closed: true,  ship_via: "TN", total: "530.00" },
-			{ id: "110", invdate: "2015-09-08", name: "test11", amount: "500.00", tax: "30.00", closed: false, ship_via: "FE", total: "530.00" },
-			{ id: "120", invdate: "2015-09-10", name: "test12", amount: "500.00", tax: "30.00", closed: false, ship_via: "FE", total: "530.00" }
-		],
-		//cmTemplate: { autoResizable: true, align: "center" },
-		//autoResizing: { compact: true },
-		//hidegrid: false,
-		iconSet: "fontAwesome",
-		idPrefix: "g3_",
-		rownumbers: true,
-		sortname: "invdate",
-		sortorder: "desc",
-		toppager: true,
-		pager: true,
-		rowNum: 5,
-		page: 2,
-		viewrecords: true,
-		caption: "The grid demonstrates formatters, templates and the pager"
-	});
-});
-//]]>
-</script>
 <p style="margin-top:.5em;">One uses `page: 2` seldom. It's just important don't mix `pager` and `page` properties.</p>
 <p>The pager have the bottons <span style="font-size: 14.6667px;" class="fa fa-fw fa-step-backward ui-state-default ui-corner-all"></span> (the first),
 <span style="font-size: 14.6667px;" class="fa fa-fw fa-backward ui-state-default ui-corner-all"></span> (the previous),
@@ -511,56 +355,6 @@ which places the sorting icons <em>before</em> the text of the column header. It
 the sorting icons even if the column width so small that the text of the column header couldn't be full displayed together
 with the corting icon.</p>
 <table id="grid4"></table>
-<script>
-//<![CDATA[
-$(function () {
-	"use strict";
-	$("#grid4").jqGrid({
-		colModel: [
-			{ name: "name", label: "Client", width: 53 },
-			{ name: "invdate", label: "Date", width: 75, align: "center", sorttype: "date",
-				formatter: "date", formatoptions: { newformat: "d-M-Y" } },
-			{ name: "amount", label: "Amount", width: 65, template: "number" },
-			{ name: "tax", label: "Tax", width: 41, template: "number" },
-			{ name: "total", label: "Total", width: 51, template: "number" },
-			{ name: "closed", label: "Closed", width: 59, template: "booleanCheckboxFa", firstsortorder: "desc" },
-			{ name: "ship_via", label: "Shipped via", width: 87, align: "center", formatter: "select",
-				formatoptions: { value: "FE:FedEx;TN:TNT;DH:DHL", defaultValue: "DH" } }
-		],
-		data: [
-			{ id: "10",  invdate: "2015-10-01", name: "test",   amount: "" },
-			{ id: "20",  invdate: "2015-09-01", name: "test2",  amount: "300.00", tax: "20.00", closed: false, ship_via: "DH", total: "320.00" },
-			{ id: "30",  invdate: "2015-09-01", name: "test3",  amount: "400.00", tax: "30.00", closed: false, ship_via: "FE", total: "430.00" },
-			{ id: "40",  invdate: "2015-10-04", name: "test4",  amount: "200.00", tax: "10.00", closed: true,  ship_via: "TN", total: "210.00" },
-			{ id: "50",  invdate: "2015-10-31", name: "test5",  amount: "300.00", tax: "20.00", closed: false, ship_via: "FE", total: "320.00" },
-			{ id: "60",  invdate: "2015-09-06", name: "test6",  amount: "400.00", tax: "30.00", closed: false, ship_via: "FE", total: "430.00" },
-			{ id: "70",  invdate: "2015-10-04", name: "test7",  amount: "200.00", tax: "10.00", closed: true,  ship_via: "TN", total: "210.00" },
-			{ id: "80",  invdate: "2015-10-03", name: "test8",  amount: "300.00", tax: "20.00", closed: false, ship_via: "FE", total: "320.00" },
-			{ id: "90",  invdate: "2015-09-01", name: "test9",  amount: "400.00", tax: "30.00", closed: false, ship_via: "TN", total: "430.00" },
-			{ id: "100", invdate: "2015-09-08", name: "test10", amount: "500.00", tax: "30.00", closed: true,  ship_via: "TN", total: "530.00" },
-			{ id: "110", invdate: "2015-09-08", name: "test11", amount: "500.00", tax: "30.00", closed: false, ship_via: "FE", total: "530.00" },
-			{ id: "120", invdate: "2015-09-10", name: "test12", amount: "500.00", tax: "30.00", closed: false, ship_via: "FE", total: "530.00" }
-		],
-		//cmTemplate: { autoResizable: true, align: "center" },
-		//autoResizing: { compact: true },
-		//hidegrid: false,
-		iconSet: "fontAwesome",
-		idPrefix: "g4_",
-		rownumbers: true,
-		sortname: "invdate",
-		sortorder: "desc",
-		threeStateSort: true,
-		sortIconsBeforeText: true,
-		headertitles: true,
-		toppager: true,
-		pager: true,
-		rowNum: 5,
-		viewrecords: true,
-		caption: "The grid demonstrates formatters, templates and the pager"
-	});
-});
-//]]>
-</script>
 <p style="margin-top:.5em;">We included in the grid one more option `headertitles: true`,
 which creates the tooltips on column headers. It's practical if one </p>
 <p>There are some other advanced options like `multiSort: true`, which allows to sort by
@@ -573,64 +367,6 @@ to implement more advanced scenarios.</p>
 with input elements which allows to filter the grid data by specified values. One need just
 call of the method `filterToolbar`.</p>
 <table id="grid5"></table>
-<script>
-//<![CDATA[
-$(function () {
-	"use strict";
-	$("#grid5").jqGrid({
-		colModel: [
-			{ name: "name", label: "Client", width: 53 },
-			{ name: "invdate", label: "Date", width: 90, align: "center", sorttype: "date",
-				formatter: "date", formatoptions: { newformat: "d-M-Y" },
-				searchoptions: { sopt: ["eq"] } },
-			{ name: "amount", label: "Amount", width: 65, template: "number" },
-			{ name: "tax", label: "Tax", width: 41, template: "number" },
-			{ name: "total", label: "Total", width: 51, template: "number" },
-			{ name: "closed", label: "Closed", width: 59, template: "booleanCheckboxFa", firstsortorder: "desc" },
-			{ name: "ship_via", label: "Shipped via", width: 87, align: "center",
-				formatter: "select",
-				formatoptions: { value: "FE:FedEx;TN:TNT;DH:DHL", defaultValue: "DH" },
-				stype: "select",
-				searchoptions: { value: ":Any;FE:FedEx;TN:TNT;DH:DHL" } }
-		],
-		data: [
-			{ id: "10",  invdate: "2015-10-01", name: "test",   amount: "" },
-			{ id: "20",  invdate: "2015-09-01", name: "test2",  amount: "300.00", tax: "20.00", closed: false, ship_via: "DH", total: "320.00" },
-			{ id: "30",  invdate: "2015-09-01", name: "test3",  amount: "400.00", tax: "30.00", closed: false, ship_via: "FE", total: "430.00" },
-			{ id: "40",  invdate: "2015-10-04", name: "test4",  amount: "200.00", tax: "10.00", closed: true,  ship_via: "TN", total: "210.00" },
-			{ id: "50",  invdate: "2015-10-31", name: "test5",  amount: "300.00", tax: "20.00", closed: false, ship_via: "FE", total: "320.00" },
-			{ id: "60",  invdate: "2015-09-06", name: "test6",  amount: "400.00", tax: "30.00", closed: false, ship_via: "FE", total: "430.00" },
-			{ id: "70",  invdate: "2015-10-04", name: "test7",  amount: "200.00", tax: "10.00", closed: true,  ship_via: "TN", total: "210.00" },
-			{ id: "80",  invdate: "2015-10-03", name: "test8",  amount: "300.00", tax: "20.00", closed: false, ship_via: "FE", total: "320.00" },
-			{ id: "90",  invdate: "2015-09-01", name: "test9",  amount: "400.00", tax: "30.00", closed: false, ship_via: "TN", total: "430.00" },
-			{ id: "100", invdate: "2015-09-08", name: "test10", amount: "500.00", tax: "30.00", closed: true,  ship_via: "TN", total: "530.00" },
-			{ id: "110", invdate: "2015-09-08", name: "test11", amount: "500.00", tax: "30.00", closed: false, ship_via: "FE", total: "530.00" },
-			{ id: "120", invdate: "2015-09-10", name: "test12", amount: "500.00", tax: "30.00", closed: false, ship_via: "FE", total: "530.00" }
-		],
-		//cmTemplate: { autoResizable: true, align: "center" },
-		//autoResizing: { compact: true },
-		//hidegrid: false,
-		iconSet: "fontAwesome",
-		idPrefix: "g5_",
-		rownumbers: true,
-		sortname: "invdate",
-		sortorder: "desc",
-		threeStateSort: true,
-		sortIconsBeforeText: true,
-		headertitles: true,
-		toppager: true,
-		pager: true,
-		rowNum: 5,
-		viewrecords: true,
-		searching: {
-			//searchOperators: true,
-			defaultSearch: "cn"
-		},
-		caption: "The grid demonstrates formatters, templates and the pager"
-	}).jqGrid("filterToolbar");
-});
-//]]>
-</script>
 <p style="margin-top:.5em;">The code of the above example is almost the same as in the previous one.
 The following changes are made:</p>
 <ul>
@@ -748,88 +484,6 @@ to the following:</p>
 </pre-js>
 </div>
 <table id="grid6"></table>
-<script>
-//<![CDATA[
-$(function () {
-	"use strict";
-	var initDatepicker = function (elem, options) {
-			var self = this, $elem = $(elem),
-				filterOnSelect = function () {
-					setTimeout(function () {
-						self.triggerToolbar();
-					}, 50);
-				},
-				triggerInputChangeOnSelect = function () {
-					$elem.change();
-				};
-
-			setTimeout(function () {
-				$elem.datepicker({
-					dateFormat: "dd-M-yy",
-					autoSize: true,
-					changeYear: true,
-					changeMonth: true,
-					showButtonPanel: true,
-					showWeek: true,
-					onSelect: (options.mode === "filter" ? filterOnSelect : triggerInputChangeOnSelect)
-				});
-			}, 50);
-		};
-
-	$("#grid6").jqGrid({
-		colModel: [
-			{ name: "name", label: "Client", width: 53 },
-			{ name: "invdate", label: "Date", width: 90, align: "center", sorttype: "date",
-				formatter: "date", formatoptions: { newformat: "d-M-Y" },
-				searchoptions: { sopt: ["eq"], dataInit: initDatepicker } },
-			{ name: "amount", label: "Amount", width: 65, template: "number" },
-			{ name: "tax", label: "Tax", width: 41, template: "number" },
-			{ name: "total", label: "Total", width: 51, template: "number" },
-			{ name: "closed", label: "Closed", width: 59, template: "booleanCheckboxFa", firstsortorder: "desc" },
-			{ name: "ship_via", label: "Shipped via", width: 87, align: "center",
-				formatter: "select",
-				formatoptions: { value: "FE:FedEx;TN:TNT;DH:DHL", defaultValue: "DH" },
-				stype: "select",
-				searchoptions: { value: ":Any;FE:FedEx;TN:TNT;DH:DHL" } }
-		],
-		data: [
-			{ id: "10",  invdate: "2015-10-01", name: "test",   amount: "" },
-			{ id: "20",  invdate: "2015-09-01", name: "test2",  amount: "300.00", tax: "20.00", closed: false, ship_via: "DH", total: "320.00" },
-			{ id: "30",  invdate: "2015-09-01", name: "test3",  amount: "400.00", tax: "30.00", closed: false, ship_via: "FE", total: "430.00" },
-			{ id: "40",  invdate: "2015-10-04", name: "test4",  amount: "200.00", tax: "10.00", closed: true,  ship_via: "TN", total: "210.00" },
-			{ id: "50",  invdate: "2015-10-31", name: "test5",  amount: "300.00", tax: "20.00", closed: false, ship_via: "FE", total: "320.00" },
-			{ id: "60",  invdate: "2015-09-06", name: "test6",  amount: "400.00", tax: "30.00", closed: false, ship_via: "FE", total: "430.00" },
-			{ id: "70",  invdate: "2015-10-04", name: "test7",  amount: "200.00", tax: "10.00", closed: true,  ship_via: "TN", total: "210.00" },
-			{ id: "80",  invdate: "2015-10-03", name: "test8",  amount: "300.00", tax: "20.00", closed: false, ship_via: "FE", total: "320.00" },
-			{ id: "90",  invdate: "2015-09-01", name: "test9",  amount: "400.00", tax: "30.00", closed: false, ship_via: "TN", total: "430.00" },
-			{ id: "100", invdate: "2015-09-08", name: "test10", amount: "500.00", tax: "30.00", closed: true,  ship_via: "TN", total: "530.00" },
-			{ id: "110", invdate: "2015-09-08", name: "test11", amount: "500.00", tax: "30.00", closed: false, ship_via: "FE", total: "530.00" },
-			{ id: "120", invdate: "2015-09-10", name: "test12", amount: "500.00", tax: "30.00", closed: false, ship_via: "FE", total: "530.00" }
-		],
-		//cmTemplate: { autoResizable: true, align: "center" },
-		//autoResizing: { compact: true },
-		//hidegrid: false,
-		iconSet: "fontAwesome",
-		idPrefix: "g6_",
-		rownumbers: true,
-		sortname: "invdate",
-		sortorder: "desc",
-		threeStateSort: true,
-		sortIconsBeforeText: true,
-		headertitles: true,
-		toppager: true,
-		pager: true,
-		rowNum: 5,
-		viewrecords: true,
-		searching: {
-			//searchOperators: true,
-			defaultSearch: "cn"
-		},
-		caption: "The grid demonstrates formatters, templates and the pager"
-	}).jqGrid("filterToolbar");
-});
-//]]>
-</script>
 </div>
 </body>
 </html>
