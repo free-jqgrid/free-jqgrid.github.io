@@ -1,4 +1,4 @@
-/*global jQuery, define */
+﻿/*global jQuery, define */
 jQuery.noConflict();
 jQuery(function ($) {
 	"use strict";
@@ -12,7 +12,7 @@ jQuery(function ($) {
 			{ id: 20, firstName: "Vladimir", lastName: "Putin" },
 			{ id: 30, firstName: "David", lastName: "Cameron" },
 			{ id: 40, firstName: "Barack", lastName: "Obama" },
-			{ id: 50, firstName: "Fran�ois", lastName: "Hollande" }
+			{ id: 50, firstName: "François", lastName: "Hollande" }
 		]
 	});
 	$("#grid1").jqGrid({
