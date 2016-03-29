@@ -14,7 +14,6 @@
 	<link rel="prefetch" href="navButtons0-fa4.png">
 	<link rel="prefetch" href="navButtons1-fa4.png">
 	<link rel="prefetch" href="navButtons2-fa4.png">
-	<link rel="subresource" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.1/css/ui.jqgrid.min.css">
 <!--@@commonHeadIncludes-->
 	<style>
 	img {
@@ -22,9 +21,6 @@
 		height: auto;
 	}
 	</style>
-	<!--<link rel="stylesheet" href="https://rawgit.com/free-jqgrid/jqGrid/master/css/ui.jqgrid.css">
-	<script src="https://rawgit.com/free-jqgrid/jqGrid/master/js/jquery.jqgrid.src.js"></script>-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.1/css/ui.jqgrid.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.1/js/jquery.jqgrid.min.js" defer></script>
 	<script src="examples.js" defer></script>
 </head>

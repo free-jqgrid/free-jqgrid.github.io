@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="author" content="Oleg Kiriljuk">
 	<title>free jqGrid documentation</title>
-	<!--@@commonHeadIncludes-->
+<!--@@commonHeadIncludes-->
 </head>
 <body>
 <!--@@menuHeader-->
