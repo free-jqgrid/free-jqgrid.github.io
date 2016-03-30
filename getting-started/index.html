@@ -13,9 +13,11 @@
 <link rel="dns-prefetch" href="https://ajax.googleapis.com">
 <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 <link rel="dns-prefetch" href="https://google-code-prettify.googlecode.com">
+<link rel="dns-prefetch" href="https://www.google-analytics.com">
 <link rel="preconnect" href="https://ajax.googleapis.com/" crossorigin>
 <link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
 <link rel="preconnect" href="https://google-code-prettify.googlecode.com/" crossorigin>
+<link rel="preconnect" href="https://www.google-analytics.com/" crossorigin>
 <link rel="prefetch subresource" href="https://google-code-prettify.googlecode.com/svn/loader/prettify.css">
 <link rel="preload" href="font.woff2" as="font" type="font/woff2" crossorigin>
 
@@ -47,10 +49,7 @@ c)return b();setTimeout(function(){g(b)})};a.addEventListener&&a.addEventListene
 (function(a){if(a.loadCSS){var b=loadCSS.relpreload={};b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}};b.poly=function(){for(var b=a.document.getElementsByTagName("link"),d=0;d<b.length;d++){var c=b[d];"preload"===c.rel&&"style"===c.getAttribute("as")&&(a.loadCSS(c.href,c),c.rel=null)}};if(!b.support()){b.poly();var e=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){a.clearInterval(e)});a.attachEvent&&
 a.attachEvent("onload",function(){a.clearInterval(e)})}}})(this);
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.2/jquery.min.js" defer></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/run_prettify.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/lang-css.min.js" defer></script>
+<script data-main="require.config" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.js" defer></script>
 <script>
 (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -60,8 +59,8 @@ ga("create", "UA-353436-3", "auto");
 ga("send", "pageview");
 </script>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.1/js/jquery.jqgrid.min.js" defer></script>
-	<script src="getting-started.js" defer></script>
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.1/js/jquery.jqgrid.min.js" defer></script>
+	<script src="getting-started.js" defer></script>-->
 <style>
 img.imageExample {
 	max-width: 100%;

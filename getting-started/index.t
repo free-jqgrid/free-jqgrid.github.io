@@ -11,8 +11,8 @@
 	<link rel="prefetch" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694746/grid-internal_mvnjkp.png">
 <!--@@commonHeadIncludes-->
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.1/js/jquery.jqgrid.min.js" defer></script>
-	<script src="getting-started.js" defer></script>
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.1/js/jquery.jqgrid.min.js" defer></script>
+	<script src="getting-started.js" defer></script>-->
 <style>
 img.imageExample {
 	max-width: 100%;
