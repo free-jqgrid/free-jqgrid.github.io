@@ -8,8 +8,6 @@
 	<title>free jqGrid API documentation</title>
 	<link rel="prefetch" href="methods.json">
 <!--@@commonHeadIncludes-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.1/js/jquery.jqgrid.min.js" defer></script>
-	<script src="api-documentation.js" defer></script>
 </head>
 <body>
 <!--@@menuHeader-->

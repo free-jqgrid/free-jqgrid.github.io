@@ -21,8 +21,6 @@
 		height: auto;
 	}
 	</style>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.1/js/jquery.jqgrid.min.js" defer></script>
-	<script src="examples.js" defer></script>
 </head>
 <body>
 <!--@@menuHeader-->
