@@ -32,8 +32,8 @@ require.config({
 define(
 [
 	"jquery",
-	"prettify",
-	"prettify-css",
+	"prettify"//,
+	//"prettify-css",
 	//"jquery-ui",
 	//"free-jqgrid"
 	//"free-jqgrid-js/i18n/grid.locale-de.min",

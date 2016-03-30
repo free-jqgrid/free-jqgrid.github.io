@@ -33,7 +33,7 @@ define(
 [
 	"jquery",
 	"prettify",
-	"prettify-css",
+	//"prettify-css",
 	"jquery-ui",
 	"free-jqgrid"
 	//"free-jqgrid-js/i18n/grid.locale-de.min",
