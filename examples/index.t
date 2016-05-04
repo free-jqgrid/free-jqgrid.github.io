@@ -6,11 +6,20 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="author" content="Oleg Kiriljuk">
 	<title>free jqGrid API documentation</title>
+	<link rel="preload" as="image" href="CustomActionButton.png">
+	<link rel="preload" as="image" href="CustomActionButton1.png">
+	<link rel="preload" as="image" href="multiPageSelection.png">
+	<link rel="preload" as="image" href="focusOfEditRow.png">
+	<link rel="preload" as="image" href="hasSubrgid.png">
+	<link rel="preload" as="image" href="navButtons0-fa4.png">
+	<link rel="preload" as="image" href="navButtons1-fa4.png">
+	<link rel="preload" as="image" href="navButtons2-fa4.png">
+
 	<link rel="prefetch" href="CustomActionButton.png">
 	<link rel="prefetch" href="CustomActionButton1.png">
 	<link rel="prefetch" href="multiPageSelection.png">
 	<link rel="prefetch" href="focusOfEditRow.png">
-	<link rel="prefetch" href="multiPageSelection.png">
+	<link rel="prefetch" href="hasSubrgid.png">
 	<link rel="prefetch" href="navButtons0-fa4.png">
 	<link rel="prefetch" href="navButtons1-fa4.png">
 	<link rel="prefetch" href="navButtons2-fa4.png">
@@ -53,7 +62,7 @@
 	<h3>jqGrid options:</h3>
 	<ul>
 		<li><a href="http://www.ok-soft-gmbh.com/jqGrid/OK/hasSubrgid.htm">Usage of <l-js>hasSubgrid</l-js> callback of <l-js>subGridOptions</l-js> option</a>. It allows to display "+" subgrid icon on rows which have subgrids only.
-			<img src="multiPageSelection.png" class="imageExample" style="display:none" alt="Usage of hasSubgrid callback of subGridOptions" />
+			<img src="hasSubrgid.png" class="imageExample" style="display:none" alt="Usage of hasSubgrid callback of subGridOptions" />
 			<p>See <a href="http://stackoverflow.com/a/32744570/315935">the answer</a> for details</p></li>
 		<li><a href="http://www.ok-soft-gmbh.com/jqGrid/OK/3stateSort.htm">Usage of <l-js>threeStateSort: true</l-js> option</a>. It allows to change the behavior of multiple clicks on the column header. Instead of standard 2-state behavior jqGrid will use 3-state behavior where the third click on the column header implies displaying unsorted grid.
 			<p>See <a href="https://github.com/free-jqgrid/jqGrid/pull/141">the pull request</a> for details</p></li>

@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="author" content="Oleg Kiriljuk">
 	<title>free jqGrid API documentation</title>
+	<link rel="preload" href="methods.json">
 	<link rel="prefetch" href="methods.json">
 <!--@@commonHeadIncludes-->
 </head>

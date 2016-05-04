@@ -3,19 +3,19 @@ require.config({
 	//skipDirOptimize: true,
 	paths: {
 		"free-jqgrid": [
-			"https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.1/js/jquery.jqgrid.min"
+			"https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.2/js/jquery.jqgrid.min"
 		],
 		"free-jqgrid-js": [
-			"https://cdn.jsdelivr.net/free-jqgrid/4.13.1/js"
+			"https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.2/js"
 		],
 		"free-jqgrid-js-min": [
-			"https://cdn.jsdelivr.net/free-jqgrid/4.13.1/js/min"
+			"https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.2/js/min"
 		],
 		jquery: [
-			"https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min"
+			"https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min"
 		],
 		"jquery-ui": [
-			"https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min"
+			"https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min"
 		],
 		"jquery-ui-i18n": [
 			"https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n"
