@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="author" content="Oleg Kiriljuk">
 	<title>free jqGrid API documentation</title>
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js" as="script">
 	<link rel="preload" as="image" href="CustomActionButton.png">
 	<link rel="preload" as="image" href="CustomActionButton1.png">
 	<link rel="preload" as="image" href="multiPageSelection.png">

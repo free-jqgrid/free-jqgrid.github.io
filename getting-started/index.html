@@ -7,6 +7,9 @@
 	<meta name="author" content="Oleg Kiriljuk">
 	<title>Getting started free jqGrid</title>
 
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js" as="script">
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" as="script">
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.2/js/jquery.jqgrid.min.js" as="script">
 	<link rel="preload" as="image" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694846/sorting-resizing_rkxu2p.gif">
 	<link rel="preload" as="image" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694746/grid-internal_mvnjkp.png">
 	<link rel="prefetch" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694846/sorting-resizing_rkxu2p.gif">
@@ -23,6 +26,7 @@
 <link rel="preconnect" href="https://res.cloudinary.com/ok-soft-gmbh/" crossorigin>
 
 <link rel="preload" as="font" crossorigin type="font/woff2" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/fonts/fontawesome-webfont.woff2?v=4.6.2">
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css" as="style">
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css" as="style">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">
@@ -36,6 +40,10 @@
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.2/css/ui.jqgrid.min.css" as="style" onload="this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.2/css/ui.jqgrid.min.css"></noscript>
 
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.js" as="script">
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/run_prettify.min.js" as="script">
+<link rel="preload" href="https://www.google-analytics.com/analytics.js" as="script">
+
 <link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/fonts/fontawesome-webfont.woff2?v=4.6.2">
 <link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_glass_85_dfeffc_1x400.png">
 <link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_inset-hard_100_fcfdfd_1x100.png">
@@ -44,6 +52,10 @@
 <link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png">
 <link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-icons_d8e7f3_256x240.png">
 <link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_glass_95_fef1ec_1x400.png">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">
+
 <script>
 /*loadCSS.min.js,cssrelpreload.min.js v1.2.0*/
 /* loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT */

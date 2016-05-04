@@ -22,9 +22,6 @@ require.config({
 		],
 		"prettify": [
 			"https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/run_prettify.min"
-		],
-		"prettify-css": [
-			"https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/lang-css.min"
 		]
 	}
 });
@@ -33,7 +30,6 @@ define(
 [
 	"jquery",
 	"prettify",
-	//"prettify-css",
 	"jquery-ui",
 	"free-jqgrid"
 	//"free-jqgrid-js/i18n/grid.locale-de.min",
