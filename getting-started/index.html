@@ -7,60 +7,102 @@
 	<meta name="author" content="Oleg Kiriljuk">
 	<title>Getting started free jqGrid</title>
 
-	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js" as="script">
-	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" as="script">
-	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.2/js/jquery.jqgrid.min.js" as="script">
+	<link rel="preload" as="script" crossorigin="anonymous"
+		href="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"
+		integrity="sha384-ugqypGWrzPLdx2zEQTF17cVktjb01piRKaDNnbYGRSxyEoeAm+MKZVtbDUYjxfZ6">
+	<link rel="preload" as="script" crossorigin="anonymous"
+		href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"
+		integrity="sha384-YWP9O4NjmcGo4oEJFXvvYSEzuHIvey+LbXkBNJ1Kd0yfugEZN9NCQNpRYBVC1RvA">
+	<link rel="preload" as="script" crossorigin="anonymous"
+		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.3/js/jquery.jqgrid.min.js"
+		integrity="sha384-m7mgGT+H521oDvG1Xjr5twSO4kV48+r7Wj9I1YIl2QKvkKNVxh19XYiD8hKRnHXk">
+	
 	<link rel="preload" as="image" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694846/sorting-resizing_rkxu2p.gif">
 	<link rel="preload" as="image" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694746/grid-internal_mvnjkp.png">
 	<link rel="prefetch" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694846/sorting-resizing_rkxu2p.gif">
 	<link rel="prefetch" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694746/grid-internal_mvnjkp.png">
+
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.3/css/ui.jqgrid.min.css" as="style" onload="this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" crossorigin="anonymous"
+		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.3/css/ui.jqgrid.min.css"
+		integrity="sha384-8Y8UQ6XfikznJ3I3eXTIxJbxpkbRHHJKC0EJGMIezxHOdAKOLzt23nqIjXGOH9th"></noscript>
+
 <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 <meta http-equiv="x-dns-prefetch-control" content="on">
 <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 <link rel="dns-prefetch" href="https://google-code-prettify.googlecode.com">
 <link rel="dns-prefetch" href="https://www.google-analytics.com">
 <link rel="dns-prefetch" href="https://res.cloudinary.com/ok-soft-gmbh/">
-<link rel="preconnect" href="https://cdnjs.cloudflare.com/">
-<link rel="preconnect" href="https://google-code-prettify.googlecode.com/" crossorigin>
-<link rel="preconnect" href="https://www.google-analytics.com/" crossorigin>
-<link rel="preconnect" href="https://res.cloudinary.com/ok-soft-gmbh/" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin="anonymous">
+<link rel="preconnect" href="https://google-code-prettify.googlecode.com/" crossorigin="anonymous">
+<link rel="preconnect" href="https://www.google-analytics.com/" crossorigin="anonymous">
+<link rel="preconnect" href="https://res.cloudinary.com/ok-soft-gmbh/" crossorigin="anonymous">
 
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css" as="style">
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css" as="style">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">
-<link rel="preload" href="https://google-code-prettify.googlecode.com/svn/loader/prettify.css" as="style" onload="this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://google-code-prettify.googlecode.com/svn/loader/prettify.css"></noscript>
+<link rel="preload" as="style" crossorigin="anonymous"
+	href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css"
+	integrity="sha384-fUMURLTdEcpeYHly3PAwggI3l2UvdHNg/I+8LRph7hLDcAZm77YfDx3Tjum9d3vK">
+<link rel="stylesheet" as="style" crossorigin="anonymous"
+	href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css"
+	integrity="sha384-AkqcRujKtNDdBHrbDApQnhQjawj/rwmEPiHw7WWmBdH8nQjKsfJG96G8MK30WU80">
+<!--<link rel="preload" href="https://google-code-prettify.googlecode.com/svn/loader/prettify.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://google-code-prettify.googlecode.com/svn/loader/prettify.css"></noscript>-->
 
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css" as="style" onload="this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css"></noscript>
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css" as="style" onload="this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css"></noscript>
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.2/css/ui.jqgrid.min.css" as="style" onload="this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.2/css/ui.jqgrid.min.css"></noscript>
+<link rel="preload" as="style" crossorigin="anonymous" onload="this.rel='stylesheet'"
+	href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css"
+	integrity="sha384-q4zwqX6xMjL3hNjZkHM8B6Sz6QYZDG+AdOTD2tmX4D5/5HoV4v/lG8en4I6Pbx4m">
+<noscript><link rel="stylesheet" crossorigin="anonymous"
+	href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css"
+	integrity="sha384-q4zwqX6xMjL3hNjZkHM8B6Sz6QYZDG+AdOTD2tmX4D5/5HoV4v/lG8en4I6Pbx4m"></noscript>
+<link rel="preload" as="style" crossorigin="anonymous" onload="this.rel='stylesheet'"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css"
+	integrity="sha384-aNUYGqSUL9wG/vP7+cWZ5QOM4gsQou3sBfWRr/8S3R1Lv0rysEmnwsRKMbhiQX/O">
+<noscript><link rel="stylesheet" crossorigin="anonymous"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css"
+	integrity="sha384-aNUYGqSUL9wG/vP7+cWZ5QOM4gsQou3sBfWRr/8S3R1Lv0rysEmnwsRKMbhiQX/O"></noscript>
 
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.js" as="script">
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/run_prettify.min.js" as="script">
+<link rel="preload" as="style" crossorigin="anonymous" onload="this.rel='stylesheet'"
+	href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.3/css/ui.jqgrid.min.css"
+	integrity="sha384-8Y8UQ6XfikznJ3I3eXTIxJbxpkbRHHJKC0EJGMIezxHOdAKOLzt23nqIjXGOH9th">
+
+<link rel="preload" as="script" crossorigin="anonymous"
+	href="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.js"
+	integrity="sha384-Rh64MlzyKveY4KwE+9IxuAKT76LZQnQ7AeHeOTgQ1BnwTrcpk2NFJU9rpAG/u7ae">
+<link rel="preload" as="script" crossorigin="anonymous"
+	href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/run_prettify.min.js"
+	integrity="sha384-FdDXhXktS7qbSx5SLuIH0p/V4mGwTw7hiWJsJeP0Mk8kCyd3hH+yv2UmzSn++Ghh">
 <link rel="preload" href="https://www.google-analytics.com/analytics.js" as="script">
 <link rel="preload" href="require.config.js" as="script">
 
-<link rel="preload" as="font" type="font/woff2" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/fonts/fontawesome-webfont.woff2?v=4.6.2">
-<link rel="preload" as="image" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_glass_85_dfeffc_1x400.png">
-<link rel="preload" as="image" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_inset-hard_100_fcfdfd_1x100.png">
-<link rel="preload" as="image" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_flat_0_aaaaaa_40x100.png">
-<link rel="preload" as="image" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_inset-hard_100_f5f8f9_1x100.png">
-<link rel="preload" as="image" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png">
-<link rel="preload" as="image" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-icons_d8e7f3_256x240.png">
-<link rel="preload" as="image" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_glass_95_fef1ec_1x400.png">
+<link rel="preload" as="font" type="font/woff2"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/fonts/fontawesome-webfont.woff2?v=4.6.2"
+	integrity="sha384-KDeqJj2npbErah7i7LAKX38QlRNQwzuZl4V2zDsqOn/cgDA6xGZRoUMXaewZcmGy"
+	crossorigin="anonymous">
+<link rel="preload" as="image"
+	href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_flat_0_aaaaaa_40x100.png">
+<link rel="preload" as="image"
+	href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_flat_55_fbec88_40x100.png">
+<link rel="preload" as="image"
+	href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_glass_75_d0e5f5_1x400.png">
+<link rel="preload" as="image"
+	href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_glass_85_dfeffc_1x400.png">
+<link rel="preload" as="image"
+	href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_glass_95_fef1ec_1x400.png">
+<link rel="preload" as="image"
+	href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png">
+<link rel="preload" as="image"
+	href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_inset-hard_100_f5f8f9_1x100.png">
+<link rel="preload" as="image"
+	href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_inset-hard_100_fcfdfd_1x100.png">
 
 <link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/fonts/fontawesome-webfont.woff2?v=4.6.2">
-<link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_glass_85_dfeffc_1x400.png">
-<link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_inset-hard_100_fcfdfd_1x100.png">
 <link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_flat_0_aaaaaa_40x100.png">
-<link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_inset-hard_100_f5f8f9_1x100.png">
-<link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png">
-<link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-icons_d8e7f3_256x240.png">
+<link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_flat_55_fbec88_40x100.png">
+<link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_glass_75_d0e5f5_1x400.png">
+<link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_glass_85_dfeffc_1x400.png">
 <link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_glass_95_fef1ec_1x400.png">
+<link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png">
+<link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_inset-hard_100_f5f8f9_1x100.png">
+<link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_inset-hard_100_fcfdfd_1x100.png">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">
@@ -417,7 +459,7 @@ One can click on a row of the grid to select it. One can click to another row
 to change the selected row or one can click the previously selected row to unselect it.
 One can resize the columns additionally in the intuitive way, which one see on the below GIF.
 You can try to do the same with the grid above because it's real working grid.</p>
-<div style="margin-left: 2px; width: 415px; height: 140px; overflow: hidden">
+<div style="margin-left: 2px; width: 415px; height: 139px; overflow: hidden">
 <img id="sorting-resizing" src="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694846/sorting-resizing_rkxu2p.gif" style="margin-left: -2px;" alt="sorting and resizing of grid" />
 </div>
 <p>The full HTML page from the above example can look as following:</p>
@@ -430,9 +472,9 @@ You can try to do the same with the grid above because it's real working grid.</
     &lt;title&gt;Your page title&lt;/title&gt;
     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css&quot;&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.2/css/ui.jqgrid.min.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.3/css/ui.jqgrid.min.css&quot;&gt;
     &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.2/js/jquery.jqgrid.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.3/js/jquery.jqgrid.min.js&quot;&gt;&lt;/script&gt;
     &lt;script&gt;
     //&lt;![CDATA[
     $(function () {
@@ -501,7 +543,7 @@ One can use <code class="prettyprint lang-js">sorttype: &quot;number&quot;</code
 use additionally property <code class="prettyprint lang-js">formatter: &quot;number&quot;</code> to display the number using decimal and thousands separator
 specific for the current locale. The default locale included in <code class="prettyprint lang-html">jquery.jqgrid.min.js</code> is en-US. There are
 38 locales included in <code class="prettyprint lang-html">i18n</code> folder. To include German locale one needs for example just include</p>
-<pre class="prettyprint lang-html"><code>&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.2/js/i18n/grid.locale-de.min.js&quot;&gt;&lt;/script&gt;
+<pre class="prettyprint lang-html"><code>&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.3/js/i18n/grid.locale-de.min.js&quot;&gt;&lt;/script&gt;
 </code></pre>
 <p>in the head of the page (before of after <code class="prettyprint lang-html">jquery.jqgrid.min.js</code>).</p>
 <p>Below is an example of the JavaScript code, which uses some features described above:</p>
@@ -514,9 +556,9 @@ specific for the current locale. The default locale included in <code class="pre
     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css&quot;&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css&quot;&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.2/css/ui.jqgrid.min.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.3/css/ui.jqgrid.min.css&quot;&gt;
     &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.2/js/jquery.jqgrid.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.3/js/jquery.jqgrid.min.js&quot;&gt;&lt;/script&gt;
     &lt;script&gt;
     //&lt;![CDATA[
     $(function () {

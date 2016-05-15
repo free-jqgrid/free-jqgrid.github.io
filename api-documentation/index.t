@@ -6,11 +6,22 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="author" content="Oleg Kiriljuk">
 	<title>free jqGrid API documentation</title>
-	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js" as="script">
-	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" as="script">
-	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.2/js/jquery.jqgrid.min.js" as="script">
+	<link rel="preload" as="script" crossorigin="anonymous"
+		href="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"
+		integrity="sha384-ugqypGWrzPLdx2zEQTF17cVktjb01piRKaDNnbYGRSxyEoeAm+MKZVtbDUYjxfZ6">
+	<link rel="preload" as="script" crossorigin="anonymous"
+		href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"
+		integrity="sha384-YWP9O4NjmcGo4oEJFXvvYSEzuHIvey+LbXkBNJ1Kd0yfugEZN9NCQNpRYBVC1RvA">
+	<link rel="preload" as="script" crossorigin="anonymous"
+		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.3/js/jquery.jqgrid.min.js"
+		integrity="sha384-m7mgGT+H521oDvG1Xjr5twSO4kV48+r7Wj9I1YIl2QKvkKNVxh19XYiD8hKRnHXk">
 	<link rel="preload" href="methods.json">
 	<link rel="prefetch" href="methods.json">
+
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.3/css/ui.jqgrid.min.css" as="style" onload="this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" crossorigin="anonymous"
+		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.3/css/ui.jqgrid.min.css"
+		integrity="sha384-8Y8UQ6XfikznJ3I3eXTIxJbxpkbRHHJKC0EJGMIezxHOdAKOLzt23nqIjXGOH9th"></noscript>
 <!--@@commonHeadIncludes-->
 </head>
 <body>

@@ -3,13 +3,13 @@ require.config({
 	//skipDirOptimize: true,
 	paths: {
 		"free-jqgrid": [
-			"https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.2/js/jquery.jqgrid.min"
+			"https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.3/js/jquery.jqgrid.min"
 		],
 		"free-jqgrid-js": [
-			"https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.2/js"
+			"https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.3/js"
 		],
 		"free-jqgrid-js-min": [
-			"https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.2/js/min"
+			"https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.3/js/min"
 		],
 		jquery: [
 			"https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min"
