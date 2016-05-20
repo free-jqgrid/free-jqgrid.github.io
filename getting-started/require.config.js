@@ -1,3 +1,4 @@
+/*global require,define*/
 require.config({
 	//"baseUrl": ".",
 	//skipDirOptimize: true,
@@ -26,8 +27,7 @@ require.config({
 	}
 });
 
-define(
-[
+define([
 	"jquery",
 	"prettify",
 	"jquery-ui",
@@ -40,7 +40,7 @@ define(
 	//"free-jqgrid-js-min/grid.common",
 	//"free-jqgrid-js-min/grid.custom"
 ], function($) {
-    $(function () {
+	$(function () {
 		"use strict";
 		$("#grid").jqGrid({
 			colModel: [
@@ -267,28 +267,28 @@ define(
 		}).jqGrid("filterToolbar");
 
 		var initDatepicker = function (elem, options) {
-				var self = this, $elem = $(elem),
-					filterOnSelect = function () {
-						setTimeout(function () {
-							self.triggerToolbar();
-						}, 50);
-					},
-					triggerInputChangeOnSelect = function () {
-						$elem.change();
-					};
+			var self = this, $elem = $(elem),
+				filterOnSelect = function () {
+					setTimeout(function () {
+						self.triggerToolbar();
+					}, 50);
+				},
+				triggerInputChangeOnSelect = function () {
+					$elem.change();
+				};
 
-				setTimeout(function () {
-					$elem.datepicker({
-						dateFormat: "dd-M-yy",
-						autoSize: true,
-						changeYear: true,
-						changeMonth: true,
-						showButtonPanel: true,
-						showWeek: true,
-						onSelect: (options.mode === "filter" ? filterOnSelect : triggerInputChangeOnSelect)
-					});
-				}, 50);
-			};
+			setTimeout(function () {
+				$elem.datepicker({
+					dateFormat: "dd-M-yy",
+					autoSize: true,
+					changeYear: true,
+					changeMonth: true,
+					showButtonPanel: true,
+					showWeek: true,
+					onSelect: (options.mode === "filter" ? filterOnSelect : triggerInputChangeOnSelect)
+				});
+			}, 50);
+		};
 
 		$("#grid6").jqGrid({
 			colModel: [
@@ -341,5 +341,5 @@ define(
 			},
 			caption: "The grid demonstrates formatters, templates and the pager"
 		}).jqGrid("filterToolbar");
-    });
+	});
 });

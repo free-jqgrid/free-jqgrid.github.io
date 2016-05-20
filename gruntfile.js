@@ -1,8 +1,31 @@
+/*global module,require*/
 module.exports = function (grunt) {
+	// load all grunt tasks matching the ['grunt-*', '@*/grunt-*'] patterns
+	require("load-grunt-tasks")(grunt);
+
 	grunt.initConfig({
 		watch: {
-			files: ["**/*.t"],
+			files: [
+				"api-documentation/*.t",
+				"api-documentation/*.js",
+				"examples/*.t",
+				"examples/*.js",
+				"getting-started/*.t",
+				"getting-started/*.js",
+				"./*.js",
+				"commonHeadIncludes.htm",
+				"menuHeader.htm",
+				"./*.t"
+			],
 			tasks: ["default"]
+		},
+		eslint: {
+			target: [
+				"api-documentation/*.js",
+				"examples/*.js",
+				"getting-started/*.js",
+				"*.js"
+			]
 		},
 		sitebuild: {
 			all: {
@@ -10,18 +33,18 @@ module.exports = function (grunt) {
 					commonHeadIncludes: "commonHeadIncludes.htm",
 					menuHeader: "menuHeader.htm",
 					shortcuts: [
-						{ from: /<l-js>/g, to: '<code class=\"prettyprint lang-js\">' },
-						{ from: /<\/l-js>/g, to: '<\/code>' },
-						{ from: /<l-css>/g, to: '<code class=\"prettyprint lang-css\">' },
-						{ from: /<\/l-css>/g, to: '<\/code>' },
-						{ from: /<l-html>/g, to: '<code class=\"prettyprint lang-html\">' },
-						{ from: /<\/l-html>/g, to: '<\/code>' },
-						{ from: /<pre-js>/g, to: '<pre class=\"prettyprint lang-js\"><code>' },
-						{ from: /<\/pre-js>/g, to: '<\/code><\/pre>' },
-						{ from: /<pre-css>/g, to: '<pre class=\"prettyprint lang-css\"><code>' },
-						{ from: /<\/pre-css>/g, to: '<\/code><\/pre>' },
-						{ from: /<pre-html>/g, to: '<pre class=\"prettyprint lang-html\"><code>' },
-						{ from: /<\/pre-html>/g, to: '</code><\/pre>' },
+						{ from: /<l-js>/g, to: "<code class=\"prettyprint lang-js\">" },
+						{ from: /<\/l-js>/g, to: "<\/code>" },
+						{ from: /<l-css>/g, to: "<code class=\"prettyprint lang-css\">" },
+						{ from: /<\/l-css>/g, to: "<\/code>" },
+						{ from: /<l-html>/g, to: "<code class=\"prettyprint lang-html\">" },
+						{ from: /<\/l-html>/g, to: "<\/code>" },
+						{ from: /<pre-js>/g, to: "<pre class=\"prettyprint lang-js\"><code>" },
+						{ from: /<\/pre-js>/g, to: "<\/code><\/pre>" },
+						{ from: /<pre-css>/g, to: "<pre class=\"prettyprint lang-css\"><code>" },
+						{ from: /<\/pre-css>/g, to: "<\/code><\/pre>" },
+						{ from: /<pre-html>/g, to: "<pre class=\"prettyprint lang-html\"><code>" },
+						{ from: /<\/pre-html>/g, to: "</code><\/pre>" }
 					]
 				},
 				files: [
@@ -49,7 +72,7 @@ module.exports = function (grunt) {
 		this.files.forEach(function (f) {
 			var src = f.src.filter(function(filepath) {
 				if (!grunt.file.exists(filepath)) {
-					grunt.log.warn('Source file "' + filepath + '" not found.');
+					grunt.log.warn("Source file \"" + filepath + "\" not found.");
 					return false;
 				} else {
 					//grunt.log.writeln("filter filepath=" + filepath);
@@ -60,7 +83,7 @@ module.exports = function (grunt) {
 				return grunt.file.read(filepath);
 			}).join(grunt.util.normalizelf(options.separator || grunt.util.linefeed));
 
-			//grunt.log.writeln('f.dest=' + f.dest);
+			//grunt.log.writeln("f.dest=" + f.dest);
 			var destText = src.replace("<!--@@commonHeadIncludes-->", grunt.file.read(options.commonHeadIncludes));
 
 			// process menuHeader
@@ -73,7 +96,7 @@ module.exports = function (grunt) {
 			destText = destText.replace("<!--@@menuHeader-->", menuHeader);
 
 			destText = destText.replace(/(`)(((?!`)[\s\S])*)(`)/gim,
-				function (match, p1, p2, p3, p4, offset, string) {
+				function (match, p1, p2/*, p3, p4, offset, string*/) {
 					//grunt.log.writeln('!!!replace!!! arguments.length=', arguments.length);
 					//grunt.log.writeln('!!!replace!!! p1="' + p1 + '", p2="' + p2 +
 					//	'", p3="' + p3 + '", p4="' + p4 + '", offset="' + offset + '"');
@@ -84,7 +107,7 @@ module.exports = function (grunt) {
 			var shortcut;
 			for (i = 0; i < options.shortcuts.length; i++) {
 				shortcut = options.shortcuts[i];
-				grunt.verbose.writeln('replacing from="' + shortcut.from + '" to="' + shortcut.to + '".');
+				grunt.verbose.writeln("replacing from=\"" + shortcut.from + "\" to=\"" + shortcut.to + "\".");
 				destText = destText.replace(shortcut.from, shortcut.to);
 			}
 
@@ -92,7 +115,7 @@ module.exports = function (grunt) {
 			// <pre- and </pre- (skipping the first > which closes <pre-xxx> tag).
 			// One can consider to escape "\"", "'" and "\/" to "&quot;", "&#39;", "&#47;" additioonally.
 			destText = destText.replace(/(<code[^>]*>)(((?!<\/code>)[\s\S])*)(<\/code>)/gim,
-				function (match, p1, p2, p3, p4, offset, string) {
+				function (match, p1, p2, p3, p4/*, offset, string*/) {
 					//grunt.log.writeln('!!!replace!!! arguments.length=', arguments.length);
 					//grunt.log.writeln('!!!replace!!! p1="' + p1 + '", p2="' + p2 +
 					//	'", p3="' + p3 + '", p4="' + p4 + '", offset="' + offset + '"');
@@ -105,10 +128,10 @@ module.exports = function (grunt) {
 				}
 			);
 			grunt.file.write(f.dest, destText);
-			grunt.log.writeln('The file "' + f.dest + '" is written.');
+			grunt.log.writeln("The file \"" + f.dest + "\" is written.");
 		});
 		grunt.log.ok();
 	});
-	grunt.loadNpmTasks("grunt-contrib-watch");
-	grunt.registerTask("default", "sitebuild");
+	//grunt.loadNpmTasks("grunt-contrib-watch");
+	grunt.registerTask("default", ["eslint", "sitebuild"]);
 };

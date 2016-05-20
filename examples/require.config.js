@@ -1,3 +1,4 @@
+/*global require,define*/
 require.config({
 	//"baseUrl": ".",
 	//skipDirOptimize: true,
@@ -11,12 +12,11 @@ require.config({
 	}
 });
 
-define(
-[
+define([
 	"jquery",
 	"prettify"
 ], function($) {
-    $(function () {
+	$(function () {
 		"use strict";
 		$("#showImages").click(function() {
 			var show = $(this).is(":checked");
@@ -26,5 +26,5 @@ define(
 		$(".showImage").click(function() {
 			$(this).closest("li").find(".imageExample")[$(this).is(":checked") ? "show": "hide"]();
 		});
-    });
+	});
 });

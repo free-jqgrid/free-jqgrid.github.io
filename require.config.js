@@ -1,3 +1,4 @@
+/*global require,define*/
 require.config({
 	//"baseUrl": ".",
 	//skipDirOptimize: true,
@@ -8,9 +9,8 @@ require.config({
 	}
 });
 
-define(
-[
+define([
 	"prettify"
-], function($) {
+], function() {
 	"use strict";
 });

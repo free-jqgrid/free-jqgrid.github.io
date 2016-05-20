@@ -1,3 +1,4 @@
+/*global require,define*/
 require.config({
 	//"baseUrl": ".",
 	//skipDirOptimize: true,
@@ -23,8 +24,7 @@ require.config({
 	}
 });
 
-define(
-[
+define([
 	"jquery",
 	"prettify",
 	"jquery-ui",
@@ -36,7 +36,7 @@ define(
 	//"free-jqgrid-js-min/grid.common",
 	//"free-jqgrid-js-min/grid.custom"
 ], function($) {
-    $(function () {
+	$(function () {
 		"use strict";
 		$("#api").jqGrid({
 			url: "methods.json",
@@ -71,5 +71,5 @@ define(
 			sortname: "name",
 			forceClientSorting: true
 		}).jqGrid("filterToolbar");
-    });
+	});
 });
