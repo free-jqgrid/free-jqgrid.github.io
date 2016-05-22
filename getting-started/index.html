@@ -7,15 +7,9 @@
 	<meta name="author" content="Oleg Kiriljuk">
 	<title>Getting started free jqGrid</title>
 
-	<link rel="preload" as="script" crossorigin="anonymous"
-		href="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"
-		integrity="sha384-ugqypGWrzPLdx2zEQTF17cVktjb01piRKaDNnbYGRSxyEoeAm+MKZVtbDUYjxfZ6">
-	<link rel="preload" as="script" crossorigin="anonymous"
-		href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"
-		integrity="sha384-YWP9O4NjmcGo4oEJFXvvYSEzuHIvey+LbXkBNJ1Kd0yfugEZN9NCQNpRYBVC1RvA">
-	<link rel="preload" as="script" crossorigin="anonymous"
-		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.3/js/jquery.jqgrid.min.js"
-		integrity="sha384-m7mgGT+H521oDvG1Xjr5twSO4kV48+r7Wj9I1YIl2QKvkKNVxh19XYiD8hKRnHXk">
+	<link rel="preload" as="script" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js" integrity="sha384-ugqypGWrzPLdx2zEQTF17cVktjb01piRKaDNnbYGRSxyEoeAm+MKZVtbDUYjxfZ6">
+	<link rel="preload" as="script" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" integrity="sha384-YWP9O4NjmcGo4oEJFXvvYSEzuHIvey+LbXkBNJ1Kd0yfugEZN9NCQNpRYBVC1RvA">
+	<link rel="preload" as="script" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.3/js/jquery.jqgrid.min.js" integrity="sha384-m7mgGT+H521oDvG1Xjr5twSO4kV48+r7Wj9I1YIl2QKvkKNVxh19XYiD8hKRnHXk">
 	
 	<link rel="preload" as="image" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694846/sorting-resizing_rkxu2p.gif">
 	<link rel="preload" as="image" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694746/grid-internal_mvnjkp.png">
@@ -23,9 +17,7 @@
 	<link rel="prefetch" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694746/grid-internal_mvnjkp.png">
 
 	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.3/css/ui.jqgrid.min.css" as="style" onload="this.rel='stylesheet'">
-	<noscript><link rel="stylesheet" crossorigin="anonymous"
-		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.3/css/ui.jqgrid.min.css"
-		integrity="sha384-8Y8UQ6XfikznJ3I3eXTIxJbxpkbRHHJKC0EJGMIezxHOdAKOLzt23nqIjXGOH9th"></noscript>
+	<noscript><link rel="stylesheet" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.3/css/ui.jqgrid.min.css" integrity="sha384-8Y8UQ6XfikznJ3I3eXTIxJbxpkbRHHJKC0EJGMIezxHOdAKOLzt23nqIjXGOH9th"></noscript>
 
 <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 <meta http-equiv="x-dns-prefetch-control" content="on">
@@ -38,61 +30,32 @@
 <link rel="preconnect" href="https://www.google-analytics.com/" crossorigin="anonymous">
 <link rel="preconnect" href="https://res.cloudinary.com/ok-soft-gmbh/" crossorigin="anonymous">
 
-<link rel="preload" as="style" crossorigin="anonymous"
-	href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css"
-	integrity="sha384-fUMURLTdEcpeYHly3PAwggI3l2UvdHNg/I+8LRph7hLDcAZm77YfDx3Tjum9d3vK">
-<link rel="stylesheet" as="style" crossorigin="anonymous"
-	href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css"
-	integrity="sha384-AkqcRujKtNDdBHrbDApQnhQjawj/rwmEPiHw7WWmBdH8nQjKsfJG96G8MK30WU80">
+<link rel="preload" as="style" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css" integrity="sha384-fUMURLTdEcpeYHly3PAwggI3l2UvdHNg/I+8LRph7hLDcAZm77YfDx3Tjum9d3vK">
+<link rel="preload" as="style" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css" integrity="sha384-AkqcRujKtNDdBHrbDApQnhQjawj/rwmEPiHw7WWmBdH8nQjKsfJG96G8MK30WU80">
 <!--<link rel="preload" href="https://google-code-prettify.googlecode.com/svn/loader/prettify.css" as="style" onload="this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://google-code-prettify.googlecode.com/svn/loader/prettify.css"></noscript>-->
 
-<link rel="preload" as="style" crossorigin="anonymous" onload="this.rel='stylesheet'"
-	href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css"
-	integrity="sha384-q4zwqX6xMjL3hNjZkHM8B6Sz6QYZDG+AdOTD2tmX4D5/5HoV4v/lG8en4I6Pbx4m">
-<noscript><link rel="stylesheet" crossorigin="anonymous"
-	href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css"
-	integrity="sha384-q4zwqX6xMjL3hNjZkHM8B6Sz6QYZDG+AdOTD2tmX4D5/5HoV4v/lG8en4I6Pbx4m"></noscript>
-<link rel="preload" as="style" crossorigin="anonymous" onload="this.rel='stylesheet'"
-	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css"
-	integrity="sha384-aNUYGqSUL9wG/vP7+cWZ5QOM4gsQou3sBfWRr/8S3R1Lv0rysEmnwsRKMbhiQX/O">
-<noscript><link rel="stylesheet" crossorigin="anonymous"
-	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css"
-	integrity="sha384-aNUYGqSUL9wG/vP7+cWZ5QOM4gsQou3sBfWRr/8S3R1Lv0rysEmnwsRKMbhiQX/O"></noscript>
+<link rel="preload" as="style" crossorigin="anonymous" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css" integrity="sha384-q4zwqX6xMjL3hNjZkHM8B6Sz6QYZDG+AdOTD2tmX4D5/5HoV4v/lG8en4I6Pbx4m">
+<noscript><link rel="stylesheet" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css" integrity="sha384-q4zwqX6xMjL3hNjZkHM8B6Sz6QYZDG+AdOTD2tmX4D5/5HoV4v/lG8en4I6Pbx4m"></noscript>
+<link rel="preload" as="style" crossorigin="anonymous" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css" integrity="sha384-aNUYGqSUL9wG/vP7+cWZ5QOM4gsQou3sBfWRr/8S3R1Lv0rysEmnwsRKMbhiQX/O">
+<noscript><link rel="stylesheet" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css" integrity="sha384-aNUYGqSUL9wG/vP7+cWZ5QOM4gsQou3sBfWRr/8S3R1Lv0rysEmnwsRKMbhiQX/O"></noscript>
 
-<link rel="preload" as="style" crossorigin="anonymous" onload="this.rel='stylesheet'"
-	href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.3/css/ui.jqgrid.min.css"
-	integrity="sha384-8Y8UQ6XfikznJ3I3eXTIxJbxpkbRHHJKC0EJGMIezxHOdAKOLzt23nqIjXGOH9th">
+<link rel="preload" as="style" crossorigin="anonymous" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.3/css/ui.jqgrid.min.css" integrity="sha384-8Y8UQ6XfikznJ3I3eXTIxJbxpkbRHHJKC0EJGMIezxHOdAKOLzt23nqIjXGOH9th">
 
-<link rel="preload" as="script" crossorigin="anonymous"
-	href="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.js"
-	integrity="sha384-Rh64MlzyKveY4KwE+9IxuAKT76LZQnQ7AeHeOTgQ1BnwTrcpk2NFJU9rpAG/u7ae">
-<link rel="preload" as="script" crossorigin="anonymous"
-	href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/run_prettify.min.js"
-	integrity="sha384-FdDXhXktS7qbSx5SLuIH0p/V4mGwTw7hiWJsJeP0Mk8kCyd3hH+yv2UmzSn++Ghh">
+<link rel="preload" as="script" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.js" integrity="sha384-Rh64MlzyKveY4KwE+9IxuAKT76LZQnQ7AeHeOTgQ1BnwTrcpk2NFJU9rpAG/u7ae">
+<link rel="preload" as="script" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/run_prettify.min.js" integrity="sha384-FdDXhXktS7qbSx5SLuIH0p/V4mGwTw7hiWJsJeP0Mk8kCyd3hH+yv2UmzSn++Ghh">
 <link rel="preload" href="https://www.google-analytics.com/analytics.js" as="script">
 <link rel="preload" href="require.config.js" as="script">
 
-<link rel="preload" as="font" type="font/woff2"
-	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/fonts/fontawesome-webfont.woff2?v=4.6.2"
-	integrity="sha384-KDeqJj2npbErah7i7LAKX38QlRNQwzuZl4V2zDsqOn/cgDA6xGZRoUMXaewZcmGy"
-	crossorigin="anonymous">
-<link rel="preload" as="image"
-	href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_flat_0_aaaaaa_40x100.png">
-<link rel="preload" as="image"
-	href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_flat_55_fbec88_40x100.png">
-<link rel="preload" as="image"
-	href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_glass_75_d0e5f5_1x400.png">
-<link rel="preload" as="image"
-	href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_glass_85_dfeffc_1x400.png">
-<link rel="preload" as="image"
-	href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_glass_95_fef1ec_1x400.png">
-<link rel="preload" as="image"
-	href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png">
-<link rel="preload" as="image"
-	href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_inset-hard_100_f5f8f9_1x100.png">
-<link rel="preload" as="image"
-	href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_inset-hard_100_fcfdfd_1x100.png">
+<link rel="preload" as="font" type="font/woff2" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/fonts/fontawesome-webfont.woff2?v=4.6.2" integrity="sha384-KDeqJj2npbErah7i7LAKX38QlRNQwzuZl4V2zDsqOn/cgDA6xGZRoUMXaewZcmGy" crossorigin="anonymous">
+<link rel="preload" as="image" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_flat_0_aaaaaa_40x100.png">
+<link rel="preload" as="image" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_flat_55_fbec88_40x100.png">
+<link rel="preload" as="image" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_glass_75_d0e5f5_1x400.png">
+<link rel="preload" as="image" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_glass_85_dfeffc_1x400.png">
+<link rel="preload" as="image" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_glass_95_fef1ec_1x400.png">
+<link rel="preload" as="image" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png">
+<link rel="preload" as="image" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_inset-hard_100_f5f8f9_1x100.png">
+<link rel="preload" as="image" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_inset-hard_100_fcfdfd_1x100.png">
 
 <link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/fonts/fontawesome-webfont.woff2?v=4.6.2">
 <link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_flat_0_aaaaaa_40x100.png">
@@ -104,8 +67,17 @@
 <link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_inset-hard_100_f5f8f9_1x100.png">
 <link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_inset-hard_100_fcfdfd_1x100.png">
 
+<style type="text/css">
+a,table{background-color:transparent}@font-face{font-family:FontAwesome;src:url(/fonts/fontawesome-webfont.eot?v=4.6.2);src:url(/fonts/fontawesome-webfont.eot?#iefix&v=4.6.2) format('embedded-opentype'),url(/fonts/fontawesome-webfont.woff2?v=4.6.2) format('woff2'),url(/fonts/fontawesome-webfont.woff?v=4.6.2) format('woff'),url(/fonts/fontawesome-webfont.ttf?v=4.6.2) format('truetype'),url(/fonts/fontawesome-webfont.svg?v=4.6.2#fontawesomeregular) format('svg');font-weight:400;font-style:normal}.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}header,nav,pre{display:block}.fa-link:before{content:"\f0c1"}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}a{color:#2fa4e7;text-decoration:none}img{border:0;vertical-align:middle}pre{overflow:auto}button{color:inherit;font:inherit;margin:0;overflow:visible;text-transform:none;-webkit-appearance:button}body,pre{line-height:1.42857143}button::-moz-focus-inner{border:0;padding:0}table{border-collapse:collapse;border-spacing:0}*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px}body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;color:#555;background-color:#fff}button{font-family:inherit;font-size:inherit;line-height:inherit}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);border:0}h2,h3,ul{margin-bottom:10px}p,pre{margin:0 0 10px}h2,h3{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:500;line-height:1.1;color:#317eac;margin-top:20px}h2{font-size:30px}h3{font-size:24px}ul{margin-top:0}code,pre{font-family:Menlo,Monaco,Consolas,"Courier New",monospace}code{padding:2px 4px;font-size:90%;color:#c7254e;background-color:#f9f2f4;border-radius:4px}pre{padding:9.5px;font-size:13px;word-break:break-all;word-wrap:break-word;color:#333;background-color:#f5f5f5;border:1px solid #ccc;border-radius:4px}.navbar-toggle,pre code{background-color:transparent}pre code{padding:0;font-size:inherit;color:inherit;white-space:pre-wrap;border-radius:0}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.collapse{display:none}.nav>li,.nav>li>a{display:block;position:relative}.nav{margin-bottom:0;padding-left:0;list-style:none}.nav>li>a{padding:10px 15px}.navbar{position:relative;min-height:50px;margin-bottom:20px;border:1px solid transparent}.navbar-collapse{overflow-x:visible;padding-right:15px;padding-left:15px;border-top:1px solid transparent;-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.1);box-shadow:inset 0 1px 0 rgba(255,255,255,.1);-webkit-overflow-scrolling:touch}.container>.navbar-collapse,.container>.navbar-header{margin-right:-15px;margin-left:-15px}@media (min-width:768px){.navbar{border-radius:4px}.navbar-header{float:left}.navbar-collapse{width:auto;border-top:0;-webkit-box-shadow:none;box-shadow:none}.navbar-collapse.collapse{display:block!important;height:auto!important;padding-bottom:0;overflow:visible!important}.navbar-static-top .navbar-collapse{padding-left:0;padding-right:0}.container>.navbar-collapse,.container>.navbar-header{margin-right:0;margin-left:0}.navbar-static-top{border-radius:0}}.navbar-static-top{z-index:1000;border-width:0 0 1px}.navbar-brand{float:left;padding:15px;font-size:18px;line-height:20px;height:50px}.navbar-toggle{position:relative;float:right;margin-right:15px;padding:9px 10px;margin-top:8px;margin-bottom:8px;background-image:none;border:1px solid transparent;border-radius:4px}.navbar-toggle .icon-bar{display:block;width:22px;height:2px;border-radius:1px}.navbar-toggle .icon-bar+.icon-bar{margin-top:4px}@media (min-width:768px){.navbar>.container .navbar-brand{margin-left:-15px}.navbar-toggle{display:none}}.navbar-nav{margin:7.5px -15px}.navbar-nav>li>a{padding-top:10px;padding-bottom:10px;line-height:20px}@media (min-width:768px){.navbar-nav{float:left;margin:0}.navbar-nav>li{float:left}.navbar-nav>li>a{padding-top:15px;padding-bottom:15px}.navbar-right{float:right!important;margin-right:-15px}}.navbar-default{background-color:#2fa4e7;border-color:#1995dc}.navbar-default .navbar-brand,.navbar-default .navbar-nav>li>a{color:#fff}.navbar-default .navbar-toggle{border-color:#178acc}.navbar-default .navbar-toggle .icon-bar{background-color:#fff}.navbar-default .navbar-collapse{border-color:#1995dc}.container:after,.container:before,.nav:after,.nav:before,.navbar-collapse:after,.navbar-collapse:before,.navbar-header:after,.navbar-header:before,.navbar:after,.navbar:before{content:" ";display:table}.container:after,.nav:after,.navbar-collapse:after,.navbar-header:after,.navbar:after{clear:both}@-ms-viewport{width:device-width}.navbar{background-image:-webkit-linear-gradient(#54b4eb,#2fa4e7 60%,#1d9ce5);background-image:-o-linear-gradient(#54b4eb,#2fa4e7 60%,#1d9ce5);background-image:-webkit-gradient(linear,left top,left bottom,from(#54b4eb),color-stop(60%,#2fa4e7),to(#1d9ce5));background-image:linear-gradient(#54b4eb,#2fa4e7 60%,#1d9ce5);background-repeat:no-repeat;border-bottom:1px solid #178acc;-webkit-filter:none;filter:none;-webkit-box-shadow:0 1px 10px rgba(0,0,0,.1);box-shadow:0 1px 10px rgba(0,0,0,.1)}.navbar .navbar-nav>li>a,.navbar-brand{text-shadow:0 1px 0 rgba(0,0,0,.1)}pre.prettyprint{padding:2px;border:1px solid #888}
+</style>
+<script id="loadcss">
+(function(u,s){!function(e){"use strict";var n=function(n,t,o){var l,r=e.document,i=r.createElement("link");if(t)l=t;else{var a=(r.body||r.getElementsByTagName("head")[0]).childNodes;l=a[a.length-1]}var d=r.styleSheets;i.rel="stylesheet",i.href=n,i.media="only x",l.parentNode.insertBefore(i,t?l:l.nextSibling);var f=function(e){for(var n=i.href,t=d.length;t--;)if(d[t].href===n)return e();setTimeout(function(){f(e)})};return i.onloadcssdefined=f,f(function(){i.media=o||"all"}),i};"undefined"!=typeof module?module.exports=n:e.loadCSS=n}("undefined"!=typeof global?global:this);for(var i in u){loadCSS(u[i],s);}}(['https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css','https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css'],document.getElementById("loadcss")));
+</script>
+<noscript>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">
+</noscript>
+
 
 <script>
 /*loadCSS.min.js,cssrelpreload.min.js v1.2.0*/
@@ -173,215 +145,6 @@ h6 a:focus, h6 a:active, {
 .ui-datepicker select.ui-datepicker-year,
 .ui-datepicker select.ui-datepicker-month {
 	color: black
-}
-/*Bootstrap-min*/
-body {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #555555;
-    background-color: #ffffff;
-    margin: 0;
-}
-* {
-    box-sizing: border-box;
-}
-*:before, *:after {
-    box-sizing: border-box;
-}
-.navbar {
-    background-image: linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
-    background-repeat: no-repeat;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54b4eb', endColorstr='#ff1d9ce5', GradientType=0);
-    border-bottom: 1px solid #178acc;
-    filter: none;
-    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
-    position: relative;
-    min-height: 50px;
-    margin-bottom: 20px;
-    border: 1px solid transparent;
-}
-@media (min-width: 768px)
-.navbar-static-top {
-    border-radius: 0;
-}
-.navbar-static-top {
-    z-index: 1000;
-    border-width: 0 0 1px;
-}
-header, nav {
-    display: block;
-}
-.clearfix:before, .clearfix:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .panel-body:before, .panel-body:after {
-    content: " ";
-    display: table;
-}
-.navbar-default .navbar-toggle {
-    border-color: #178acc;
-}
-@media (min-width: 768px)
-.navbar-toggle {
-    display: none;
-    position: relative;
-    float: right;
-    margin-right: 15px;
-    padding: 9px 10px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    background-color: transparent;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
-}
-input, button, select, textarea {
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-}
-button, html input[type="button"], input[type="reset"], input[type="submit"] {
-    -webkit-appearance: button;
-    cursor: pointer;
-}
-button, select {
-    text-transform: none;
-}
-button {
-    overflow: visible;
-}
-button, input, optgroup, select, textarea {
-    color: inherit;
-    font: inherit;
-    margin: 0;
-}
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-}
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #ffffff;
-}
-.navbar-toggle .icon-bar {
-    display: block;
-    width: 22px;
-    height: 2px;
-    border-radius: 1px;
-}
-@media (min-width: 768px)
-.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-    margin-left: -15px;
-}
-.navbar-default .navbar-brand {
-    color: #ffffff;
-}
-.navbar .navbar-nav>li>a, .navbar-brand {
-    text-shadow: 0 1px 0 rgba(0,0,0,0.1);
-}
-.navbar-brand {
-    float: left;
-    padding: 15px 15px;
-    font-size: 18px;
-    line-height: 20px;
-    height: 50px;
-}
-a {
-    color: #2fa4e7;
-    text-decoration: none;
-    background-color: transparent;
-}
-@media (min-width: 768px)
-.navbar-nav {
-    float: left;
-    margin: 0;
-}
-.nav {
-    padding-left: 0;
-    list-style: none;
-}
-@media (min-width: 768px)
-.navbar-nav>li {
-    float: left;
-}
-.nav>li {
-    position: relative;
-    display: block;
-}
-@media (min-width: 1200px)
-.container {
-    width: 1170px;
-}
-@media (min-width: 992px)
-.container {
-    width: 970px;
-}
-@media (min-width: 768px)
-.container {
-    width: 750px;
-}
-.container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-h2, .h2 {
-    font-size: 30px;
-}
-h1, .h1, h2, .h2, h3, .h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 500;
-    line-height: 1.1;
-    color: #317eac;
-}
-h3, .h3 {
-    font-size: 24px;
-}
-p {
-    margin: 0 0 10px;
-}
-pre.prettyprint {
-    padding: 2px;
-    border: 1px solid #888;
-}
-pre {
-    display: block;
-    padding: 9.5px;
-    margin: 0 0 10px;
-    font-size: 13px;
-    line-height: 1.42857143;
-    word-break: break-all;
-    word-wrap: break-word;
-    color: #333333;
-    background-color: #f5f5f5;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
-}
-code, kbd, pre, samp {
-    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
-}
-pre {
-    overflow: auto;
-}
-pre code {
-    padding: 0;
-    font-size: inherit;
-    color: inherit;
-    white-space: pre-wrap;
-    background-color: transparent;
-    border-radius: 0;
-}
-img {
-    vertical-align: middle;
-    border: 0;
 }
 </style>
 </head>
@@ -460,7 +223,7 @@ to change the selected row or one can click the previously selected row to unsel
 One can resize the columns additionally in the intuitive way, which one see on the below GIF.
 You can try to do the same with the grid above because it's real working grid.</p>
 <div style="margin-left: 2px; width: 415px; height: 139px; overflow: hidden">
-<img id="sorting-resizing" src="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694846/sorting-resizing_rkxu2p.gif" style="margin-left: -2px;" alt="sorting and resizing of grid" />
+<img id="sorting-resizing" src="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694846/sorting-resizing_rkxu2p.gif" style="margin-left: -2px;" alt="sorting and resizing of grid">
 </div>
 <p>The full HTML page from the above example can look as following:</p>
 <div id="the_first_grid_code">
@@ -505,7 +268,7 @@ You can try to do the same with the grid above because it's real working grid.</
 <p>You can try the example on <a href="https://jsfiddle.net/OlegKi/pqL7d004/2/">JSFiddle</a>.</p>
 <p>It's important to understand that the empty <code class="prettyprint lang-html">&lt;table&gt;</code> will be converted to relatively complex
 structure of divs and tables. One can use, for example, Developer Tools of Chrome to examine the grid after creating:</p>
-<img id="grid-internal" src="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694746/grid-internal_mvnjkp.png" class="imageExample" alt="grid internals" />
+<img id="grid-internal" src="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694746/grid-internal_mvnjkp.png" class="imageExample" alt="grid internals">
 <p>One don't need to know all internals of the grid, but it's important to understand some basis facts:</p>
 <ul>
 <li>every row of the grid (<code class="prettyprint lang-html">&lt;tr&gt;</code> elements) have <code class="prettyprint lang-js">id</code> attribute (see red marked attributes
