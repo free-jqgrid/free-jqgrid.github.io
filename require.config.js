@@ -4,7 +4,7 @@ require.config({
 	//skipDirOptimize: true,
 	paths: {
 		"prettify": [
-			"https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/run_prettify.min"
+			"https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify"
 		]
 	}
 });

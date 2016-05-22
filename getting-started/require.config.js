@@ -22,7 +22,7 @@ require.config({
 			"https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n"
 		],
 		"prettify": [
-			"https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/run_prettify.min"
+			"https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify"
 		]
 	}
 });
