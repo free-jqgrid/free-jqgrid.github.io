@@ -27,6 +27,21 @@ module.exports = function (grunt) {
 				"*.js"
 			]
 		},
+		critical: {
+			test: {
+				options: {
+					minify: true
+				},
+				src: [
+					"./api-documentation/index.html",
+					"./examples/index.html",
+					"./getting-started/index.html",
+					"./index.html"
+				], //"index.html",
+				//dest: "index-critical.html"
+				dest: "./"
+			}
+		},
 		sitebuild: {
 			all: {
 				options: {
@@ -133,5 +148,6 @@ module.exports = function (grunt) {
 		grunt.log.ok();
 	});
 	//grunt.loadNpmTasks("grunt-contrib-watch");
-	grunt.registerTask("default", ["eslint", "sitebuild"]);
+	//grunt.loadNpmTasks("grunt-critical");
+	grunt.registerTask("default", ["eslint", "sitebuild", "critical"]);
 };
