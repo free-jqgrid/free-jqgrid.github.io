@@ -28,7 +28,7 @@ module.exports = function (grunt) {
 			]
 		},
 		critical: {
-			test: {
+			all: {
 				options: {
 					minify: true
 				},
@@ -37,8 +37,7 @@ module.exports = function (grunt) {
 					"./examples/index.html",
 					"./getting-started/index.html",
 					"./index.html"
-				], //"index.html",
-				//dest: "index-critical.html"
+				],
 				dest: "./"
 			}
 		},
