@@ -13,7 +13,7 @@ require.config({
 			"https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.3/js/min"
 		],
 		jquery: [
-			"https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min"
+			"https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min"
 		],
 		"jquery-ui": [
 			"https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min"

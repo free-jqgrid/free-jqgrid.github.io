@@ -7,6 +7,9 @@
 	<meta name="author" content="Oleg Kiriljuk">
 	<title>free jqGrid API documentation</title>
 
+	<link rel="preload" as="script" crossorigin="anonymous"
+		href="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+		integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ">
 	<link rel="preload" as="image" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1463312684/CustomActionButton_hy5ukf.png">
 	<link rel="preload" as="image" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1463312689/CustomActionButton1_wzbym2.png">
 	<link rel="preload" as="image" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1463312704/multiPageSelection_yafort.png">

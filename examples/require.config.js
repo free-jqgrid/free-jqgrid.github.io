@@ -4,7 +4,7 @@ require.config({
 	//skipDirOptimize: true,
 	paths: {
 		jquery: [
-			"https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min"
+			"https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min"
 		],
 		"prettify": [
 			"https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify"
