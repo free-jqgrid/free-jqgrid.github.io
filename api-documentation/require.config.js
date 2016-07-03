@@ -41,7 +41,6 @@ define([
 		$("#api").jqGrid({
 			url: "methods.json",
 			datatype: "json",
-			postData: "",
 			colModel: [
 				{ name: "base", hidden: true },
 				{ name: "fullName", width: 300,
