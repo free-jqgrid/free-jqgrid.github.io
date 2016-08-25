@@ -83,17 +83,17 @@ h6 a:focus, h6 a:active, {
 <div class="container">
 <h2 id="how_to_use"><a class="anchor" href="#how_to_use"><span class="fa fa-link"></span></a>
 <a href="#how_to_use">How to use free jqGrid?</a></h2>
-<p>Free jqGrid allows many ways to display tabled-based data. The data can be loaded from JavaScript array or be loaded
-from the server (in JSON or XML format). It supports as well client-side paging, sorting and filtering as server-side.
-One can group the displayed data, create the data as pivote table (made aggregation of data), display the data in the Tree form
-creates subgrids and so on. One can easy implement tree variants of editing of local or remote data.</p>
-<p>The large number of possibilities makes difficult for the newcommer to start usage of jqGrid. The information below
-provide basis knowlage to make quick start in the usage of free jqGrid. We will just include some small "advanced" options
+<p>Free jqGrid is a JavaScript plugin that displays table-based data in a lot of different configurations. The data can be loaded from JavaScript array or be loaded
+from the server (in JSON or XML format). It supports client-side paging, sorting and filtering on server-side.
+One can group the displayed data, create the data as pivot table (made aggregation of data), display the data in the Tree form
+creates subgrids and so on. One can easily implement tree variants of editing of local or remote data.</p>
+<p>The large number of possibilities makes it difficult for a newcomer to start using jqGrid. The information below
+provides basic free jqGrid knowledge to make it easier to get started quickly. We will just include some small "advanced" options
 in some demos, mostly to show the diversity of customization possibilities.</p>
 <h3 id="the_first_grid"><a class="anchor" href="#the_first_grid"><span class="fa fa-link"></span></a>
 <a href="#the_first_grid">The first grid</a></h3>
-<p>Free jqGrid is implemneted as jQuery plugin and it uses jQuery UI CSS and oder Bootstrap CSS. Thus
-one have to include the corresponding JavaScript and CSS files. The second basis thing, which one has to know,
+<p>Free jqGrid is implemented as jQuery plugin, our plugin uses jQuery UI CSS and Bootstrap CSS for styling. Thus
+one would have to include the corresponding JavaScript and CSS files. The second basic thing, which one should know,
 is the fact that free jqGrid uses HTML <l-html><table></l-html> internally. One have to create an empty
 <l-html><table></l-html> element to reserve the place where the grid should be created. Finally one should
 call `jQuery("#tableId").jqGrid({/*options*/});` to create the grid. Different options of
@@ -119,12 +119,16 @@ For example, the code below</p>
 </div>
 <p>creates the simple grid</p>
 <table id="grid"></table>
-<p style="margin-top:.5em;">In defference to the standard HTML <l-html><table></l-html> one can click on the column header to <em>sort</em>
-the rows by the content in the column. One have hovering effects for rows and the cells on the grid.
-One can click on a row of the grid to select it. One can click to another row
-to change the selected row or one can click the previously selected row to unselect it.
-One can resize the columns additionally in the intuitive way, which one see on the below GIF.
-You can try to do the same with the grid above because it's real working grid.</p>
+<p style="margin-top:.5em;">The differences between free jqGrid and a standard HTML table are as follows:</p>
+<ul>
+	<li>Sortable Columns: One can click on the column header to <em>sort</em> the rows by the content in the column.</li>
+	<li>Hover Effects: Free jqGrid gives you the ability to use hovering effects for rows and the cells on the grid.</li>
+	<li>Selectable Rows: One can click on a row of the grid to select/unselect it</li>
+	<li>Multi-Selectable Rows: One can select multiple rows.</li>
+	<li>Selectable Rows: One can click on a row of the grid to select it.</li>
+	<li>Resizable Columns: One can resize the columns in an intuitive way, as shown in the animated image below.</li>
+</ul>
+<p style="font-style: italic;">Please use the demonstration grid above to sample just a few of the functionalities free jqGrid offers.</p>
 <div style="margin-left: 2px; width: 415px; height: 139px; overflow: hidden">
 <img id="sorting-resizing" src="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694846/sorting-resizing_rkxu2p.gif" style="margin-left: -2px;" alt="sorting and resizing of grid">
 </div>
@@ -170,7 +174,7 @@ You can try to do the same with the grid above because it's real working grid.</
 </div>
 <p>You can try the example on <a href="https://jsfiddle.net/OlegKi/pqL7d004/2/">JSFiddle</a>.</p>
 <p>It's important to understand that the empty <l-html><table></l-html> will be converted to relatively complex
-structure of divs and tables. One can use, for example, Developer Tools of Chrome to examine the grid after creating:</p>
+structure of divs and tables. One can use, for example, Chrome developer tools to examine the grid after creating:</p>
 <img id="grid-internal" src="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694746/grid-internal_mvnjkp.png" class="imageExample" alt="grid internals">
 <p>One don't need to know all internals of the grid, but it's important to understand some basis facts:</p>
 <ul>

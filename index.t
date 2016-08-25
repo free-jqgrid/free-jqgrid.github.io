@@ -21,23 +21,23 @@
 	GPL v2 licenses. You can use free jqGrid completely free of charge. We just ask you to contribute to
 	the development by donating via PayPal, if you are able.</p>
 	<h2>What is the goal of the documentation?</h2>
-	<p> The current site is <em>the first attempt</em> to create new documentation of jqGrid with a description
-	of all new features of free jqGrid and to share the set	of examples of usage free jqGrid.
-	The information will be extended and probably the look of the page will be changed too. I just decided to
-	to post *the early preliminiry* version to show other developers, who uses jqGrid, in which direction I work now.
+	<p>The current site is <em>the first attempt</em> to create new documentation of jqGrid with a description
+	of all new features of free jqGrid and to share the set	of examples demonstrating the usage of free jqGrid.
+	The information will be extended and the look of the page will probably be changed as well. I just decided to
+	to post <em>the early preliminiry</em> version to show other developers, who uses jqGrid, in which direction I work now.
 	I ask all developers to share his experience. I suggest to post "feature request to documentation"
 	in the Issues of the repository. One can request, for example, for the demo which shows
 	the usage free jqGrid in the corresponding test case.</p>
 	<p>The look of the web site will be changed soon. The main goals of the upcoming changes are to provide
-	a way in which <em>the content will be extended without breaking the URLs to the previously posted content</em>.
-	There are additional goals in separating the list of options, functions and other long collection of information from
+	a way in which <em>the content will be extended without breaking the URLs to any previously posted content</em>.
+	There are additional goals in separating the list of options, functions and other collections of information from
 	HTML code. We don't want to use any CMS currently. It should still be possile to use for example the URL to options
-	with suffix <code class="prettyprint lang-html">?filter=prmNames</code> or <code class="prettyprint lang-html">#prmNames</code>
-	to filter or to jump to the specified option. The requirement exist	at least for the pages which displays
-	methods or options. It should be possible to filter the information to some	specific category.
+	with suffix <l-html>?filter=prmNames</l-html> or <l-html>#prmNames</l-html>
+	to filter or to jump to the specified option. The requirement exists, at least, for the pages which displays
+	methods or options. It should be possible to filter the information to some specific category.
 	For example to display the options, methods, callbacks or event, which are related to TreeGrid
-	without displaying for example the information related for data grouping. We want to make possible to display long
-	information not only table form, but using <code class="prettyprint lang-html"><li></code> for example.</p>
+	without displaying for example the information related for data grouping. We want to make it possible to display long
+	information not only table form, but using <l-html><li></l-html> for example.</p>
 	<p>We ask all native English speakers and all, who can improve the text of the web site, to post
 	his/her suggestions as pull requests to <a href="https://github.com/free-jqgrid/free-jqgrid.github.io">free-jqgrid.github.io</a></p>
 </div>
