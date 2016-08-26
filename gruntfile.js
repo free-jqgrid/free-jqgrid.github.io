@@ -15,16 +15,44 @@ module.exports = function (grunt) {
 				"./*.js",
 				"commonHeadIncludes.htm",
 				"menuHeader.htm",
-				"./*.t"
+				"./*.t",
+				"!**/*.min.js"
 			],
 			tasks: ["default"]
+		},
+		uglify: {
+			all: {
+				files: {
+					"./require.config.min.js": ["./require.config.js"],
+					"api-documentation/require.config.min.js": ["api-documentation/require.config.js"],
+					"examples/require.config.min.js": ["examples/require.config.js"],
+					"getting-started/require.config.min.js": ["getting-started/require.config.js"]
+				},
+				/*src: [
+					"./require.config.js",
+					"api-documentation/require.config.js",
+					"examples/require.config.js",
+					"getting-started/require.config.js"
+				],*/
+				//dest: "*/require.config.min.js",
+				options: {
+					preserveComments: false,
+					sourceMap: true,
+					//sourceMapName: "*/require.config.min.map",
+					//report: "min",
+					compress: {
+						//"hoist_funs": false
+					}
+				}
+			}
 		},
 		eslint: {
 			target: [
 				"api-documentation/*.js",
 				"examples/*.js",
 				"getting-started/*.js",
-				"*.js"
+				"*.js",
+				"!**/*.min.js"
 			]
 		},
 		critical: {
@@ -39,6 +67,21 @@ module.exports = function (grunt) {
 					"./index.html"
 				],
 				dest: "./"
+			}
+		},
+		replace: {
+			all: {
+				src: [
+					"./api-documentation/index.html",
+					"./examples/index.html",
+					"./getting-started/index.html",
+					"./index.html"
+				],
+				overwrite: true,
+				replacements: [{
+					from: /url\(\/fonts\/fontawesome-webfont./g,
+					to: "url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/fonts/fontawesome-webfont."
+				}]
 			}
 		},
 		sitebuild: {
@@ -146,7 +189,9 @@ module.exports = function (grunt) {
 		});
 		grunt.log.ok();
 	});
+	grunt.loadNpmTasks("grunt-contrib-uglify");
+	grunt.loadNpmTasks("grunt-text-replace");
 	//grunt.loadNpmTasks("grunt-contrib-watch");
 	//grunt.loadNpmTasks("grunt-critical");
-	grunt.registerTask("default", ["eslint", "sitebuild", "critical"]);
+	grunt.registerTask("default", ["eslint", "uglify:all", "sitebuild", "critical", "replace"]);
 };
