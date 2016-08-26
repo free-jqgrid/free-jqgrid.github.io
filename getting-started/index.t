@@ -92,9 +92,9 @@ provides basic free jqGrid knowledge to make it easier to get started quickly. W
 in some demos, mostly to show the diversity of customization possibilities.</p>
 <h3 id="the_first_grid"><a class="anchor" href="#the_first_grid"><span class="fa fa-link"></span></a>
 <a href="#the_first_grid">The first grid</a></h3>
-<p>Free jqGrid is implemented as jQuery plugin, our plugin uses jQuery UI CSS and Bootstrap CSS for styling. Thus
+<p>Free jqGrid is implemented as jQuery plugin, our plugin uses jQuery UI CSS or Bootstrap CSS for styling. Thus
 one would have to include the corresponding JavaScript and CSS files. The second basic thing, which one should know,
-is the fact that free jqGrid uses HTML <l-html><table></l-html> internally. One have to create an empty
+is the fact that free jqGrid uses HTML <l-html><table></l-html> internally. One would have to create an empty
 <l-html><table></l-html> element to reserve the place where the grid should be created. Finally one should
 call `jQuery("#tableId").jqGrid({/*options*/});` to create the grid. Different options of
 free jqGrid provides <em>the data</em> of the table body and the information about the outer part of the grid.
