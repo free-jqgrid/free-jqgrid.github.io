@@ -80,18 +80,10 @@ module.exports = function (grunt) {
 					shortcuts: [
 						{ from: /<h([1-9])link\s*id\s*=\s*([\"|\'])(.*?)\2>/g, to: "<h$1 id=\"$3\"><a class=\"anchor\" href=\"#$3\"><span class=\"fa fa-link\"><\/span><\/a><a href=\"#$3\">" },
 						{ from: /<\/h([1-9])link>/g, to: "<\/a><\/h$1>" },
-						{ from: /<l-js>/g, to: "<code class=\"prettyprint lang-js\">" },
-						{ from: /<\/l-js>/g, to: "<\/code>" },
-						{ from: /<l-css>/g, to: "<code class=\"prettyprint lang-css\">" },
-						{ from: /<\/l-css>/g, to: "<\/code>" },
-						{ from: /<l-html>/g, to: "<code class=\"prettyprint lang-html\">" },
-						{ from: /<\/l-html>/g, to: "<\/code>" },
-						{ from: /<pre-js>/g, to: "<pre class=\"prettyprint lang-js\"><code>" },
-						{ from: /<\/pre-js>/g, to: "<\/code><\/pre>" },
-						{ from: /<pre-css>/g, to: "<pre class=\"prettyprint lang-css\"><code>" },
-						{ from: /<\/pre-css>/g, to: "<\/code><\/pre>" },
-						{ from: /<pre-html>/g, to: "<pre class=\"prettyprint lang-html\"><code>" },
-						{ from: /<\/pre-html>/g, to: "</code><\/pre>" }
+						{ from: /<l-(js|css|html)>/g, to: "<code class=\"prettyprint lang-$1\">" },
+						{ from: /<\/l-(js|css|html)>/g, to: "<\/code>" },
+						{ from: /<pre-(js|css|html)>/g, to: "<pre class=\"prettyprint lang-$1\"><code>" },
+						{ from: /<\/pre-(js|css|html)>/g, to: "<\/code><\/pre>" }
 					]
 				},
 				files: [
