@@ -81,8 +81,7 @@ h6 a:focus, h6 a:active, {
 <body>
 <!--@@menuHeader-->
 <div class="container">
-<h2 id="how_to_use"><a class="anchor" href="#how_to_use"><span class="fa fa-link"></span></a>
-<a href="#how_to_use">How to use free jqGrid?</a></h2>
+<h2link id="how_to_use">How to use free jqGrid?</h2link>
 <p>Free jqGrid is a JavaScript plugin that displays table-based data in a lot of different configurations. The data can be loaded from JavaScript array or be loaded
 from the server (in JSON or XML format). It supports client-side paging, sorting and filtering on server-side.
 One can group the displayed data, create the data as pivot table (made aggregation of data), display the data in the Tree form
@@ -90,8 +89,7 @@ creates subgrids and so on. One can easily implement tree variants of editing of
 <p>The large number of possibilities makes it difficult for a newcomer to start using jqGrid. The information below
 provides basic free jqGrid knowledge to make it easier to get started quickly. We will just include some small "advanced" options
 in some demos, mostly to show the diversity of customization possibilities.</p>
-<h3 id="the_first_grid"><a class="anchor" href="#the_first_grid"><span class="fa fa-link"></span></a>
-<a href="#the_first_grid">The first grid</a></h3>
+<h3link id="the_first_grid">The first grid</h3link>
 <p>Free jqGrid is implemented as jQuery plugin, our plugin uses jQuery UI CSS or Bootstrap CSS for styling. Thus
 one would have to include the corresponding JavaScript and CSS files. The second basic thing, which one should know,
 is the fact that free jqGrid uses HTML <l-html><table></l-html> internally. One would have to create an empty
@@ -199,8 +197,7 @@ holding the headers fixed.</li>
 One can for example create custom tooltip text or to remove it. One can prevent hovering or rows. One can prevent allow to
 select multiple rows, to prevert unselection of rows on the second click on previously seceted row, ... It's important
 curretly just to understand the basis features existing in every grid. The custumization of the features will be described later.</p>
-<h3 id="type_of_data"><a class="anchor" href="#type_of_data"><span class="fa fa-link"></span></a>
-<a href="#type_of_data">Type of data, templetes, formatters</a></h3>
+<h3link id="type_of_data">Type of data, templetes, formatters</h3link>
 <p>The input data contains typically not only strings, but numbers, dates and so on. One uses typically some locale independend
 format for transfering the data (like `123456789.12345` for numbers, `"2015-12-31"`, `"2015-12-31T07:08:45:15Z"` and so on).
 One want typically display the data in some locale format (like `123,456,789.12` and `"12/31/2015 8:45:15 AM"`).
@@ -241,7 +238,7 @@ specific for the current locale. The default locale included in <l-html>jquery.j
                 { name: "amount", label: "Amount", width: 65, template: "number" },
                 { name: "tax", label: "Tax", width: 41, template: "number" },
                 { name: "total", label: "Total", width: 51, template: "number" },
-                { name: "closed", label: "Closed", width: 59, template: "booleanCheckboxFa", firstsortorder: "desc" },
+                { name: "closed", label: "Closed", width: 59, template: "booleanCheckbox", firstsortorder: "desc" },
                 { name: "ship_via", label: "Shipped via", width: 87, align: "center", formatter: "select",
                     formatoptions: { value: "FE:FedEx;TN:TNT;DH:DHL", defaultValue: "DH" } }
             ],
@@ -319,15 +316,14 @@ column properties, which will be typically used together. For example, very comm
 `formatter: "number", align: "right", sorttype: "number"` in case of usage numbers as input data. The property `template: "number"`
 is the shortcut, which allows to specify all the options (and some other used for searching and editing) at once. We use
 the template for columns `amount`, `amount` and `total`.</p>
-<p>The column `closed` uses one more template: `template: "booleanCheckboxFa"`. The template uses `formatter: "checkboxFontAwesome4"`
-available only if we includes CSS of <a href="http://fontawesome.io/">Font Awesome 4.5.0</a>. The `template: "booleanCheckboxFa"`
+<p>The column `closed` uses one more template: `template: "booleanCheckbox"`. The template uses `formatter: "checkboxFontAwesome4"`
+available only if we includes CSS of <a href="http://fontawesome.io/">Font Awesome 4.5.0</a>. The `template: "booleanCheckbox"`
 displays Boolean input data `true` and `false` as <i style="font-size: 14.6667px;" class="fa fa-square-o fa-lg" title="Closed"></i> or
 <i style="font-size: 14.6667px;" class="fa fa-check-square-o fa-lg" title="Closed"></i>. The property `firstsortorder: "desc"`
 force to start sorting of the column by descending oder, where the checked items (`true`) will be displayed first. The second
 click on the column header of the column `closed` will invert the sorting order. The property `firstsortorder: "desc"` is practical,
 because one want typecally see checked items if one sort by the column with Bollean data.</p>
-<h3 id="paging_searching_filtering"><a class="anchor" href="#paging_searching_filtering"><span class="fa fa-link"></span></a>
-<a href="#paging_searching_filtering">Paging, searching, filtering</a></h3>
+<h3link id="paging_searching_filtering">Paging, searching, filtering</h3link>
 <p>Paging, searching and filtering are extreamly important in case of displaying large set of information.
 One should understand that displaying thousands or rows of the data have no value for the user. The user need to know
 only some small subset from the data, like top 10 rows sorted based on some criteria.
@@ -336,8 +332,7 @@ Sometimes one need to filter the data first of all based on one criterias (like 
 to sort the result based on another criterias and display the final result using the paging.</p>
 <p>The next paragraphs gives small infroduction of the paging, searching and filtering features of free jqGrid. We
 will describe all the features based on local data, but jqGrid supports the same features with remote data too.</p>
-<h4 id="paging"><a class="anchor" href="#paging"><span class="fa fa-link"></span></a>
-<a href="#paging">Paging</a></h4>
+<h4link id="paging">Paging</h4link>
 <p>Sometime one need to dispaly so many items of data that display not allows to represent. In such case it would be much more
 effective to use local paging of data instead of displaying all the items on the page and to require that the user uses vertical
 scrollbar to see the data. Placing of all the data on the HTML page takes relative much time and it makes the page very slow
@@ -353,8 +348,7 @@ the page in the right part of the pagers. One can use `page: 2` to specify the p
 <span style="font-size: 14.6667px;" class="fa fa-fw fa-forward ui-state-default ui-corner-all"></span> (the next) and
 <span style="font-size: 14.6667px;" class="fa fa-fw fa-step-forward ui-state-default ui-corner-all"></span> (the last), which allow to navigate
 over the pages. The additional <l-html><input></l-html> element allows to navigate to some page directly by the number.</p>
-<h4 id="sorting"><a class="anchor" href="#sorting"><span class="fa fa-link"></span></a>
-<a href="#sorting">Sorting</a></h4>
+<h4link id="sorting">Sorting</h4link>
 <p>There are two main options of jqGrid, which specify sorting: `sortname` and `sortorder`. The default value of `sortname` is
 the empty string, which means the the grid will be displayed unsorted. It means that the order of rows corresponds the order of
 items in the array of item of the input data. If the `sortname` is specified, for example `sortname: "invdate"`, then the grid sorts
@@ -377,8 +371,7 @@ which creates the tooltips on column headers. It's practical if one </p>
 multiple columns and some options, which customize the look of the sorting icons.
 The option `viewsortcols` and ovewriding `$.jgrid.builderSortIcons` method allows
 to implement more advanced scenarios.</p>
-<h4 id="filtering"><a class="anchor" href="#filtering"><span class="fa fa-link"></span></a>
-<a href="#filtering">Filtering</a></h4>
+<h4link id="filtering">Filtering</h4link>
 <p>Filtering is very practical and powerful feature of jqGrid. One can create an additional line
 with input elements which allows to filter the grid data by specified values. One need just
 call of the method `filterToolbar`.</p>
@@ -414,7 +407,7 @@ as no filtering.</li>
             { name: "amount", label: "Amount", width: 65, template: "number" },
             { name: "tax", label: "Tax", width: 41, template: "number" },
             { name: "total", label: "Total", width: 51, template: "number" },
-            { name: "closed", label: "Closed", width: 59, template: "booleanCheckboxFa", firstsortorder: "desc" },
+            { name: "closed", label: "Closed", width: 59, template: "booleanCheckbox", firstsortorder: "desc" },
             { name: "ship_via", label: "Shipped via", width: 87, align: "center",
                 formatter: "select",
                 formatoptions: { value: "FE:FedEx;TN:TNT;DH:DHL", defaultValue: "DH" },

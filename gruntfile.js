@@ -28,21 +28,9 @@ module.exports = function (grunt) {
 					"examples/require.config.min.js": ["examples/require.config.js"],
 					"getting-started/require.config.min.js": ["getting-started/require.config.js"]
 				},
-				/*src: [
-					"./require.config.js",
-					"api-documentation/require.config.js",
-					"examples/require.config.js",
-					"getting-started/require.config.js"
-				],*/
-				//dest: "*/require.config.min.js",
 				options: {
 					preserveComments: false,
-					sourceMap: true,
-					//sourceMapName: "*/require.config.min.map",
-					//report: "min",
-					compress: {
-						//"hoist_funs": false
-					}
+					sourceMap: true
 				}
 			}
 		},
@@ -90,6 +78,8 @@ module.exports = function (grunt) {
 					commonHeadIncludes: "commonHeadIncludes.htm",
 					menuHeader: "menuHeader.htm",
 					shortcuts: [
+						{ from: /<h([1-9])link\s*id\s*=\s*([\"|\'])(.*?)\2>/g, to: "<h$1 id=\"$3\"><a class=\"anchor\" href=\"#$3\"><span class=\"fa fa-link\"><\/span><\/a><a href=\"#$3\">" },
+						{ from: /<\/h([1-9])link>/g, to: "<\/a><\/h$1>" },
 						{ from: /<l-js>/g, to: "<code class=\"prettyprint lang-js\">" },
 						{ from: /<\/l-js>/g, to: "<\/code>" },
 						{ from: /<l-css>/g, to: "<code class=\"prettyprint lang-css\">" },
