@@ -39,6 +39,9 @@ img.imageExample {
     text-decoration: none;
 	display: none;
 }
+pre.prettyprint > .anchor {
+    margin-left: -16px;
+}
 h1:hover a,
 h2:hover a,
 h3:hover a,
@@ -54,10 +57,14 @@ h3:hover .anchor,
 h4:hover .anchor,
 h5:hover .anchor,
 h6:hover .anchor,
+pre.prettyprint:hover .anchor,
 .anchor:hover {
     text-decoration: none;
 	cursor: pointer;
     display: block;
+}
+pre.prettyprint:hover > a {
+	text-decoration: none;
 }
 h1 a:focus, h1 a:active,
 h2 a:focus, h2 a:active,
@@ -109,8 +116,7 @@ is the fact that free jqGrid uses HTML <l-html><table></l-html> internally. One 
 call `jQuery("#tableId").jqGrid({/*options*/});` to create the grid. Different options of
 free jqGrid provides <em>the data</em> of the table body and the information about the outer part of the grid.
 For example, the code below</p>
-<div id="the_first_grid-code-js1">
-<pre-js>$(function () {
+<pre-id-js id="the_first_grid-code-js1">$(function () {
     "use strict";
     $("#grid").jqGrid({
         colModel: [
@@ -125,8 +131,7 @@ For example, the code below</p>
             { id: 50, firstName: "François", lastName: "Hollande" }
         ]
     });
-});</pre-js>
-</div>
+});</pre-id-js>
 <p>creates the simple grid</p>
 <table id="grid"></table>
 <p style="margin-top:.5em;">The differences between free jqGrid and a standard HTML table are as follows:</p>
@@ -143,8 +148,7 @@ For example, the code below</p>
 <img id="sorting-resizing" src="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694846/sorting-resizing_rkxu2p.gif" style="margin-left: -2px;" alt="sorting and resizing of grid">
 </div>
 <p>The full HTML page from the above example can look as following:</p>
-<div id="the_first_grid_code">
-<pre-html><!DOCTYPE html>
+<pre-id-html id="the_first_grid_code"><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -180,8 +184,7 @@ For example, the code below</p>
 <table id="grid"></table>
 </body>
 </html>
-</pre-html>
-</div>
+</pre-id-html>
 <p>You can try the example on <a href="https://jsfiddle.net/OlegKi/pqL7d004/2/">JSFiddle</a>.</p>
 <p>It's important to understand that the empty <l-html><table></l-html> will be converted to relatively complex
 structure of divs and tables. One can use, for example, Chrome developer tools to examine the grid after creating:</p>
@@ -226,8 +229,7 @@ specific for the current locale. The default locale included in <l-html>jquery.j
 </pre-html>
 <p>in the head of the page (before of after <l-html>jquery.jqgrid.min.js</l-html>).</p>
 <p>Below is an example of the JavaScript code, which uses some features described above:</p>
-<div id="type_of_data_code">
-<pre-html><!DOCTYPE html>
+<pre-id-html id="type_of_data_code"><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -283,8 +285,7 @@ specific for the current locale. The default locale included in <l-html>jquery.j
 <table id="grid1"></table>
 </body>
 </html>
-</pre-html>
-</div>
+</pre-id-html>
 <p>You can try the example on <a href="https://jsfiddle.net/OlegKi/5w5h2Lgw/3/">JSFiddle</a>.</p>
 <p>The above code uses `iconSet: "fontAwesome"` and includes <a href="http://fontawesome.io/">Font Awesome 4.5.0</a>
 `font-awesome.min.css` additionally to CSSs included in the previous examples. You can see the resulting grid below:</p>
@@ -338,8 +339,7 @@ because one want typecally see checked items if one sort by the column with Boll
 <h3link id="bootstrap">Usage of Boostrap CSS instead of jQuery UI CSS</h3link>
 <p>Free jqGrid can use Boostrap CSS instead of default jQuery UI CSS. One need just need include Boostrap CSS and
 to add `guiStyle: "bootstrap"` option. The code posted in the previous section can look as the following:</p>
-<div id="bootstrap_code">
-<pre-html><!DOCTYPE html>
+<pre-id-html id="bootstrap_code"><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -398,11 +398,11 @@ to add `guiStyle: "bootstrap"` option. The code posted in the previous section c
 <table id="grid1b"></table>
 </body>
 </html>
-</pre-html>
+</pre-id-html>
 <p>The resulting grid will be:</p>
 <table id="grid1b"></table>
 <p style="margin-top:.5em;">Free jqGrid allows to customize the results. By adding the following CSS rules for example</p>
-<pre-css>.ui-jqgrid.ui-jqgrid-bootstrap {
+<pre-id-css id="bootstrap_custom_css">.ui-jqgrid.ui-jqgrid-bootstrap {
 	border: 1px solid #003380;
 }
 .ui-jqgrid.ui-jqgrid-bootstrap .ui-jqgrid-caption {
@@ -411,7 +411,7 @@ to add `guiStyle: "bootstrap"` option. The code posted in the previous section c
 .ui-jqgrid.ui-jqgrid-bootstrap .ui-jqgrid-hdiv {
     background-color: #cce0ff;
 }
-</pre-css>
+</pre-id-css>
 <p>one gets the following results</p>
 <div class="my-bootstrap-style">
 <table id="grid2b"></table>
@@ -490,8 +490,7 @@ the subtrings like `FE:FedEx` specify the value and the text of the option:
 as no filtering.</li>
 </ul>
 <p>One can find the full code of the above demo below:</p>
-<div id="filtering-code-js1">
-<pre-js>$(function () {
+<pre-id-js id="filtering-code-js1">$(function () {
     "use strict";
     $("#grid5").jqGrid({
         colModel: [
@@ -541,15 +540,12 @@ as no filtering.</li>
         caption: "The grid, which demonstrates formatters, templates and the pager"
     }).jqGrid("filterToolbar");
 });
-</pre-js>
-</div>
+</pre-id-js>
 <p>Remark: we added the CSS rule</p>
-<div id="filtering-code-css1">
-<pre-css>.ui-search-input > input::-ms-clear {
+<pre-id-css id="filtering-code-css1">.ui-search-input > input::-ms-clear {
     display: none;
 }
-</pre-css>
-</div>
+</pre-id-css>
 <p>to remove additional "clear field", which will be displayed in `<input>` elements by default in
 Internet Explorer (see <a href="https://msdn.microsoft.com/en-us/library/windows/apps/hh465740.aspx">IE documentation</a>).</p>
 <p>We don't want to include too much details in the "Getting started" toptic. Nevertherless we
@@ -558,8 +554,7 @@ well-known conrols in the filter toolbar of jqGrid. One can specify `dataInit` c
 inside of `searchoptions` property of some column. For example we can use jQuery UI Datepicker
 in the "Date" column in the following way. We need modify `searchoptions: { sopt: ["eq"] }` property
 to the following:</p>
-<div id="filtering-code-js2">
-<pre-js>searchoptions: {
+<pre-id-js id="filtering-code-js2">searchoptions: {
     sopt: ["eq"],
     dataInit: function (elem, options) {
         var self = this, $elem = $(elem),
@@ -585,8 +580,7 @@ to the following:</p>
         }, 50);
     }
 }
-</pre-js>
-</div>
+</pre-id-js>
 <table id="grid6"></table>
 </div>
 </body>
