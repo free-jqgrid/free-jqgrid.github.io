@@ -83,7 +83,9 @@ module.exports = function (grunt) {
 						{ from: /<l-(js|css|html)>/g, to: "<code class=\"prettyprint lang-$1\">" },
 						{ from: /<\/l-(js|css|html)>/g, to: "<\/code>" },
 						{ from: /<pre-(js|css|html)>/g, to: "<pre class=\"prettyprint lang-$1\"><code>" },
-						{ from: /<\/pre-(js|css|html)>/g, to: "<\/code><\/pre>" }
+						{ from: /<\/pre-(js|css|html)>/g, to: "<\/code><\/pre>" },
+						{ from: /<pre-id-(js|css|html)\s*id\s*=\s*([\"|\'])(.*?)\2>/g, to: "<div id=\"$3\"><pre class=\"prettyprint lang-$1\"><a class=\"anchor\" href=\"#$3\"><span class=\"fa fa-link\"></span></a><a href=\"#$3\"><code>" },
+						{ from: /<\/pre-id-(js|css|html)>/g, to: "<\/code><\/a><\/pre><\/div>" }
 					]
 				},
 				files: [
