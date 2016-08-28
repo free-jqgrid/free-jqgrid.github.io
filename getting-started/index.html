@@ -104,6 +104,9 @@ img.imageExample {
     text-decoration: none;
 	display: none;
 }
+pre.prettyprint > .anchor {
+    margin-left: -16px;
+}
 h1:hover a,
 h2:hover a,
 h3:hover a,
@@ -119,10 +122,14 @@ h3:hover .anchor,
 h4:hover .anchor,
 h5:hover .anchor,
 h6:hover .anchor,
+pre.prettyprint:hover .anchor,
 .anchor:hover {
     text-decoration: none;
 	cursor: pointer;
     display: block;
+}
+pre.prettyprint:hover > a {
+	text-decoration: none;
 }
 h1 a:focus, h1 a:active,
 h2 a:focus, h2 a:active,
@@ -201,8 +208,7 @@ is the fact that free jqGrid uses HTML <code class="prettyprint lang-html">&lt;t
 call <code class="prettyprint lang-js">jQuery(&quot;#tableId&quot;).jqGrid({/*options*/});</code> to create the grid. Different options of
 free jqGrid provides <em>the data</em> of the table body and the information about the outer part of the grid.
 For example, the code below</p>
-<div id="the_first_grid-code-js1">
-<pre class="prettyprint lang-js"><code>$(function () {
+<div id="the_first_grid-code-js1"><pre class="prettyprint lang-js"><a class="anchor" href="#the_first_grid-code-js1"><span class="fa fa-link"></span></a><a href="#the_first_grid-code-js1"><code>$(function () {
     &quot;use strict&quot;;
     $(&quot;#grid&quot;).jqGrid({
         colModel: [
@@ -217,8 +223,7 @@ For example, the code below</p>
             { id: 50, firstName: &quot;François&quot;, lastName: &quot;Hollande&quot; }
         ]
     });
-});</code></pre>
-</div>
+});</code></a></pre></div>
 <p>creates the simple grid</p>
 <table id="grid"></table>
 <p style="margin-top:.5em;">The differences between free jqGrid and a standard HTML table are as follows:</p>
@@ -235,8 +240,7 @@ For example, the code below</p>
 <img id="sorting-resizing" src="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694846/sorting-resizing_rkxu2p.gif" style="margin-left: -2px;" alt="sorting and resizing of grid">
 </div>
 <p>The full HTML page from the above example can look as following:</p>
-<div id="the_first_grid_code">
-<pre class="prettyprint lang-html"><code>&lt;!DOCTYPE html&gt;
+<div id="the_first_grid_code"><pre class="prettyprint lang-html"><a class="anchor" href="#the_first_grid_code"><span class="fa fa-link"></span></a><a href="#the_first_grid_code"><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
     &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -272,8 +276,7 @@ For example, the code below</p>
 &lt;table id=&quot;grid&quot;&gt;&lt;/table&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre>
-</div>
+</code></a></pre></div>
 <p>You can try the example on <a href="https://jsfiddle.net/OlegKi/pqL7d004/2/">JSFiddle</a>.</p>
 <p>It's important to understand that the empty <code class="prettyprint lang-html">&lt;table&gt;</code> will be converted to relatively complex
 structure of divs and tables. One can use, for example, Chrome developer tools to examine the grid after creating:</p>
@@ -318,8 +321,7 @@ specific for the current locale. The default locale included in <code class="pre
 </code></pre>
 <p>in the head of the page (before of after <code class="prettyprint lang-html">jquery.jqgrid.min.js</code>).</p>
 <p>Below is an example of the JavaScript code, which uses some features described above:</p>
-<div id="type_of_data_code">
-<pre class="prettyprint lang-html"><code>&lt;!DOCTYPE html&gt;
+<div id="type_of_data_code"><pre class="prettyprint lang-html"><a class="anchor" href="#type_of_data_code"><span class="fa fa-link"></span></a><a href="#type_of_data_code"><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
     &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -375,8 +377,7 @@ specific for the current locale. The default locale included in <code class="pre
 &lt;table id=&quot;grid1&quot;&gt;&lt;/table&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre>
-</div>
+</code></a></pre></div>
 <p>You can try the example on <a href="https://jsfiddle.net/OlegKi/5w5h2Lgw/3/">JSFiddle</a>.</p>
 <p>The above code uses <code class="prettyprint lang-js">iconSet: &quot;fontAwesome&quot;</code> and includes <a href="http://fontawesome.io/">Font Awesome 4.5.0</a>
 <code class="prettyprint lang-js">font-awesome.min.css</code> additionally to CSSs included in the previous examples. You can see the resulting grid below:</p>
@@ -430,8 +431,7 @@ because one want typecally see checked items if one sort by the column with Boll
 <h3 id="bootstrap"><a class="anchor" href="#bootstrap"><span class="fa fa-link"></span></a><a href="#bootstrap">Usage of Boostrap CSS instead of jQuery UI CSS</a></h3>
 <p>Free jqGrid can use Boostrap CSS instead of default jQuery UI CSS. One need just need include Boostrap CSS and
 to add <code class="prettyprint lang-js">guiStyle: &quot;bootstrap&quot;</code> option. The code posted in the previous section can look as the following:</p>
-<div id="bootstrap_code">
-<pre class="prettyprint lang-html"><code>&lt;!DOCTYPE html&gt;
+<div id="bootstrap_code"><pre class="prettyprint lang-html"><a class="anchor" href="#bootstrap_code"><span class="fa fa-link"></span></a><a href="#bootstrap_code"><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
     &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -490,11 +490,11 @@ to add <code class="prettyprint lang-js">guiStyle: &quot;bootstrap&quot;</code> 
 &lt;table id=&quot;grid1b&quot;&gt;&lt;/table&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre>
+</code></a></pre></div>
 <p>The resulting grid will be:</p>
 <table id="grid1b"></table>
 <p style="margin-top:.5em;">Free jqGrid allows to customize the results. By adding the following CSS rules for example</p>
-<pre class="prettyprint lang-css"><code>.ui-jqgrid.ui-jqgrid-bootstrap {
+<div id="bootstrap_custom_css"><pre class="prettyprint lang-css"><a class="anchor" href="#bootstrap_custom_css"><span class="fa fa-link"></span></a><a href="#bootstrap_custom_css"><code>.ui-jqgrid.ui-jqgrid-bootstrap {
 	border: 1px solid #003380;
 }
 .ui-jqgrid.ui-jqgrid-bootstrap .ui-jqgrid-caption {
@@ -503,7 +503,7 @@ to add <code class="prettyprint lang-js">guiStyle: &quot;bootstrap&quot;</code> 
 .ui-jqgrid.ui-jqgrid-bootstrap .ui-jqgrid-hdiv {
     background-color: #cce0ff;
 }
-</code></pre>
+</code></a></pre></div>
 <p>one gets the following results</p>
 <div class="my-bootstrap-style">
 <table id="grid2b"></table>
@@ -582,8 +582,7 @@ the subtrings like <code class="prettyprint lang-js">FE:FedEx</code> specify the
 as no filtering.</li>
 </ul>
 <p>One can find the full code of the above demo below:</p>
-<div id="filtering-code-js1">
-<pre class="prettyprint lang-js"><code>$(function () {
+<div id="filtering-code-js1"><pre class="prettyprint lang-js"><a class="anchor" href="#filtering-code-js1"><span class="fa fa-link"></span></a><a href="#filtering-code-js1"><code>$(function () {
     &quot;use strict&quot;;
     $(&quot;#grid5&quot;).jqGrid({
         colModel: [
@@ -633,15 +632,12 @@ as no filtering.</li>
         caption: &quot;The grid, which demonstrates formatters, templates and the pager&quot;
     }).jqGrid(&quot;filterToolbar&quot;);
 });
-</code></pre>
-</div>
+</code></a></pre></div>
 <p>Remark: we added the CSS rule</p>
-<div id="filtering-code-css1">
-<pre class="prettyprint lang-css"><code>.ui-search-input &gt; input::-ms-clear {
+<div id="filtering-code-css1"><pre class="prettyprint lang-css"><a class="anchor" href="#filtering-code-css1"><span class="fa fa-link"></span></a><a href="#filtering-code-css1"><code>.ui-search-input &gt; input::-ms-clear {
     display: none;
 }
-</code></pre>
-</div>
+</code></a></pre></div>
 <p>to remove additional "clear field", which will be displayed in <code class="prettyprint lang-js">&lt;input&gt;</code> elements by default in
 Internet Explorer (see <a href="https://msdn.microsoft.com/en-us/library/windows/apps/hh465740.aspx">IE documentation</a>).</p>
 <p>We don't want to include too much details in the "Getting started" toptic. Nevertherless we
@@ -650,8 +646,7 @@ well-known conrols in the filter toolbar of jqGrid. One can specify <code class=
 inside of <code class="prettyprint lang-js">searchoptions</code> property of some column. For example we can use jQuery UI Datepicker
 in the "Date" column in the following way. We need modify <code class="prettyprint lang-js">searchoptions: { sopt: [&quot;eq&quot;] }</code> property
 to the following:</p>
-<div id="filtering-code-js2">
-<pre class="prettyprint lang-js"><code>searchoptions: {
+<div id="filtering-code-js2"><pre class="prettyprint lang-js"><a class="anchor" href="#filtering-code-js2"><span class="fa fa-link"></span></a><a href="#filtering-code-js2"><code>searchoptions: {
     sopt: [&quot;eq&quot;],
     dataInit: function (elem, options) {
         var self = this, $elem = $(elem),
@@ -677,9 +672,8 @@ to the following:</p>
         }, 50);
     }
 }
-</code></pre>
-</div>
+</code></a></pre></div>
 <table id="grid6"></table>
 </div>
-</div></body>
+</body>
 </html>
