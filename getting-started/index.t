@@ -58,6 +58,7 @@ h4:hover .anchor,
 h5:hover .anchor,
 h6:hover .anchor,
 pre.prettyprint:hover .anchor,
+div:hover > .anchor,
 .anchor:hover {
     text-decoration: none;
 	cursor: pointer;
@@ -188,7 +189,10 @@ For example, the code below</p>
 <p>You can try the example on <a href="https://jsfiddle.net/OlegKi/pqL7d004/2/">JSFiddle</a>.</p>
 <p>It's important to understand that the empty <l-html><table></l-html> will be converted to relatively complex
 structure of divs and tables. One can use, for example, Chrome developer tools to examine the grid after creating:</p>
+<div id="grid-internal-div"><a class="anchor" href="#grid-internal-div"><span class="fa fa-link"></span></a>
+<a href="#grid-internal-div"> 
 <img id="grid-internal" src="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694746/grid-internal_mvnjkp.png" class="imageExample" alt="grid internals">
+</a></div>
 <p>One don't need to know all internals of the grid, but it's important to understand some basis facts:</p>
 <ul>
 <li>every row of the grid (<l-html><tr></l-html> elements) have `id` attribute (see red marked attributes
