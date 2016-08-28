@@ -141,6 +141,18 @@ h6 a:focus, h6 a:active, {
 .ui-datepicker select.ui-datepicker-month {
 	color: black
 }
+/* fix of inline css crated by critical CSS */
+.s-ico .fa-lg { line-height: .75em }
+
+div.my-bootstrap-style .ui-jqgrid.ui-jqgrid-bootstrap {
+	border: 1px solid #003380;
+}
+div.my-bootstrap-style .ui-jqgrid.ui-jqgrid-bootstrap .ui-jqgrid-caption {
+	background-color: #e6f0ff;
+}
+div.my-bootstrap-style .ui-jqgrid.ui-jqgrid-bootstrap .ui-jqgrid-hdiv {
+	background-color: #cce0ff;
+}
 </style>
 </head>
 <body>
@@ -314,7 +326,7 @@ specific for the current locale. The default locale included in <code class="pre
     &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css&quot;&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css&quot;&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.4/css/ui.jqgrid.min.css&quot;&gt;
     &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.4/js/jquery.jqgrid.min.js&quot;&gt;&lt;/script&gt;
@@ -415,6 +427,89 @@ displays Boolean input data <code class="prettyprint lang-js">true</code> and <c
 force to start sorting of the column by descending oder, where the checked items (<code class="prettyprint lang-js">true</code>) will be displayed first. The second
 click on the column header of the column <code class="prettyprint lang-js">closed</code> will invert the sorting order. The property <code class="prettyprint lang-js">firstsortorder: &quot;desc&quot;</code> is practical,
 because one want typecally see checked items if one sort by the column with Bollean data.</p>
+<h3 id="bootstrap"><a class="anchor" href="#bootstrap"><span class="fa fa-link"></span></a><a href="#bootstrap">Usage of Boostrap CSS instead of jQuery UI CSS</a></h3>
+<p>Free jqGrid can use Boostrap CSS instead of default jQuery UI CSS. One need just need include Boostrap CSS and
+to add <code class="prettyprint lang-js">guiStyle: &quot;bootstrap&quot;</code> option. The code posted in the previous section can look as the following:</p>
+<div id="bootstrap_code">
+<pre class="prettyprint lang-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;
+	&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css&quot;&gt;
+	&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot;&gt;
+	&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css&quot;&gt;
+	&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.4/css/ui.jqgrid.min.css&quot;&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.4/js/jquery.jqgrid.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script&gt;
+    //&lt;![CDATA[
+    $(function () {
+        &quot;use strict&quot;;
+        $(&quot;#grid1b&quot;).jqGrid({
+            colModel: [
+                { name: &quot;name&quot;, label: &quot;Client&quot;, width: 53 },
+                { name: &quot;invdate&quot;, label: &quot;Date&quot;, width: 75, align: &quot;center&quot;, sorttype: &quot;date&quot;,
+                    formatter: &quot;date&quot;, formatoptions: { newformat: &quot;d-M-Y&quot; } },
+                { name: &quot;amount&quot;, label: &quot;Amount&quot;, width: 65, template: &quot;number&quot; },
+                { name: &quot;tax&quot;, label: &quot;Tax&quot;, width: 41, template: &quot;number&quot; },
+                { name: &quot;total&quot;, label: &quot;Total&quot;, width: 51, template: &quot;number&quot; },
+                { name: &quot;closed&quot;, label: &quot;Closed&quot;, width: 59, template: &quot;booleanCheckbox&quot;, firstsortorder: &quot;desc&quot; },
+                { name: &quot;ship_via&quot;, label: &quot;Shipped via&quot;, width: 87, align: &quot;center&quot;, formatter: &quot;select&quot;,
+                    formatoptions: { value: &quot;FE:FedEx;TN:TNT;DH:DHL&quot;, defaultValue: &quot;DH&quot; } }
+            ],
+            data: [
+                { id: &quot;10&quot;,  invdate: &quot;2015-10-01&quot;, name: &quot;test&quot;,   amount: &quot;&quot; },
+                { id: &quot;20&quot;,  invdate: &quot;2015-09-01&quot;, name: &quot;test2&quot;,  amount: &quot;300.00&quot;, tax: &quot;20.00&quot;, closed: false, ship_via: &quot;FE&quot;, total: &quot;320.00&quot; },
+                { id: &quot;30&quot;,  invdate: &quot;2015-09-01&quot;, name: &quot;test3&quot;,  amount: &quot;400.00&quot;, tax: &quot;30.00&quot;, closed: false, ship_via: &quot;FE&quot;, total: &quot;430.00&quot; },
+                { id: &quot;40&quot;,  invdate: &quot;2015-10-04&quot;, name: &quot;test4&quot;,  amount: &quot;200.00&quot;, tax: &quot;10.00&quot;, closed: true,  ship_via: &quot;TN&quot;, total: &quot;210.00&quot; },
+                { id: &quot;50&quot;,  invdate: &quot;2015-10-31&quot;, name: &quot;test5&quot;,  amount: &quot;300.00&quot;, tax: &quot;20.00&quot;, closed: false, ship_via: &quot;FE&quot;, total: &quot;320.00&quot; },
+                { id: &quot;60&quot;,  invdate: &quot;2015-09-06&quot;, name: &quot;test6&quot;,  amount: &quot;400.00&quot;, tax: &quot;30.00&quot;, closed: false, ship_via: &quot;FE&quot;, total: &quot;430.00&quot; },
+                { id: &quot;70&quot;,  invdate: &quot;2015-10-04&quot;, name: &quot;test7&quot;,  amount: &quot;200.00&quot;, tax: &quot;10.00&quot;, closed: true,  ship_via: &quot;TN&quot;, total: &quot;210.00&quot; },
+                { id: &quot;80&quot;,  invdate: &quot;2015-10-03&quot;, name: &quot;test8&quot;,  amount: &quot;300.00&quot;, tax: &quot;20.00&quot;, closed: false, ship_via: &quot;FE&quot;, total: &quot;320.00&quot; },
+                { id: &quot;90&quot;,  invdate: &quot;2015-09-01&quot;, name: &quot;test9&quot;,  amount: &quot;400.00&quot;, tax: &quot;30.00&quot;, closed: false, ship_via: &quot;TN&quot;, total: &quot;430.00&quot; },
+                { id: &quot;100&quot;, invdate: &quot;2015-09-08&quot;, name: &quot;test10&quot;, amount: &quot;500.00&quot;, tax: &quot;30.00&quot;, closed: true,  ship_via: &quot;TN&quot;, total: &quot;530.00&quot; },
+                { id: &quot;110&quot;, invdate: &quot;2015-09-08&quot;, name: &quot;test11&quot;, amount: &quot;500.00&quot;, tax: &quot;30.00&quot;, closed: false, ship_via: &quot;FE&quot;, total: &quot;530.00&quot; },
+                { id: &quot;120&quot;, invdate: &quot;2015-09-10&quot;, name: &quot;test12&quot;, amount: &quot;500.00&quot;, tax: &quot;30.00&quot;, closed: false, ship_via: &quot;FE&quot;, total: &quot;530.00&quot; }
+            ],
+            guiStyle: &quot;bootstrap&quot;,
+            iconSet: &quot;fontAwesome&quot;,
+            idPrefix: &quot;gb1_&quot;,
+            rownumbers: true,
+            sortname: &quot;invdate&quot;,
+            sortorder: &quot;desc&quot;,
+            caption: &quot;The grid, which uses predefined formatters and templates&quot;
+        });
+    });
+    //]]&gt;
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;table id=&quot;grid1b&quot;&gt;&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>The resulting grid will be:</p>
+<table id="grid1b"></table>
+<p style="margin-top:.5em;">Free jqGrid allows to customize the results. By adding the following CSS rules for example</p>
+<pre class="prettyprint lang-css"><code>.ui-jqgrid.ui-jqgrid-bootstrap {
+	border: 1px solid #003380;
+}
+.ui-jqgrid.ui-jqgrid-bootstrap .ui-jqgrid-caption {
+    background-color: #e6f0ff;
+}
+.ui-jqgrid.ui-jqgrid-bootstrap .ui-jqgrid-hdiv {
+    background-color: #cce0ff;
+}
+</code></pre>
+<p>one gets the following results</p>
+<div class="my-bootstrap-style">
+<table id="grid2b"></table>
+</div>
+<p style="margin-top:.5em;">We removed the option <code class="prettyprint lang-js">iconSet: &quot;fontAwesome&quot;</code> in the last example additionally, to show that the default value
+of <code class="prettyprint lang-js">iconSet</code> option is <code class="prettyprint lang-js">iconSet: &quot;glyph&quot;</code> (instead of <code class="prettyprint lang-js">iconSet: &quot;jQueryUI&quot;</code>) in case of usage Bootstrap CSS.</p>
 <h3 id="paging_searching_filtering"><a class="anchor" href="#paging_searching_filtering"><span class="fa fa-link"></span></a><a href="#paging_searching_filtering">Paging, searching, filtering</a></h3>
 <p>Paging, searching and filtering are extreamly important in case of displaying large set of information.
 One should understand that displaying thousands or rows of the data have no value for the user. The user need to know
@@ -586,5 +681,5 @@ to the following:</p>
 </div>
 <table id="grid6"></table>
 </div>
-</body>
+</div></body>
 </html>
