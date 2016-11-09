@@ -13,17 +13,21 @@
 		href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"
 		integrity="sha384-YWP9O4NjmcGo4oEJFXvvYSEzuHIvey+LbXkBNJ1Kd0yfugEZN9NCQNpRYBVC1RvA">
 	<link rel="preload" as="script" crossorigin="anonymous"
-		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.4/js/jquery.jqgrid.min.js"
-		integrity="sha384-0k4qTU5Ro/vj5Lqz5F5IQwuNviTRd8tbdkcC2uuLR/8TaNIjiFIJhZf9X3nL2iMA">
+		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.5/js/jquery.jqgrid.min.js"
+		integrity="sha384-iiqLfmfhYpoxDemmvtFvidYdaDBovrjzDsRuNbVKQfEuCqZ8+jEqL4Ghu6IofClM">
 	<link rel="preload" href="methods.json">
 	<link rel="prefetch" href="methods.json">
+	<link rel="preload" as="font" type="font/woff2"
+		href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/fonts/glyphicons-halflings-regular.woff2"
+		integrity="sha384-76YS2IfQ3qmYotbpI+I7mNFgT24iL+SLDOW4TaspSmVaPDmFZnbyDsdGS6ApOdNO"
+		crossorigin="anonymous">
 
 	<link rel="preload" as="style" crossorigin="anonymous" onload="this.rel='stylesheet'"
-		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.4/css/ui.jqgrid.min.css"
-		integrity="sha384-0EvQ5eNIJgWyWab3EDJ5KrXBw5m9YI8Yivsg4oSzfywJ7p4Mtt3TENRzkc+TF4y4">
+		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.5/css/ui.jqgrid.min.css"
+		integrity="sha384-kpU+p/QlN4Jiue9BMOLbG3RaFwNs1L/mt2ONkw45SXt7oB4NvIw6ApRFqObITjsL">
 	<noscript><link rel="stylesheet" crossorigin="anonymous"
-		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.4/css/ui.jqgrid.min.css"
-		integrity="sha384-0EvQ5eNIJgWyWab3EDJ5KrXBw5m9YI8Yivsg4oSzfywJ7p4Mtt3TENRzkc+TF4y4"></noscript>
+		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.5/css/ui.jqgrid.min.css"
+		integrity="sha384-kpU+p/QlN4Jiue9BMOLbG3RaFwNs1L/mt2ONkw45SXt7oB4NvIw6ApRFqObITjsL"></noscript>
 <!--@@commonHeadIncludes-->
 </head>
 <body>

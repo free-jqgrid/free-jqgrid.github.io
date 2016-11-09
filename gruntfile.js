@@ -68,7 +68,7 @@ module.exports = function (grunt) {
 				overwrite: true,
 				replacements: [{
 					from: /url\(\/fonts\/fontawesome-webfont./g,
-					to: "url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/fonts/fontawesome-webfont."
+					to: "url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont."
 				}]
 			}
 		},
