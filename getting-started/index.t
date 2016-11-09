@@ -19,6 +19,10 @@
 	<link rel="preload" as="image" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694746/grid-internal_mvnjkp.png">
 	<link rel="prefetch" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694846/sorting-resizing_rkxu2p.gif">
 	<link rel="prefetch" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694746/grid-internal_mvnjkp.png">
+	<link rel="preload" as="font" type="font/woff2"
+		href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/fonts/glyphicons-halflings-regular.woff2"
+		integrity="sha384-76YS2IfQ3qmYotbpI+I7mNFgT24iL+SLDOW4TaspSmVaPDmFZnbyDsdGS6ApOdNO"
+		crossorigin="anonymous">
 
 	<link rel="preload" as="style" crossorigin="anonymous" onload="this.rel='stylesheet'"
 		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.5/css/ui.jqgrid.min.css"

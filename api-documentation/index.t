@@ -17,10 +17,6 @@
 		integrity="sha384-iiqLfmfhYpoxDemmvtFvidYdaDBovrjzDsRuNbVKQfEuCqZ8+jEqL4Ghu6IofClM">
 	<link rel="preload" href="methods.json">
 	<link rel="prefetch" href="methods.json">
-	<link rel="preload" as="font" type="font/woff2"
-		href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/fonts/glyphicons-halflings-regular.woff2"
-		integrity="sha384-76YS2IfQ3qmYotbpI+I7mNFgT24iL+SLDOW4TaspSmVaPDmFZnbyDsdGS6ApOdNO"
-		crossorigin="anonymous">
 
 	<link rel="preload" as="style" crossorigin="anonymous" onload="this.rel='stylesheet'"
 		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.5/css/ui.jqgrid.min.css"
