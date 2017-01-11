@@ -8,11 +8,11 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "critical": "^0.8.0",
+    "critical": "^0.8.1",
     "grunt": "^1.0.1",
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-critical": "^0.2.1",
+    "grunt-critical": "^0.2.2",
     "grunt-eslint": "^19.0.0",
     "grunt-text-replace": "^0.4.0",
     "load-grunt-tasks": "^3.5.2"
