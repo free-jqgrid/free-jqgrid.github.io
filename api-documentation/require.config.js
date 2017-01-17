@@ -28,13 +28,8 @@ define([
 	"jquery",
 	"prettify",
 	"jquery-ui",
-	"free-jqgrid"
-	//"free-jqgrid-js-min/grid.base",
-	//"free-jqgrid-js-min/jquery.fmatter",
-	//"free-jqgrid-js-min/jqdnr",
-	//"free-jqgrid-js-min/jqmodal",
-	//"free-jqgrid-js-min/grid.common",
-	//"free-jqgrid-js-min/grid.custom"
+	//"free-jqgrid"
+	"free-jqgrid-js-min/grid.custom"
 ], function($) {
 	$(function () {
 		"use strict";

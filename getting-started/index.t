@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
 	<meta name="author" content="Oleg Kiriljuk">
 	<title>Getting started free jqGrid</title>
@@ -180,9 +180,9 @@ For example, the code below</p>
     <title>Your page title</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.5/css/ui.jqgrid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.6/css/ui.jqgrid.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.5/js/jquery.jqgrid.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.6/js/jquery.jqgrid.min.js"></script>
     <script>
     //<![CDATA[
     $(function () {
@@ -252,7 +252,7 @@ One can use `sorttype: "number"` in the column which holds numbers to change the
 use additionally property `formatter: "number"` to display the number using decimal and thousands separator
 specific for the current locale. The default locale included in <l-html>jquery.jqgrid.min.js</l-html> is en-US. There are
 38 locales included in <l-html>i18n</l-html> folder. To include German locale one needs for example just include</p>
-<pre-html><script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.5/js/i18n/grid.locale-de.min.js"></script>
+<pre-html><script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.6/js/i18n/grid.locale-de.min.js"></script>
 </pre-html>
 <p>in the head of the page (before of after <l-html>jquery.jqgrid.min.js</l-html>).</p>
 <p>Below is an example of the JavaScript code, which uses some features described above:</p>
@@ -264,9 +264,9 @@ specific for the current locale. The default locale included in <l-html>jquery.j
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.5/css/ui.jqgrid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.6/css/ui.jqgrid.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.5/js/jquery.jqgrid.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.6/js/jquery.jqgrid.min.js"></script>
     <script>
     //<![CDATA[
     $(function () {
@@ -314,7 +314,7 @@ specific for the current locale. The default locale included in <l-html>jquery.j
 </html>
 </pre-id-html>
 <p>You can try the example on <a href="https://jsfiddle.net/OlegKi/5w5h2Lgw/3/">JSFiddle</a>.</p>
-<p>The above code uses `iconSet: "fontAwesome"` and includes <a href="http://fontawesome.io/">Font Awesome 4.5.0</a>
+<p>The above code uses `iconSet: "fontAwesome"` and includes <a href="http://fontawesome.io/">Font Awesome 4.x</a>
 `font-awesome.min.css` additionally to CSSs included in the previous examples. You can see the resulting grid below:</p>
 <table id="grid1"></table>
 <p style="margin-top:.5em;">The meaning of the most of properties and options used in jqGrid can be guessed intuitively.</p>
@@ -357,7 +357,7 @@ column properties, which will be typically used together. For example, very comm
 is the shortcut, which allows to specify all the options (and some other used for searching and editing) at once. We use
 the template for columns `amount`, `amount` and `total`.</p>
 <p>The column `closed` uses one more template: `template: "booleanCheckbox"`. The template uses `formatter: "checkboxFontAwesome4"`
-available only if we includes CSS of <a href="http://fontawesome.io/">Font Awesome 4.5.0</a>. The `template: "booleanCheckbox"`
+available only if we includes CSS of <a href="http://fontawesome.io/">Font Awesome 4.x</a>. The `template: "booleanCheckbox"`
 displays Boolean input data `true` and `false` as <i style="font-size: 14.6667px;" class="fa fa-square-o fa-lg" title="Closed"></i> or
 <i style="font-size: 14.6667px;" class="fa fa-check-square-o fa-lg" title="Closed"></i>. The property `firstsortorder: "desc"`
 force to start sorting of the column by descending oder, where the checked items (`true`) will be displayed first. The second
@@ -372,13 +372,13 @@ to add `guiStyle: "bootstrap"` option. The code posted in the previous section c
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.5/css/ui.jqgrid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.6/css/ui.jqgrid.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.5/js/jquery.jqgrid.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.6/js/jquery.jqgrid.min.js"></script>
     <script>
     //<![CDATA[
     $(function () {

@@ -46,6 +46,7 @@ module.exports = function (grunt) {
 		critical: {
 			all: {
 				options: {
+					timeout: 70000,// ms; abort critical CSS generation after this timeout
 					minify: true
 				},
 				src: [
@@ -67,8 +68,8 @@ module.exports = function (grunt) {
 				],
 				overwrite: true,
 				replacements: [{
-					from: /url\(\/fonts\/fontawesome-webfont./g,
-					to: "url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont."
+					from: /url\(\.\.\/\.\.\/fonts\/fontawesome-/g,
+					to: "url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-"
 				}]
 			}
 		},
@@ -175,7 +176,7 @@ module.exports = function (grunt) {
 	});
 	grunt.loadNpmTasks("grunt-contrib-uglify");
 	grunt.loadNpmTasks("grunt-text-replace");
-	//grunt.loadNpmTasks("grunt-contrib-watch");
-	//grunt.loadNpmTasks("grunt-critical");
+	grunt.loadNpmTasks("grunt-contrib-watch");
+	grunt.loadNpmTasks("grunt-critical");
 	grunt.registerTask("default", ["eslint", "uglify:all", "sitebuild", "critical", "replace"]);
 };
