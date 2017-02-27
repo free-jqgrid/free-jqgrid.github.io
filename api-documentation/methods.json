@@ -1,200 +1,247 @@
 [
 	{
-		"base": "$.fn.fmatter",
-		"methodType": "standard",
-		"name": "actions",
-		"category": ["helper", "internal"]
-	},
-	{
-		"base": "$.fn.fmatter.actions",
-		"methodType": "standard",
-		"name": "pageFinalization",
-		"category": ["helper", "internal"]
-	},
-	{
-		"base": "$.fn.fmatter",
-		"methodType": "standard",
-		"name": "checkbox",
-		"category": ["helper", "internal"]
-	},
-	{
-		"base": "$.fn.fmatter.checkbox",
-		"methodType": "standard",
-		"name": "getCellBuilder",
-		"category": ["helper", "internal"]
-	},
-	{
-		"base": "$.fn.fmatter",
-		"methodType": "standard",
-		"name": "checkboxFontAwesome4",
-		"category": ["helper", "internal"]
-	},
-	{
-		"base": "$.fn.fmatter.checkboxFontAwesome4",
-		"methodType": "standard",
-		"name": "getCellBuilder",
-		"category": ["helper", "internal"]
-	},
-	{
-		"base": "$.fn.fmatter.checkboxFontAwesome4",
-		"methodType": "standard",
-		"name": "unformat",
-		"category": ["helper", "internal"]
-	},
-	{
-		"base": "$.fn.fmatter",
-		"methodType": "standard",
-		"name": "currency",
-		"category": ["helper", "internal"]
-	},
-	{
-		"base": "$.fn.fmatter.currency",
-		"methodType": "standard",
-		"name": "getCellBuilder",
-		"category": ["helper", "internal"]
-	},
-	{
-		"base": "$.fn.fmatter",
-		"methodType": "standard",
-		"name": "date",
-		"category": ["helper", "internal"]
-	},
-	{
-		"base": "$.fn.fmatter.date",
-		"methodType": "standard",
-		"name": "getCellBuilder",
-		"category": ["helper", "internal"]
-	},
-	{
-		"base": "$.fn.fmatter",
-		"methodType": "standard",
-		"name": "defaultFormat",
-		"category": ["helper", "internal"]
-	},
-	{
-		"base": "$.fn.fmatter",
-		"methodType": "standard",
-		"name": "email",
-		"category": ["helper", "internal"]
-	},
-	{
-		"base": "$.fn.fmatter",
-		"methodType": "standard",
-		"name": "getCellBuilder",
-		"category": ["helper", "internal"]
-	},
-	{
-		"base": "$.fn.fmatter",
-		"methodType": "standard",
-		"name": "integer",
-		"category": ["helper", "internal"]
-	},
-	{
-		"base": "$.fn.fmatter.integer",
-		"methodType": "standard",
-		"name": "getCellBuilder",
-		"category": ["helper", "internal"]
-	},
-	{
-		"base": "$.fn.fmatter",
-		"methodType": "standard",
-		"name": "link",
-		"category": ["helper", "internal"]
-	},
-	{
-		"base": "$.fn.fmatter",
-		"methodType": "standard",
-		"name": "number",
-		"category": ["helper", "internal"]
-	},
-	{
-		"base": "$.fn.fmatter.number",
-		"methodType": "standard",
-		"name": "getCellBuilder",
-		"category": ["helper", "internal"]
-	},
-	{
-		"base": "$.fn.fmatter",
-		"methodType": "standard",
-		"name": "rowactions",
-		"category": ["helper", "internal"]
-	},
-	{
-		"base": "$.fn.fmatter",
-		"methodType": "standard",
-		"name": "select",
-		"category": ["helper", "internal"]
-	},
-	{
-		"base": "$.fn.fmatter.select",
-		"methodType": "standard",
-		"name": "getCellBuilder",
-		"category": ["helper", "internal"]
-	},
-	{
-		"base": "$.fn.fmatter",
-		"methodType": "standard",
-		"name": "showlink",
-		"category": ["helper", "internal"]
-	},
-	{
-		"base": "$.fn.fmatter.showlink",
-		"methodType": "standard",
-		"name": "getCellBuilder",
-		"category": ["helper", "internal"]
-	},
-	{
-		"base": "$.fn.fmatter.showlink",
-		"methodType": "standard",
-		"name": "pageFinalization",
-		"category": ["helper", "internal"]
-	},
-	{
+		"name": "fmatter",
 		"base": "$.fn",
+		"module": "jquery.fmatter",
 		"methodType": "static",
-		"name": "jqDrag",
 		"category": ["helper"]
 	},
 	{
-		"base": "$.fn",
+		"name": "actions",
+		"base": "$.fn.fmatter",
+		"module": "jquery.fmatter",
 		"methodType": "standard",
+		"category": ["helper", "internal"]
+	},
+	{
+		"name": "pageFinalization",
+		"base": "$.fn.fmatter.actions",
+		"module": "jquery.fmatter",
+		"methodType": "standard",
+		"category": ["helper", "internal"]
+	},
+	{
+		"name": "checkbox",
+		"base": "$.fn.fmatter",
+		"module": "jquery.fmatter",
+		"methodType": "standard",
+		"category": ["helper", "internal"]
+	},
+	{
+		"name": "getCellBuilder",
+		"base": "$.fn.fmatter.checkbox",
+		"module": "jquery.fmatter",
+		"methodType": "standard",
+		"category": ["helper", "internal"]
+	},
+	{
+		"name": "checkboxFontAwesome4",
+		"base": "$.fn.fmatter",
+		"module": "jquery.fmatter",
+		"methodType": "standard",
+		"category": ["helper", "internal"]
+	},
+	{
+		"name": "getCellBuilder",
+		"base": "$.fn.fmatter.checkboxFontAwesome4",
+		"module": "jquery.fmatter",
+		"methodType": "standard",
+		"category": ["helper", "internal"]
+	},
+	{
+		"name": "unformat",
+		"base": "$.fn.fmatter.checkboxFontAwesome4",
+		"module": "jquery.fmatter",
+		"methodType": "standard",
+		"category": ["helper", "internal"]
+	},
+	{
+		"name": "currency",
+		"base": "$.fn.fmatter",
+		"module": "jquery.fmatter",
+		"methodType": "standard",
+		"category": ["helper", "internal"]
+	},
+	{
+		"name": "getCellBuilder",
+		"base": "$.fn.fmatter.currency",
+		"module": "jquery.fmatter",
+		"methodType": "standard",
+		"category": ["helper", "internal"]
+	},
+	{
+		"name": "date",
+		"base": "$.fn.fmatter",
+		"module": "jquery.fmatter",
+		"methodType": "standard",
+		"category": ["helper", "internal"]
+	},
+	{
+		"name": "getCellBuilder",
+		"base": "$.fn.fmatter.date",
+		"module": "jquery.fmatter",
+		"methodType": "standard",
+		"category": ["helper", "internal"]
+	},
+	{
+		"name": "defaultFormat",
+		"base": "$.fn.fmatter",
+		"module": "jquery.fmatter",
+		"methodType": "standard",
+		"category": ["helper", "internal"]
+	},
+	{
+		"name": "email",
+		"base": "$.fn.fmatter",
+		"module": "jquery.fmatter",
+		"methodType": "standard",
+		"category": ["helper", "internal"]
+	},
+	{
+		"name": "getCellBuilder",
+		"base": "$.fn.fmatter",
+		"module": "jquery.fmatter",
+		"methodType": "standard",
+		"category": ["helper", "internal"]
+	},
+	{
+		"name": "integer",
+		"base": "$.fn.fmatter",
+		"module": "jquery.fmatter",
+		"methodType": "standard",
+		"category": ["helper", "internal"]
+	},
+	{
+		"name": "getCellBuilder",
+		"base": "$.fn.fmatter.integer",
+		"module": "jquery.fmatter",
+		"methodType": "standard",
+		"category": ["helper", "internal"]
+	},
+	{
+		"name": "link",
+		"base": "$.fn.fmatter",
+		"module": "jquery.fmatter",
+		"methodType": "standard",
+		"category": ["helper", "internal"]
+	},
+	{
+		"name": "number",
+		"base": "$.fn.fmatter",
+		"module": "jquery.fmatter",
+		"methodType": "standard",
+		"category": ["helper", "internal"]
+	},
+	{
+		"name": "getCellBuilder",
+		"base": "$.fn.fmatter.number",
+		"module": "jquery.fmatter",
+		"methodType": "standard",
+		"category": ["helper", "internal"]
+	},
+	{
+		"name": "rowactions",
+		"base": "$.fn.fmatter",
+		"module": "jquery.fmatter",
+		"methodType": "standard",
+		"category": ["helper", "internal"]
+	},
+	{
+		"name": "select",
+		"base": "$.fn.fmatter",
+		"module": "jquery.fmatter",
+		"methodType": "standard",
+		"category": ["helper", "internal"]
+	},
+	{
+		"name": "getCellBuilder",
+		"base": "$.fn.fmatter.select",
+		"module": "jquery.fmatter",
+		"methodType": "standard",
+		"category": ["helper", "internal"]
+	},
+	{
+		"name": "showlink",
+		"base": "$.fn.fmatter",
+		"module": "jquery.fmatter",
+		"methodType": "standard",
+		"category": ["helper", "internal"]
+	},
+	{
+		"name": "getCellBuilder",
+		"base": "$.fn.fmatter.showlink",
+		"module": "jquery.fmatter",
+		"methodType": "standard",
+		"category": ["helper", "internal"]
+	},
+	{
+		"name": "pageFinalization",
+		"base": "$.fn.fmatter.showlink",
+		"module": "jquery.fmatter",
+		"methodType": "standard",
+		"category": ["helper", "internal"]
+	},
+	{
+		"name": "jqDrag",
+		"base": "$.fn",
+		"module": "jqdnr",
+		"methodType": "standard",
+		"category": ["helper"]
+	},
+	{
+		"name": "jqResize",
+		"base": "$.fn",
+		"module": "jqdnr",
+		"methodType": "standard",
+		"category": ["helper"]
+	},
+	{
 		"name": "jqFilter",
+		"base": "$.fn",
+		"module": "grid.filter",
+		"methodType": "standard",
 		"addChildNode": ["constructor", "helper", "searching"]
 	},
 	{
-		"base": "$.fn.jqFilter",
-		"methodType": "standard",
 		"name": "addFilter",
+		"base": "$.fn.jqFilter",
+		"module": "grid.filter",
+		"methodType": "standard",
 		"addChildNode": ["helper", "searching", "internal"]
 	},
 	{
-		"base": "$.fn.jqFilter",
-		"methodType": "standard",
 		"name": "filterData",
+		"base": "$.fn.jqFilter",
+		"module": "grid.filter",
+		"methodType": "standard",
 		"addChildNode": ["helper", "searching", "internal"]
 	},
 	{
-		"base": "$.fn.jqFilter",
-		"methodType": "standard",
 		"name": "getParameter",
+		"base": "$.fn.jqFilter",
+		"module": "grid.filter",
+		"methodType": "standard",
 		"addChildNode": ["helper", "searching", "internal"]
 	},
 	{
-		"base": "$.fn.jqFilter",
-		"methodType": "standard",
 		"name": "resetFilter",
-		"addChildNode": ["helper", "searching", "internal"]
-	},
-	{
 		"base": "$.fn.jqFilter",
+		"module": "grid.filter",
 		"methodType": "standard",
-		"name": "toSQLString",
 		"addChildNode": ["helper", "searching", "internal"]
 	},
 	{
-		"base": "$.fn",
+		"name": "toSQLString",
+		"base": "$.fn.jqFilter",
+		"module": "grid.filter",
 		"methodType": "standard",
+		"addChildNode": ["helper", "searching", "internal"]
+	},
+	{
 		"name": "jqGrid",
+		"base": "$.fn",
+		"module": "grid.base",
+		"methodType": "standard",
 		"addChildNode": ["constructor"]
 	},
 	{
@@ -1222,12 +1269,6 @@
 		"methodType": "standard",
 		"name": "prevCell",
 		"category": ["editing", "cell-editing"]
-	},
-	{
-		"base": "$.fn",
-		"methodType": "static",
-		"name": "jqResize",
-		"category": ["helper"]
 	},
 	{
 		"base": "$.fn.jqGrid",
