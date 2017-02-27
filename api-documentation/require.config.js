@@ -1,16 +1,11 @@
 /*global require,define*/
 require.config({
-	//"baseUrl": ".",
-	//skipDirOptimize: true,
 	paths: {
 		"free-jqgrid": [
-			"https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.5/js/jquery.jqgrid.min"
+			"https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.0/modules/min/"
 		],
-		"free-jqgrid-js": [
-			"https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.5/js"
-		],
-		"free-jqgrid-js-min": [
-			"https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.5/js/min"
+		"free-jqgrid-plugins": [
+			"https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.0/plugins/min"
 		],
 		jquery: [
 			"https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min"
@@ -28,8 +23,7 @@ define([
 	"jquery",
 	"prettify",
 	"jquery-ui",
-	//"free-jqgrid"
-	"free-jqgrid-js-min/grid.custom"
+	"free-jqgrid/grid.custom"
 ], function($) {
 	$(function () {
 		"use strict";

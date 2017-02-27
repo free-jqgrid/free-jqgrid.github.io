@@ -12,18 +12,33 @@
 	<link rel="preload" as="script" crossorigin="anonymous"
 		href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"
 		integrity="sha384-YWP9O4NjmcGo4oEJFXvvYSEzuHIvey+LbXkBNJ1Kd0yfugEZN9NCQNpRYBVC1RvA">
-	<link rel="preload" as="script" crossorigin="anonymous"
-		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.5/js/jquery.jqgrid.min.js"
-		integrity="sha384-iiqLfmfhYpoxDemmvtFvidYdaDBovrjzDsRuNbVKQfEuCqZ8+jEqL4Ghu6IofClM">
 	<link rel="preload" href="methods.json">
 	<link rel="prefetch" href="methods.json">
 
 	<link rel="preload" as="style" crossorigin="anonymous" onload="this.rel='stylesheet'"
-		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.5/css/ui.jqgrid.min.css"
-		integrity="sha384-kpU+p/QlN4Jiue9BMOLbG3RaFwNs1L/mt2ONkw45SXt7oB4NvIw6ApRFqObITjsL">
+		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.0/css/ui.jqgrid.min.css"
+		integrity="sha384-CBFfj5K1lM/ysApOnrpK2i8VXrNLGLuHDiNn3EMZM9J5kcajoEM5v+wN/o3p7qJq">
 	<noscript><link rel="stylesheet" crossorigin="anonymous"
-		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.5/css/ui.jqgrid.min.css"
-		integrity="sha384-kpU+p/QlN4Jiue9BMOLbG3RaFwNs1L/mt2ONkw45SXt7oB4NvIw6ApRFqObITjsL"></noscript>
+		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.0/css/ui.jqgrid.min.css"
+		integrity="sha384-CBFfj5K1lM/ysApOnrpK2i8VXrNLGLuHDiNn3EMZM9J5kcajoEM5v+wN/o3p7qJq"></noscript>
+	<link rel="preload" as="script" crossorigin="anonymous"
+		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.0/modules/min/grid.base.js"
+		integrity="sha384-R+cT9q6IuqVo/pfroCOy5Ce+yTPjdgvU7XP8In9xNeSkhWyZCzs+F8YTkS5GRttn">
+	<link rel="preload" as="script" crossorigin="anonymous"
+		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.0/modules/min/jquery.fmatter.js"
+		integrity="sha384-q8Wz+4dR1lwwDSR9oNqB2jB6z8et2MUSGGZS2e6x/GiwIFXB6G5eQKYQ2JbUD7BD">
+	<link rel="preload" as="script" crossorigin="anonymous"
+		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.0/modules/min/grid.common.js"
+		integrity="sha384-uO6SHzM32E6ZbuW5QkSLOL8gUX7gj77Dm9PLLgJAL4im52phBYKjRwwfgDUoUvBn">
+	<link rel="preload" as="script" crossorigin="anonymous"
+		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.0/modules/min/jqdnr.js"
+		integrity="sha384-941p4h68nPzNGcrXXuWwaM4uKEC0ErT2tVojj1P711oUyLiROfOgWcewwZBxVG9P">		
+	<link rel="preload" as="script" crossorigin="anonymous"
+		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.0/modules/min/jqmodal.js"
+		integrity="sha384-YLf13c0SDjfM/TLLJMreGhPtnfKRy+0n6q7okpT/KhbdQSeVWN/VTtu7OMIPt7Kk">
+	<link rel="preload" as="script" crossorigin="anonymous"
+		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.0/modules/min/grid.custom.js"
+		integrity="sha384-98pDcx40aG3OUCMQZW4vFsnOVQVnzNFIV+hrrddpiOyYkXRqRLkoJK7tJ0t5aHpt">
 <!--@@commonHeadIncludes-->
 </head>
 <body>
