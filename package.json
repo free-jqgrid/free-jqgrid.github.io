@@ -8,9 +8,9 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "critical": "^0.8.3",
+    "critical": "^0.8.4",
     "grunt": "^1.0.1",
-    "grunt-contrib-uglify": "^2.1.0",
+    "grunt-contrib-uglify": "^2.3.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-critical": "^0.2.2",
     "grunt-eslint": "^19.0.0",
