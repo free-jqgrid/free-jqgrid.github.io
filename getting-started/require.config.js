@@ -24,9 +24,9 @@ require.config({
 
 define([
 	"jquery",
-	"prettify",
 	"jquery-ui",
-	"free-jqgrid/grid.custom"
+	"free-jqgrid/grid.custom",
+	"prettify"
 ], function($) {
 	$(function () {
 		"use strict";

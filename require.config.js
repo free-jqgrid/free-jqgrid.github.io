@@ -11,6 +11,6 @@ require.config({
 
 define([
 	"prettify"
-], function() {
+], function () {
 	"use strict";
 });
