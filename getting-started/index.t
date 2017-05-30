@@ -25,29 +25,29 @@
 		crossorigin="anonymous">
 
 	<link rel="preload" as="style" crossorigin="anonymous" onload="this.rel='stylesheet'"
-		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.0/css/ui.jqgrid.min.css"
-		integrity="sha384-CBFfj5K1lM/ysApOnrpK2i8VXrNLGLuHDiNn3EMZM9J5kcajoEM5v+wN/o3p7qJq">
+		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.1/css/ui.jqgrid.min.css"
+		integrity="sha384-u8OuIQ+o+vnlopCNCvMt+yfUAvf6sxgapU4VEuCDbcBdOh88gBw5nPpyms9aXjD/">
 	<noscript><link rel="stylesheet" crossorigin="anonymous"
-		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.0/css/ui.jqgrid.min.css"
-		integrity="sha384-CBFfj5K1lM/ysApOnrpK2i8VXrNLGLuHDiNn3EMZM9J5kcajoEM5v+wN/o3p7qJq"></noscript>
+		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.1/css/ui.jqgrid.min.css"
+		integrity="sha384-u8OuIQ+o+vnlopCNCvMt+yfUAvf6sxgapU4VEuCDbcBdOh88gBw5nPpyms9aXjD/"></noscript>
 	<link rel="preload" as="script" crossorigin="anonymous"
-		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.0/modules/min/grid.base.js"
-		integrity="sha384-R+cT9q6IuqVo/pfroCOy5Ce+yTPjdgvU7XP8In9xNeSkhWyZCzs+F8YTkS5GRttn">
+		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.1/modules/min/grid.base.js"
+		integrity="sha384-Y4CMlcA2EENr5Yr6MQcAxbwp/KfplRiZebjrXs46vdxeE58TqWzZhjYMTgFdgWs4">
 	<link rel="preload" as="script" crossorigin="anonymous"
-		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.0/modules/min/jquery.fmatter.js"
-		integrity="sha384-q8Wz+4dR1lwwDSR9oNqB2jB6z8et2MUSGGZS2e6x/GiwIFXB6G5eQKYQ2JbUD7BD">
+		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.1/modules/min/jquery.fmatter.js"
+		integrity="sha384-93PHlXzia23WWG+qM6ZYsFOxLRBjh5gFidILnGCMFGuDF4XmiHPIKvKNlG6Wwl/b">
 	<link rel="preload" as="script" crossorigin="anonymous"
-		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.0/modules/min/grid.common.js"
-		integrity="sha384-uO6SHzM32E6ZbuW5QkSLOL8gUX7gj77Dm9PLLgJAL4im52phBYKjRwwfgDUoUvBn">
+		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.1/modules/min/grid.common.js"
+		integrity="sha384-5j6kLRibHUI2qaLdaP2mfbYKe2n6LcX0tfFfDENWvuL7RhSQ9xRbkNyst+KkJaLA">
 	<link rel="preload" as="script" crossorigin="anonymous"
-		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.0/modules/min/jqdnr.js"
-		integrity="sha384-941p4h68nPzNGcrXXuWwaM4uKEC0ErT2tVojj1P711oUyLiROfOgWcewwZBxVG9P">		
+		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.1/modules/min/jqdnr.js"
+		integrity="sha384-EP7mlAM6r/i1iINvjKFbECu9gxHUPV6cA0/owe+jRO8ydHG5X9vs0NyjF4NX0jUj">		
 	<link rel="preload" as="script" crossorigin="anonymous"
-		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.0/modules/min/jqmodal.js"
-		integrity="sha384-YLf13c0SDjfM/TLLJMreGhPtnfKRy+0n6q7okpT/KhbdQSeVWN/VTtu7OMIPt7Kk">
+		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.1/modules/min/jqmodal.js"
+		integrity="sha384-xyuHfJ0yNMSFEdgj2wHwDB/DuZdrdL/YqOqOaOg8vn9ZUygryhAMhknDE7PB7ICX">
 	<link rel="preload" as="script" crossorigin="anonymous"
-		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.0/modules/min/grid.custom.js"
-		integrity="sha384-98pDcx40aG3OUCMQZW4vFsnOVQVnzNFIV+hrrddpiOyYkXRqRLkoJK7tJ0t5aHpt">
+		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.1/modules/min/grid.custom.js"
+		integrity="sha384-KUPEygM0MGy2eMkznGJ+e+sF3Ucb6vg56q0ooRQ2v8k/ISxNKgDj8dc5qsNqsuqj">
 
 <!--@@commonHeadIncludes-->
 <style>
@@ -180,9 +180,9 @@ For example, the code below</p>
     <title>Your page title</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.0/css/ui.jqgrid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.1/css/ui.jqgrid.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.0/jquery.jqgrid.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.1/jquery.jqgrid.min.js"></script>
     <script>
     //<![CDATA[
     $(function () {
@@ -252,7 +252,7 @@ One can use `sorttype: "number"` in the column which holds numbers to change the
 use additionally property `formatter: "number"` to display the number using decimal and thousands separator
 specific for the current locale. The default locale included in <l-html>jquery.jqgrid.min.js</l-html> is en-US. There are
 38 locales included in <l-html>i18n</l-html> folder. To include German locale one needs for example just include</p>
-<pre-html><script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.0/js/i18n/min/grid.locale-de.js"></script>
+<pre-html><script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.1/i18n/min/grid.locale-de.js"></script>
 </pre-html>
 <p>in the head of the page (before of after <l-html>jquery.jqgrid.min.js</l-html>).</p>
 <p>Below is an example of the JavaScript code, which uses some features described above:</p>
@@ -264,9 +264,9 @@ specific for the current locale. The default locale included in <l-html>jquery.j
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.0/css/ui.jqgrid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.1/css/ui.jqgrid.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.0/jquery.jqgrid.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.1/jquery.jqgrid.min.js"></script>
     <script>
     //<![CDATA[
     $(function () {
@@ -375,10 +375,10 @@ to add `guiStyle: "bootstrap"` option. The code posted in the previous section c
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.0/css/ui.jqgrid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.1/css/ui.jqgrid.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.0/jquery.jqgrid.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.14.1/jquery.jqgrid.min.js"></script>
     <script>
     //<![CDATA[
     $(function () {
