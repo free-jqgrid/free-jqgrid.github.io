@@ -79,14 +79,38 @@ module.exports = function (grunt) {
 					commonHeadIncludes: "commonHeadIncludes.htm",
 					menuHeader: "menuHeader.htm",
 					shortcuts: [
-						{ from: /<h([1-9])link\s*id\s*=\s*([\"|\'])(.*?)\2>/g, to: "<h$1 id=\"$3\"><a class=\"anchor\" href=\"#$3\"><span class=\"fa fa-link\"><\/span><\/a><a href=\"#$3\">" },
-						{ from: /<\/h([1-9])link>/g, to: "<\/a><\/h$1>" },
-						{ from: /<l-(js|css|html)>/g, to: "<code class=\"prettyprint lang-$1\">" },
-						{ from: /<\/l-(js|css|html)>/g, to: "<\/code>" },
-						{ from: /<pre-(js|css|html)>/g, to: "<pre class=\"prettyprint lang-$1\"><code>" },
-						{ from: /<\/pre-(js|css|html)>/g, to: "<\/code><\/pre>" },
-						{ from: /<pre-id-(js|css|html)\s*id\s*=\s*([\"|\'])(.*?)\2>/g, to: "<div id=\"$3\"><pre class=\"prettyprint lang-$1\"><a class=\"anchor\" href=\"#$3\"><span class=\"fa fa-link\"></span></a><a href=\"#$3\"><code>" },
-						{ from: /<\/pre-id-(js|css|html)>/g, to: "<\/code><\/a><\/pre><\/div>" }
+						{
+							from: /<h([1-9])link\s*id\s*=\s*(["|'])(.*?)\2>/g,
+							to: "<h$1 id=\"$3\"><a class=\"anchor\" href=\"#$3\"><span class=\"fa fa-link\"></span></a><a href=\"#$3\">"
+						},
+						{
+							from: /<\/h([1-9])link>/g,
+							to: "</a></h$1>"
+						},
+						{
+							from: /<l-(js|css|html)>/g,
+							to: "<code class=\"prettyprint lang-$1\">"
+						},
+						{
+							from: /<\/l-(js|css|html)>/g,
+							to: "</code>"
+						},
+						{
+							from: /<pre-(js|css|html)>/g,
+							to: "<pre class=\"prettyprint lang-$1\"><code>"
+						},
+						{
+							from: /<\/pre-(js|css|html)>/g,
+							to: "</code></pre>"
+						},
+						{
+							from: /<pre-id-(js|css|html)\s*id\s*=\s*(["|'])(.*?)\2>/g,
+							to: "<div id=\"$3\"><pre class=\"prettyprint lang-$1\"><a class=\"anchor\" href=\"#$3\"><span class=\"fa fa-link\"></span></a><a href=\"#$3\"><code>"
+						},
+						{
+							from: /<\/pre-id-(js|css|html)>/g,
+							to: "</code></a></pre></div>"
+						}
 					]
 				},
 				files: [
@@ -163,7 +187,7 @@ module.exports = function (grunt) {
 					//	'", p3="' + p3 + '", p4="' + p4 + '", offset="' + offset + '"');
 					return p1 +
 						p2.replace(/&/g, "&amp;")
-							.replace(/\"/g, "&quot;")
+							.replace(/"/g, "&quot;")
 							.replace(/</g, "&lt;")
 							.replace(/>/g, "&gt;") +
 						p4;
