@@ -252,9 +252,9 @@ For example, the code below</p>
     &lt;title&gt;Your page title&lt;/title&gt;
     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css&quot;&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/css/ui.jqgrid.min.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.2/css/ui.jqgrid.min.css&quot;&gt;
     &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/jquery.jqgrid.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.2/jquery.jqgrid.min.js&quot;&gt;&lt;/script&gt;
     &lt;script&gt;
     //&lt;![CDATA[
     $(function () {
@@ -281,7 +281,7 @@ For example, the code below</p>
 &lt;/body&gt;
 &lt;/html&gt;
 </code></a></pre></div>
-<p>You can try the example on <a href="https://jsfiddle.net/OlegKi/ehxq6440/">JSFiddle</a>.</p>
+<p>You can try the example on <a href="https://jsfiddle.net/OlegKi/edqL7hbu/">JSFiddle</a>.</p>
 <p>It's important to understand that the empty <code class="prettyprint lang-html">&lt;table&gt;</code> will be converted to relatively complex
 structure of divs and tables. One can use, for example, Chrome developer tools to examine the grid after creating:</p>
 <div id="grid-internal-div"><a class="anchor" href="#grid-internal-div"><span class="fa fa-link"></span></a>
@@ -324,7 +324,7 @@ One can use <code class="prettyprint lang-js">sorttype: &quot;number&quot;</code
 use additionally property <code class="prettyprint lang-js">formatter: &quot;number&quot;</code> to display the number using decimal and thousands separator
 specific for the current locale. The default locale included in <code class="prettyprint lang-html">jquery.jqgrid.min.js</code> is en-US. There are
 38 locales included in <code class="prettyprint lang-html">i18n</code> folder. To include German locale one needs for example just include</p>
-<pre class="prettyprint lang-html"><code>&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/i18n/min/grid.locale-de.js&quot;&gt;&lt;/script&gt;
+<pre class="prettyprint lang-html"><code>&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.2/i18n/min/grid.locale-de.js&quot;&gt;&lt;/script&gt;
 </code></pre>
 <p>in the head of the page (before of after <code class="prettyprint lang-html">jquery.jqgrid.min.js</code>).</p>
 <p>Below is an example of the JavaScript code, which uses some features described above:</p>
@@ -336,9 +336,9 @@ specific for the current locale. The default locale included in <code class="pre
     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css&quot;&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/css/ui.jqgrid.min.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.2/css/ui.jqgrid.min.css&quot;&gt;
     &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/jquery.jqgrid.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.2/jquery.jqgrid.min.js&quot;&gt;&lt;/script&gt;
     &lt;script&gt;
     //&lt;![CDATA[
     $(function () {
@@ -385,7 +385,7 @@ specific for the current locale. The default locale included in <code class="pre
 &lt;/body&gt;
 &lt;/html&gt;
 </code></a></pre></div>
-<p>You can try the example on <a href="https://jsfiddle.net/OlegKi/dnfk8hmr/">JSFiddle</a>. </p>
+<p>You can try the example on <a href="https://jsfiddle.net/OlegKi/52boyw5x/">JSFiddle</a>. </p>
 <p>The above code uses <code class="prettyprint lang-js">iconSet: &quot;fontAwesome&quot;</code> and includes <a href="http://fontawesome.io/">Font Awesome 4.x</a>
 <code class="prettyprint lang-js">font-awesome.min.css</code> additionally to CSSs included in the previous examples. You can see the resulting grid below:</p>
 <table id="grid1"></table>
@@ -447,10 +447,10 @@ to add <code class="prettyprint lang-js">guiStyle: &quot;bootstrap&quot;</code> 
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot;&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css&quot;&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/css/ui.jqgrid.min.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.2/css/ui.jqgrid.min.css&quot;&gt;
     &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/jquery.jqgrid.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.2/jquery.jqgrid.min.js&quot;&gt;&lt;/script&gt;
     &lt;script&gt;
     //&lt;![CDATA[
     $(function () {
