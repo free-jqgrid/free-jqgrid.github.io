@@ -8,7 +8,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "critical": "^0.9.1",
+    "critical": "^1.0.0",
     "grunt": "^1.0.1",
     "grunt-contrib-uglify": "^3.1.0",
     "grunt-contrib-watch": "^1.0.0",
