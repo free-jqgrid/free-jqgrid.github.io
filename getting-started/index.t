@@ -177,8 +177,8 @@ For example, the code below</p>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Your page title</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Your page title</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.3/css/ui.jqgrid.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -262,6 +262,7 @@ specific for the current locale. The default locale included in <l-html>jquery.j
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Your page title</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.3/css/ui.jqgrid.min.css">
@@ -372,6 +373,7 @@ to add `guiStyle: "bootstrap"` option. The code posted in the previous section c
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Your page title</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
@@ -445,6 +447,88 @@ to add `guiStyle: "bootstrap"` option. The code posted in the previous section c
 </div>
 <p style="margin-top:.5em;">We removed the option `iconSet: "fontAwesome"` in the last example additionally, to show that the default value
 of `iconSet` option is `iconSet: "glyph"` (instead of `iconSet: "jQueryUI"`) in case of usage Bootstrap CSS.</p>
+<p>To use Bootstrap 4 instead of Bootstrap 3 one need just to replace `guiStyle: "bootstrap"` parameter to `guiStyle: "bootstrap4"`.
+jqGrid uses only Bootstrap CSS and no JavaScript files of Bootsrap, but if you do need `bootstrap.min.js` then you need to include
+both `popper.min.js` and `bootstrap.min.js`. Be carefull, that jqGrid can't be used with slim version of jQuery.
+One need to include the full version instead. The resulting code could be the following, for example:</p>
+<pre-id-html id="bootstrap4_code"><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Demo which uses Bootstrap 4</title>
+    <link rel="stylesheet" crossorigin="anonymous"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha256-LA89z+k9fjgMKQ/kq4OO2Mrf8VltYml/VES+Rg0fh20=">
+    <link rel="stylesheet" crossorigin="anonymous"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=">
+    <link rel="stylesheet" crossorigin="anonymous"
+          href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.3/css/ui.jqgrid.min.css"
+          integrity="sha256-Dc0KYGQqTeEYDX6NdgvYnTU9imh7vPNy5aOJSrOK0Ns=">
+    <script crossorigin="anonymous" src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="></script>
+    <!-- the next line need be uncommented if you need to use bootstrap.min.js -->
+    <!--<script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.1/umd/popper.min.js"
+            integrity="sha256-AoNQZpaRmemSTxMy9xcqXX5VLwI6IMPYugO7bFHOW+U="></script>
+    <script crossorigin="anonymous" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha256-5+02zu5UULQkO7w1GIr6vftCgMfFdZcAHeDtFnKZsBs="></script>-->
+    <script>
+        $.jgrid = $.jgrid || {};
+        $.jgrid.no_legacy_api = true;
+    </script>
+    <script crossorigin="anonymous"
+            src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.3/jquery.jqgrid.min.js"
+            integrity="sha256-oldv0Jj7ycfYK4MW0JQ3qPRqibS9nSA527dmZX8jI3Q="></script>
+    <script>
+    //<![CDATA[
+    $(function () {
+        "use strict";
+        $("#grid1b").jqGrid({
+            colModel: [
+                { name: "name", label: "Client", width: 53 },
+                { name: "invdate", label: "Date", width: 75, align: "center", sorttype: "date",
+                    formatter: "date", formatoptions: { newformat: "d-M-Y" } },
+                { name: "amount", label: "Amount", width: 65, template: "number" },
+                { name: "tax", label: "Tax", width: 41, template: "number" },
+                { name: "total", label: "Total", width: 51, template: "number" },
+                { name: "closed", label: "Closed", width: 59, template: "booleanCheckbox", firstsortorder: "desc" },
+                { name: "ship_via", label: "Shipped via", width: 87, align: "center", formatter: "select",
+                    formatoptions: { value: "FE:FedEx;TN:TNT;DH:DHL", defaultValue: "DH" } }
+            ],
+            data: [
+                { id: "10",  invdate: "2015-10-01", name: "test",   amount: "" },
+                { id: "20",  invdate: "2015-09-01", name: "test2",  amount: "300.00", tax: "20.00", closed: false, ship_via: "FE", total: "320.00" },
+                { id: "30",  invdate: "2015-09-01", name: "test3",  amount: "400.00", tax: "30.00", closed: false, ship_via: "FE", total: "430.00" },
+                { id: "40",  invdate: "2015-10-04", name: "test4",  amount: "200.00", tax: "10.00", closed: true,  ship_via: "TN", total: "210.00" },
+                { id: "50",  invdate: "2015-10-31", name: "test5",  amount: "300.00", tax: "20.00", closed: false, ship_via: "FE", total: "320.00" },
+                { id: "60",  invdate: "2015-09-06", name: "test6",  amount: "400.00", tax: "30.00", closed: false, ship_via: "FE", total: "430.00" },
+                { id: "70",  invdate: "2015-10-04", name: "test7",  amount: "200.00", tax: "10.00", closed: true,  ship_via: "TN", total: "210.00" },
+                { id: "80",  invdate: "2015-10-03", name: "test8",  amount: "300.00", tax: "20.00", closed: false, ship_via: "FE", total: "320.00" },
+                { id: "90",  invdate: "2015-09-01", name: "test9",  amount: "400.00", tax: "30.00", closed: false, ship_via: "TN", total: "430.00" },
+                { id: "100", invdate: "2015-09-08", name: "test10", amount: "500.00", tax: "30.00", closed: true,  ship_via: "TN", total: "530.00" },
+                { id: "110", invdate: "2015-09-08", name: "test11", amount: "500.00", tax: "30.00", closed: false, ship_via: "FE", total: "530.00" },
+                { id: "120", invdate: "2015-09-10", name: "test12", amount: "500.00", tax: "30.00", closed: false, ship_via: "FE", total: "530.00" }
+            ],
+            guiStyle: "bootstrap4",
+            iconSet: "fontAwesome",
+            idPrefix: "gb1_",
+            rownumbers: true,
+            sortname: "invdate",
+            sortorder: "desc",
+            caption: "The grid, which uses predefined formatters and templates"
+        });
+    });
+    //]]>
+    </script>
+</head>
+<body>
+<table id="grid1b"></table>
+</body>
+</html>
+</pre-id-html>
+<p>See <a href="https://jsfiddle.net/OlegKi/d1ajvyz9/">https://jsfiddle.net/OlegKi/d1ajvyz9/</a>.</p>
 <h3link id="paging_searching_filtering">Paging, searching, filtering</h3link>
 <p>Paging, searching and filtering are extreamly important in case of displaying large set of information.
 One should understand that displaying thousands or rows of the data have no value for the user. The user need to know
