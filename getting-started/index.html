@@ -249,8 +249,8 @@ For example, the code below</p>
 &lt;head&gt;
     &lt;meta charset=&quot;utf-8&quot;&gt;
     &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-    &lt;title&gt;Your page title&lt;/title&gt;
     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;
+    &lt;title&gt;Your page title&lt;/title&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css&quot;&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.3/css/ui.jqgrid.min.css&quot;&gt;
     &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
@@ -334,6 +334,7 @@ specific for the current locale. The default locale included in <code class="pre
     &lt;meta charset=&quot;utf-8&quot;&gt;
     &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;
+    &lt;title&gt;Your page title&lt;/title&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css&quot;&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.3/css/ui.jqgrid.min.css&quot;&gt;
@@ -444,6 +445,7 @@ to add <code class="prettyprint lang-js">guiStyle: &quot;bootstrap&quot;</code> 
     &lt;meta charset=&quot;utf-8&quot;&gt;
     &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;
+    &lt;title&gt;Your page title&lt;/title&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot;&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css&quot;&gt;
@@ -517,6 +519,88 @@ to add <code class="prettyprint lang-js">guiStyle: &quot;bootstrap&quot;</code> 
 </div>
 <p style="margin-top:.5em;">We removed the option <code class="prettyprint lang-js">iconSet: &quot;fontAwesome&quot;</code> in the last example additionally, to show that the default value
 of <code class="prettyprint lang-js">iconSet</code> option is <code class="prettyprint lang-js">iconSet: &quot;glyph&quot;</code> (instead of <code class="prettyprint lang-js">iconSet: &quot;jQueryUI&quot;</code>) in case of usage Bootstrap CSS.</p>
+<p>To use Bootstrap 4 instead of Bootstrap 3 one need just to replace <code class="prettyprint lang-js">guiStyle: &quot;bootstrap&quot;</code> parameter to <code class="prettyprint lang-js">guiStyle: &quot;bootstrap4&quot;</code>.
+jqGrid uses only Bootstrap CSS and no JavaScript files of Bootsrap, but if you do need <code class="prettyprint lang-js">bootstrap.min.js</code> then you need to include
+both <code class="prettyprint lang-js">popper.min.js</code> and <code class="prettyprint lang-js">bootstrap.min.js</code>. Be carefull, that jqGrid can't be used with slim version of jQuery.
+One need to include the full version instead. The resulting code could be the following, for example:</p>
+<div id="bootstrap4_code"><pre class="prettyprint lang-html"><a class="anchor" href="#bootstrap4_code"><span class="fa fa-link"></span></a><a href="#bootstrap4_code"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;
+    &lt;title&gt;Demo which uses Bootstrap 4&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; crossorigin=&quot;anonymous&quot;
+          href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css&quot;
+          integrity=&quot;sha256-LA89z+k9fjgMKQ/kq4OO2Mrf8VltYml/VES+Rg0fh20=&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; crossorigin=&quot;anonymous&quot;
+          href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;
+          integrity=&quot;sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; crossorigin=&quot;anonymous&quot;
+          href=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.3/css/ui.jqgrid.min.css&quot;
+          integrity=&quot;sha256-Dc0KYGQqTeEYDX6NdgvYnTU9imh7vPNy5aOJSrOK0Ns=&quot;&gt;
+    &lt;script crossorigin=&quot;anonymous&quot; src=&quot;https://code.jquery.com/jquery-3.3.1.min.js&quot;
+            integrity=&quot;sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=&quot;&gt;&lt;/script&gt;
+    &lt;!-- the next line need be uncommented if you need to use bootstrap.min.js --&gt;
+    &lt;!--&lt;script crossorigin=&quot;anonymous&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.1/umd/popper.min.js&quot;
+            integrity=&quot;sha256-AoNQZpaRmemSTxMy9xcqXX5VLwI6IMPYugO7bFHOW+U=&quot;&gt;&lt;/script&gt;
+    &lt;script crossorigin=&quot;anonymous&quot; src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js&quot;
+            integrity=&quot;sha256-5+02zu5UULQkO7w1GIr6vftCgMfFdZcAHeDtFnKZsBs=&quot;&gt;&lt;/script&gt;--&gt;
+    &lt;script&gt;
+        $.jgrid = $.jgrid || {};
+        $.jgrid.no_legacy_api = true;
+    &lt;/script&gt;
+    &lt;script crossorigin=&quot;anonymous&quot;
+            src=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.3/jquery.jqgrid.min.js&quot;
+            integrity=&quot;sha256-oldv0Jj7ycfYK4MW0JQ3qPRqibS9nSA527dmZX8jI3Q=&quot;&gt;&lt;/script&gt;
+    &lt;script&gt;
+    //&lt;![CDATA[
+    $(function () {
+        &quot;use strict&quot;;
+        $(&quot;#grid1b&quot;).jqGrid({
+            colModel: [
+                { name: &quot;name&quot;, label: &quot;Client&quot;, width: 53 },
+                { name: &quot;invdate&quot;, label: &quot;Date&quot;, width: 75, align: &quot;center&quot;, sorttype: &quot;date&quot;,
+                    formatter: &quot;date&quot;, formatoptions: { newformat: &quot;d-M-Y&quot; } },
+                { name: &quot;amount&quot;, label: &quot;Amount&quot;, width: 65, template: &quot;number&quot; },
+                { name: &quot;tax&quot;, label: &quot;Tax&quot;, width: 41, template: &quot;number&quot; },
+                { name: &quot;total&quot;, label: &quot;Total&quot;, width: 51, template: &quot;number&quot; },
+                { name: &quot;closed&quot;, label: &quot;Closed&quot;, width: 59, template: &quot;booleanCheckbox&quot;, firstsortorder: &quot;desc&quot; },
+                { name: &quot;ship_via&quot;, label: &quot;Shipped via&quot;, width: 87, align: &quot;center&quot;, formatter: &quot;select&quot;,
+                    formatoptions: { value: &quot;FE:FedEx;TN:TNT;DH:DHL&quot;, defaultValue: &quot;DH&quot; } }
+            ],
+            data: [
+                { id: &quot;10&quot;,  invdate: &quot;2015-10-01&quot;, name: &quot;test&quot;,   amount: &quot;&quot; },
+                { id: &quot;20&quot;,  invdate: &quot;2015-09-01&quot;, name: &quot;test2&quot;,  amount: &quot;300.00&quot;, tax: &quot;20.00&quot;, closed: false, ship_via: &quot;FE&quot;, total: &quot;320.00&quot; },
+                { id: &quot;30&quot;,  invdate: &quot;2015-09-01&quot;, name: &quot;test3&quot;,  amount: &quot;400.00&quot;, tax: &quot;30.00&quot;, closed: false, ship_via: &quot;FE&quot;, total: &quot;430.00&quot; },
+                { id: &quot;40&quot;,  invdate: &quot;2015-10-04&quot;, name: &quot;test4&quot;,  amount: &quot;200.00&quot;, tax: &quot;10.00&quot;, closed: true,  ship_via: &quot;TN&quot;, total: &quot;210.00&quot; },
+                { id: &quot;50&quot;,  invdate: &quot;2015-10-31&quot;, name: &quot;test5&quot;,  amount: &quot;300.00&quot;, tax: &quot;20.00&quot;, closed: false, ship_via: &quot;FE&quot;, total: &quot;320.00&quot; },
+                { id: &quot;60&quot;,  invdate: &quot;2015-09-06&quot;, name: &quot;test6&quot;,  amount: &quot;400.00&quot;, tax: &quot;30.00&quot;, closed: false, ship_via: &quot;FE&quot;, total: &quot;430.00&quot; },
+                { id: &quot;70&quot;,  invdate: &quot;2015-10-04&quot;, name: &quot;test7&quot;,  amount: &quot;200.00&quot;, tax: &quot;10.00&quot;, closed: true,  ship_via: &quot;TN&quot;, total: &quot;210.00&quot; },
+                { id: &quot;80&quot;,  invdate: &quot;2015-10-03&quot;, name: &quot;test8&quot;,  amount: &quot;300.00&quot;, tax: &quot;20.00&quot;, closed: false, ship_via: &quot;FE&quot;, total: &quot;320.00&quot; },
+                { id: &quot;90&quot;,  invdate: &quot;2015-09-01&quot;, name: &quot;test9&quot;,  amount: &quot;400.00&quot;, tax: &quot;30.00&quot;, closed: false, ship_via: &quot;TN&quot;, total: &quot;430.00&quot; },
+                { id: &quot;100&quot;, invdate: &quot;2015-09-08&quot;, name: &quot;test10&quot;, amount: &quot;500.00&quot;, tax: &quot;30.00&quot;, closed: true,  ship_via: &quot;TN&quot;, total: &quot;530.00&quot; },
+                { id: &quot;110&quot;, invdate: &quot;2015-09-08&quot;, name: &quot;test11&quot;, amount: &quot;500.00&quot;, tax: &quot;30.00&quot;, closed: false, ship_via: &quot;FE&quot;, total: &quot;530.00&quot; },
+                { id: &quot;120&quot;, invdate: &quot;2015-09-10&quot;, name: &quot;test12&quot;, amount: &quot;500.00&quot;, tax: &quot;30.00&quot;, closed: false, ship_via: &quot;FE&quot;, total: &quot;530.00&quot; }
+            ],
+            guiStyle: &quot;bootstrap4&quot;,
+            iconSet: &quot;fontAwesome&quot;,
+            idPrefix: &quot;gb1_&quot;,
+            rownumbers: true,
+            sortname: &quot;invdate&quot;,
+            sortorder: &quot;desc&quot;,
+            caption: &quot;The grid, which uses predefined formatters and templates&quot;
+        });
+    });
+    //]]&gt;
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;table id=&quot;grid1b&quot;&gt;&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></a></pre></div>
+<p>See <a href="https://jsfiddle.net/OlegKi/d1ajvyz9/">https://jsfiddle.net/OlegKi/d1ajvyz9/</a>.</p>
 <h3 id="paging_searching_filtering"><a class="anchor" href="#paging_searching_filtering"><span class="fa fa-link"></span></a><a href="#paging_searching_filtering">Paging, searching, filtering</a></h3>
 <p>Paging, searching and filtering are extreamly important in case of displaying large set of information.
 One should understand that displaying thousands or rows of the data have no value for the user. The user need to know
