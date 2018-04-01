@@ -447,7 +447,7 @@ to add `guiStyle: "bootstrap"` option. The code posted in the previous section c
 </div>
 <p style="margin-top:.5em;">We removed the option `iconSet: "fontAwesome"` in the last example additionally, to show that the default value
 of `iconSet` option is `iconSet: "glyph"` (instead of `iconSet: "jQueryUI"`) in case of usage Bootstrap CSS.</p>
-<p>To use Bootstrap 4 instead of Bootstrap 3 one need just to replace `guiStyle: "bootstrap"` parameter to `guiStyle: "bootstrap4"`.
+<p id="bootstrap4">To use Bootstrap 4 instead of Bootstrap 3 one need just to replace `guiStyle: "bootstrap"` parameter to `guiStyle: "bootstrap4"`.
 jqGrid uses only Bootstrap CSS and no JavaScript files of Bootsrap, but if you do need `bootstrap.min.js` then you need to include
 both `popper.min.js` and `bootstrap.min.js`. Be carefull, that jqGrid can't be used with slim version of jQuery.
 One need to include the full version instead. The resulting code could be the following, for example:</p>
