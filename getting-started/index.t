@@ -180,9 +180,9 @@ For example, the code below</p>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Your page title</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.3/css/ui.jqgrid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/css/ui.jqgrid.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.3/jquery.jqgrid.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/jquery.jqgrid.min.js"></script>
     <script>
     //<![CDATA[
     $(function () {
@@ -209,7 +209,7 @@ For example, the code below</p>
 </body>
 </html>
 </pre-id-html>
-<p>You can try the example on <a href="https://jsfiddle.net/OlegKi/enwz51sp/">JSFiddle</a>.</p>
+<p>You can try the example on <a href="https://jsfiddle.net/OlegKi/e6hu02z4/">JSFiddle</a>.</p>
 <p>It's important to understand that the empty <l-html><table></l-html> will be converted to relatively complex
 structure of divs and tables. One can use, for example, Chrome developer tools to examine the grid after creating:</p>
 <div id="grid-internal-div"><a class="anchor" href="#grid-internal-div"><span class="fa fa-link"></span></a>
@@ -252,7 +252,7 @@ One can use `sorttype: "number"` in the column which holds numbers to change the
 use additionally property `formatter: "number"` to display the number using decimal and thousands separator
 specific for the current locale. The default locale included in <l-html>jquery.jqgrid.min.js</l-html> is en-US. There are
 38 locales included in <l-html>i18n</l-html> folder. To include German locale one needs for example just include</p>
-<pre-html><script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.3/i18n/min/grid.locale-de.js"></script>
+<pre-html><script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/i18n/min/grid.locale-de.js"></script>
 </pre-html>
 <p>in the head of the page (before of after <l-html>jquery.jqgrid.min.js</l-html>).</p>
 <p>Below is an example of the JavaScript code, which uses some features described above:</p>
@@ -265,9 +265,9 @@ specific for the current locale. The default locale included in <l-html>jquery.j
     <title>Your page title</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.3/css/ui.jqgrid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/css/ui.jqgrid.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.3/jquery.jqgrid.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/jquery.jqgrid.min.js"></script>
     <script>
     //<![CDATA[
     $(function () {
@@ -314,7 +314,7 @@ specific for the current locale. The default locale included in <l-html>jquery.j
 </body>
 </html>
 </pre-id-html>
-<p>You can try the example on <a href="https://jsfiddle.net/OlegKi/7k4dv191/">JSFiddle</a>. </p>
+<p>You can try the example on <a href="https://jsfiddle.net/OlegKi/j3hj8rsw/">JSFiddle</a>. </p>
 <p>The above code uses `iconSet: "fontAwesome"` and includes <a href="http://fontawesome.io/">Font Awesome 4.x</a>
 `font-awesome.min.css` additionally to CSSs included in the previous examples. You can see the resulting grid below:</p>
 <table id="grid1"></table>
@@ -377,10 +377,10 @@ to add `guiStyle: "bootstrap"` option. The code posted in the previous section c
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.3/css/ui.jqgrid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/css/ui.jqgrid.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.3/jquery.jqgrid.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/jquery.jqgrid.min.js"></script>
     <script>
     //<![CDATA[
     $(function () {
@@ -465,8 +465,8 @@ One need to include the full version instead. The resulting code could be the fo
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
           integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=">
     <link rel="stylesheet" crossorigin="anonymous"
-          href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.3/css/ui.jqgrid.min.css"
-          integrity="sha256-Dc0KYGQqTeEYDX6NdgvYnTU9imh7vPNy5aOJSrOK0Ns=">
+          href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/css/ui.jqgrid.min.css"
+          integrity="sha256-gY7w+ZzYjTPCx5Gx1YexizMJigg1YYwcQ3fAnWgAUTE=">
     <script crossorigin="anonymous" src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="></script>
     <!-- the next line need be uncommented if you need to use bootstrap.min.js -->
@@ -479,8 +479,8 @@ One need to include the full version instead. The resulting code could be the fo
         $.jgrid.no_legacy_api = true;
     </script>
     <script crossorigin="anonymous"
-            src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.3/jquery.jqgrid.min.js"
-            integrity="sha256-oldv0Jj7ycfYK4MW0JQ3qPRqibS9nSA527dmZX8jI3Q="></script>
+            src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/jquery.jqgrid.min.js"
+            integrity="sha256-GN28v8v0UEhIeH35OHeGh9LoP5liiKMRbiIFVQ5flTo="></script>
     <script>
     //<![CDATA[
     $(function () {
@@ -528,7 +528,7 @@ One need to include the full version instead. The resulting code could be the fo
 </body>
 </html>
 </pre-id-html>
-<p>See <a href="https://jsfiddle.net/OlegKi/d1ajvyz9/">https://jsfiddle.net/OlegKi/d1ajvyz9/</a>.</p>
+<p>See <a href="https://jsfiddle.net/OlegKi/Lg57bj8y/">JSFiddle demo</a>.</p>
 <h3link id="paging_searching_filtering">Paging, searching, filtering</h3link>
 <p>Paging, searching and filtering are extreamly important in case of displaying large set of information.
 One should understand that displaying thousands or rows of the data have no value for the user. The user need to know
