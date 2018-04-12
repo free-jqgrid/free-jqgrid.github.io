@@ -1,66 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
-	<meta name="author" content="Oleg Kiriljuk">
-	<title>Getting started free jqGrid</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+    <meta name="author" content="Oleg Kiriljuk">
+    <title>Getting started free jqGrid</title>
 
-	<link rel="preload" as="script" crossorigin="anonymous"
-		href="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
-		integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ">
-	<link rel="preload" as="script" crossorigin="anonymous"
-		href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"
-		integrity="sha384-YWP9O4NjmcGo4oEJFXvvYSEzuHIvey+LbXkBNJ1Kd0yfugEZN9NCQNpRYBVC1RvA">
-	
-	<link rel="preload" as="image" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694846/sorting-resizing_rkxu2p.gif">
-	<link rel="preload" as="image" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694746/grid-internal_mvnjkp.png">
-	<link rel="prefetch" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694846/sorting-resizing_rkxu2p.gif">
-	<link rel="prefetch" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694746/grid-internal_mvnjkp.png">
-	<link rel="preload" as="font" type="font/woff2"
-		href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/fonts/glyphicons-halflings-regular.woff2"
-		integrity="sha384-76YS2IfQ3qmYotbpI+I7mNFgT24iL+SLDOW4TaspSmVaPDmFZnbyDsdGS6ApOdNO"
-		crossorigin="anonymous">
+    <link rel="preload" as="script" crossorigin="anonymous"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ">
+    <link rel="preload" as="script" crossorigin="anonymous"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"
+        integrity="sha384-YWP9O4NjmcGo4oEJFXvvYSEzuHIvey+LbXkBNJ1Kd0yfugEZN9NCQNpRYBVC1RvA">
+    
+    <link rel="preload" as="image" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694846/sorting-resizing_rkxu2p.gif">
+    <link rel="preload" as="image" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694746/grid-internal_mvnjkp.png">
+    <link rel="prefetch" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694846/sorting-resizing_rkxu2p.gif">
+    <link rel="prefetch" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694746/grid-internal_mvnjkp.png">
+    <link rel="preload" as="font" type="font/woff2"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/fonts/glyphicons-halflings-regular.woff2"
+        integrity="sha384-76YS2IfQ3qmYotbpI+I7mNFgT24iL+SLDOW4TaspSmVaPDmFZnbyDsdGS6ApOdNO"
+        crossorigin="anonymous">
 
-	<link rel="preload" as="style" crossorigin="anonymous" onload="this.rel='stylesheet'"
-		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/css/ui.jqgrid.min.css"
-		integrity="sha384-vBKkTM2sE5bWw2KGTiBIEQGHlqzRzRr4OMUTLDCzrImvhbP9FuGIISwTqRfatPEE">
-	<noscript><link rel="stylesheet" crossorigin="anonymous"
-		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/css/ui.jqgrid.min.css"
-		integrity="sha384-vBKkTM2sE5bWw2KGTiBIEQGHlqzRzRr4OMUTLDCzrImvhbP9FuGIISwTqRfatPEE"></noscript>
-	<link rel="preload" as="script" crossorigin="anonymous"
-		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/modules/min/grid.base.js"
-		integrity="sha384-cu+wbSOgc8MpLUPypupZ9rv7AzrVVJM+ICRZXdqX/9IiF+dVT9/gLnbZFDwStXqV">
-	<link rel="preload" as="script" crossorigin="anonymous"
-		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/modules/min/jquery.fmatter.js"
-		integrity="sha384-JH3D+VY+biV1jBrEDXr5q1lxH8dfKXmcZIMcI9nHErufkCqsW9+BmyHezKcOn70S">
-	<link rel="preload" as="script" crossorigin="anonymous"
-		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/modules/min/grid.common.js"
-		integrity="sha384-j8qMpLuPE7SqEglwfVFL5y74DFg/ybPeC8tQNnOEmsGMm/fmsON0ivgw5/KrWVTJ">
-	<link rel="preload" as="script" crossorigin="anonymous"
-		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/modules/min/jqdnr.js"
-		integrity="sha384-EP7mlAM6r/i1iINvjKFbECu9gxHUPV6cA0/owe+jRO8ydHG5X9vs0NyjF4NX0jUj">
-	<link rel="preload" as="script" crossorigin="anonymous"
-		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/modules/min/jqmodal.js"
-		integrity="sha384-xyuHfJ0yNMSFEdgj2wHwDB/DuZdrdL/YqOqOaOg8vn9ZUygryhAMhknDE7PB7ICX">
-	<link rel="preload" as="script" crossorigin="anonymous"
-		href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/modules/min/grid.custom.js"
-		integrity="sha384-E4k2E7o05AvJZd1BE7sAgXzglCZMUWw99tbZLp4cjWqksBpN0KaQwmze3Rlu/bv2">
+    <link rel="preload" as="style" crossorigin="anonymous" onload="this.rel='stylesheet'"
+        href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/css/ui.jqgrid.min.css"
+        integrity="sha384-vBKkTM2sE5bWw2KGTiBIEQGHlqzRzRr4OMUTLDCzrImvhbP9FuGIISwTqRfatPEE">
+    <noscript><link rel="stylesheet" crossorigin="anonymous"
+        href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/css/ui.jqgrid.min.css"
+        integrity="sha384-vBKkTM2sE5bWw2KGTiBIEQGHlqzRzRr4OMUTLDCzrImvhbP9FuGIISwTqRfatPEE"></noscript>
+    <link rel="preload" as="script" crossorigin="anonymous"
+        href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/modules/min/grid.base.js"
+        integrity="sha384-cu+wbSOgc8MpLUPypupZ9rv7AzrVVJM+ICRZXdqX/9IiF+dVT9/gLnbZFDwStXqV">
+    <link rel="preload" as="script" crossorigin="anonymous"
+        href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/modules/min/jquery.fmatter.js"
+        integrity="sha384-JH3D+VY+biV1jBrEDXr5q1lxH8dfKXmcZIMcI9nHErufkCqsW9+BmyHezKcOn70S">
+    <link rel="preload" as="script" crossorigin="anonymous"
+        href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/modules/min/grid.common.js"
+        integrity="sha384-j8qMpLuPE7SqEglwfVFL5y74DFg/ybPeC8tQNnOEmsGMm/fmsON0ivgw5/KrWVTJ">
+    <link rel="preload" as="script" crossorigin="anonymous"
+        href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/modules/min/jqdnr.js"
+        integrity="sha384-EP7mlAM6r/i1iINvjKFbECu9gxHUPV6cA0/owe+jRO8ydHG5X9vs0NyjF4NX0jUj">
+    <link rel="preload" as="script" crossorigin="anonymous"
+        href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/modules/min/jqmodal.js"
+        integrity="sha384-xyuHfJ0yNMSFEdgj2wHwDB/DuZdrdL/YqOqOaOg8vn9ZUygryhAMhknDE7PB7ICX">
+    <link rel="preload" as="script" crossorigin="anonymous"
+        href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/modules/min/grid.custom.js"
+        integrity="sha384-E4k2E7o05AvJZd1BE7sAgXzglCZMUWw99tbZLp4cjWqksBpN0KaQwmze3Rlu/bv2">
 
 <!--@@commonHeadIncludes-->
 <style>
 img.imageExample {
-	max-width: 100%;
-	height: auto;
+    max-width: 100%;
+    height: auto;
 }
 .anchor {
-	position: absolute;
+    position: absolute;
     padding-right: 2px;
     margin-left: -1em;
     text-decoration: none;
-	display: none;
+    display: none;
 }
 pre.prettyprint > .anchor {
     margin-left: -16px;
@@ -72,7 +72,7 @@ h4:hover a,
 h5:hover a,
 h6:hover a {
     text-decoration: none;
-	cursor: pointer;
+    cursor: pointer;
 }
 h1:hover .anchor,
 h2:hover .anchor,
@@ -84,11 +84,11 @@ pre.prettyprint:hover .anchor,
 div:hover > .anchor,
 .anchor:hover {
     text-decoration: none;
-	cursor: pointer;
+    cursor: pointer;
     display: block;
 }
 pre.prettyprint:hover > a {
-	text-decoration: none;
+    text-decoration: none;
 }
 h1 a:focus, h1 a:active,
 h2 a:focus, h2 a:active,
@@ -97,7 +97,7 @@ h4 a:focus, h4 a:active,
 h5 a:focus, h5 a:active,
 h6 a:focus, h6 a:active, {
     display: block;
-	outline: none;
+    outline: none;
 }
 .ui-search-input > input::-ms-clear {
     display: none;
@@ -105,19 +105,19 @@ h6 a:focus, h6 a:active, {
 .ui-datepicker { font-size: 76.39%; }
 .ui-datepicker select.ui-datepicker-year,
 .ui-datepicker select.ui-datepicker-month {
-	color: black
+    color: black
 }
 /* fix of inline css crated by critical CSS */
 .s-ico .fa-lg { line-height: .75em }
 
 div.my-bootstrap-style .ui-jqgrid.ui-jqgrid-bootstrap {
-	border: 1px solid #003380;
+    border: 1px solid #003380;
 }
 div.my-bootstrap-style .ui-jqgrid.ui-jqgrid-bootstrap .ui-jqgrid-caption {
-	background-color: #e6f0ff;
+    background-color: #e6f0ff;
 }
 div.my-bootstrap-style .ui-jqgrid.ui-jqgrid-bootstrap .ui-jqgrid-hdiv {
-	background-color: #cce0ff;
+    background-color: #cce0ff;
 }
 </style>
 </head>
@@ -160,12 +160,12 @@ For example, the code below</p>
 <table id="grid"></table>
 <p style="margin-top:.5em;">The differences between free jqGrid and a standard HTML table are as follows:</p>
 <ul>
-	<li>Sortable Columns: One can click on the column header to <em>sort</em> the rows by the content in the column.</li>
-	<li>Hover Effects: Free jqGrid gives you the ability to use hovering effects for rows and the cells on the grid.</li>
-	<li>Selectable Rows: One can click on a row of the grid to select/unselect it</li>
-	<li>Multi-Selectable Rows: One can select multiple rows.</li>
-	<li>Selectable Rows: One can click on a row of the grid to select it.</li>
-	<li>Resizable Columns: One can resize the columns in an intuitive way, as shown in the animated image below.</li>
+    <li>Sortable Columns: One can click on the column header to <em>sort</em> the rows by the content in the column.</li>
+    <li>Hover Effects: Free jqGrid gives you the ability to use hovering effects for rows and the cells on the grid.</li>
+    <li>Selectable Rows: One can click on a row of the grid to select/unselect it</li>
+    <li>Multi-Selectable Rows: One can select multiple rows.</li>
+    <li>Selectable Rows: One can click on a row of the grid to select it.</li>
+    <li>Resizable Columns: One can resize the columns in an intuitive way, as shown in the animated image below.</li>
 </ul>
 <p style="font-style: italic;">Please use the demonstration grid above to sample just a few of the functionalities free jqGrid offers.</p>
 <div style="margin-left: 2px; width: 415px; height: 139px; overflow: hidden">
@@ -432,7 +432,7 @@ to add `guiStyle: "bootstrap"` option. The code posted in the previous section c
 <table id="grid1b"></table>
 <p style="margin-top:.5em;">Free jqGrid allows to customize the results. By adding the following CSS rules for example</p>
 <pre-id-css id="bootstrap_custom_css">.ui-jqgrid.ui-jqgrid-bootstrap {
-	border: 1px solid #003380;
+    border: 1px solid #003380;
 }
 .ui-jqgrid.ui-jqgrid-bootstrap .ui-jqgrid-caption {
     background-color: #e6f0ff;
@@ -459,8 +459,8 @@ One need to include the full version instead. The resulting code could be the fo
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Demo which uses Bootstrap 4</title>
     <link rel="stylesheet" crossorigin="anonymous"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha256-LA89z+k9fjgMKQ/kq4OO2Mrf8VltYml/VES+Rg0fh20=">
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha256-NJWeQ+bs82iAeoT5Ktmqbi3NXwxcHlfaVejzJI2dklU=">
     <link rel="stylesheet" crossorigin="anonymous"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
           integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=">
@@ -470,10 +470,10 @@ One need to include the full version instead. The resulting code could be the fo
     <script crossorigin="anonymous" src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="></script>
     <!-- the next line need be uncommented if you need to use bootstrap.min.js -->
-    <!--<script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.1/umd/popper.min.js"
-            integrity="sha256-AoNQZpaRmemSTxMy9xcqXX5VLwI6IMPYugO7bFHOW+U="></script>
-    <script crossorigin="anonymous" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha256-5+02zu5UULQkO7w1GIr6vftCgMfFdZcAHeDtFnKZsBs="></script>-->
+    <!--<script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha256-98vAGjEDGN79TjHkYWVD4s87rvWkdWLHPs5MC3FvFX4="></script>
+    <script crossorigin="anonymous" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+            integrity="sha256-C8oQVJ33cKtnkARnmeWp6SDChkU+u7KvsNMFUzkkUzk="></script>-->
     <script>
         $.jgrid = $.jgrid || {};
         $.jgrid.no_legacy_api = true;
@@ -528,7 +528,7 @@ One need to include the full version instead. The resulting code could be the fo
 </body>
 </html>
 </pre-id-html>
-<p>See <a href="https://jsfiddle.net/OlegKi/Lg57bj8y/">JSFiddle demo</a>.</p>
+<p>See <a href="https://jsfiddle.net/OlegKi/k2edmrkd/">JSFiddle demo</a>.</p>
 <h3link id="paging_searching_filtering">Paging, searching, filtering</h3link>
 <p>Paging, searching and filtering are extreamly important in case of displaying large set of information.
 One should understand that displaying thousands or rows of the data have no value for the user. The user need to know
