@@ -528,7 +528,7 @@ One need to include the full version instead. The resulting code could be the fo
 </body>
 </html>
 </pre-id-html>
-<p>See <a href="https://jsfiddle.net/OlegKi/k2edmrkd/">JSFiddle demo</a>.</p>
+<p>See <a href="https://jsfiddle.net/OlegKi/zb61bo15/">JSFiddle demo</a>.</p>
 <h3link id="paging_searching_filtering">Paging, searching, filtering</h3link>
 <p>Paging, searching and filtering are extreamly important in case of displaying large set of information.
 One should understand that displaying thousands or rows of the data have no value for the user. The user need to know
