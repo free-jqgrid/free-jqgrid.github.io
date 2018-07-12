@@ -357,10 +357,10 @@ column properties, which will be typically used together. For example, very comm
 `formatter: "number", align: "right", sorttype: "number"` in case of usage numbers as input data. The property `template: "number"`
 is the shortcut, which allows to specify all the options (and some other used for searching and editing) at once. We use
 the template for columns `amount`, `amount` and `total`.</p>
-<p>The column `closed` uses one more template: `template: "booleanCheckbox"`. The template uses `formatter: "checkboxFontAwesome4"`
-available only if we includes CSS of <a href="http://fontawesome.io/">Font Awesome 4.x</a>. The `template: "booleanCheckbox"`
-displays Boolean input data `true` and `false` as <i style="font-size: 14.6667px;" class="fa fa-square-o fa-lg" title="Closed"></i> or
-<i style="font-size: 14.6667px;" class="fa fa-check-square-o fa-lg" title="Closed"></i>. The property `firstsortorder: "desc"`
+<p>The column `closed` uses one more template: `template: "booleanCheckbox"`, which displays Boolean input data `true` and `false`
+as <i style="font-size: 14.6667px;" class="fa fa-square-o fa-lg" title="Closed"></i> or
+<i style="font-size: 14.6667px;" class="fa fa-check-square-o fa-lg" title="Closed"></i> in case of usage `iconSet: "fontAwesome"`.
+The property `firstsortorder: "desc"`
 force to start sorting of the column by descending oder, where the checked items (`true`) will be displayed first. The second
 click on the column header of the column `closed` will invert the sorting order. The property `firstsortorder: "desc"` is practical,
 because one want typecally see checked items if one sort by the column with Bollean data.</p>
@@ -501,17 +501,17 @@ One need to include the full version instead. The resulting code could be the fo
             ],
             data: [
                 { id: "10",  invdate: "2015-10-01", name: "test",   amount: "" },
-                { id: "20",  invdate: "2015-09-01", name: "test2",  amount: "300.00", tax: "20.00", closed: false, ship_via: "FE", total: "320.00" },
-                { id: "30",  invdate: "2015-09-01", name: "test3",  amount: "400.00", tax: "30.00", closed: false, ship_via: "FE", total: "430.00" },
-                { id: "40",  invdate: "2015-10-04", name: "test4",  amount: "200.00", tax: "10.00", closed: true,  ship_via: "TN", total: "210.00" },
-                { id: "50",  invdate: "2015-10-31", name: "test5",  amount: "300.00", tax: "20.00", closed: false, ship_via: "FE", total: "320.00" },
-                { id: "60",  invdate: "2015-09-06", name: "test6",  amount: "400.00", tax: "30.00", closed: false, ship_via: "FE", total: "430.00" },
-                { id: "70",  invdate: "2015-10-04", name: "test7",  amount: "200.00", tax: "10.00", closed: true,  ship_via: "TN", total: "210.00" },
-                { id: "80",  invdate: "2015-10-03", name: "test8",  amount: "300.00", tax: "20.00", closed: false, ship_via: "FE", total: "320.00" },
-                { id: "90",  invdate: "2015-09-01", name: "test9",  amount: "400.00", tax: "30.00", closed: false, ship_via: "TN", total: "430.00" },
-                { id: "100", invdate: "2015-09-08", name: "test10", amount: "500.00", tax: "30.00", closed: true,  ship_via: "TN", total: "530.00" },
-                { id: "110", invdate: "2015-09-08", name: "test11", amount: "500.00", tax: "30.00", closed: false, ship_via: "FE", total: "530.00" },
-                { id: "120", invdate: "2015-09-10", name: "test12", amount: "500.00", tax: "30.00", closed: false, ship_via: "FE", total: "530.00" }
+                { id: "20",  invdate: "2015-09-01", name: "test2",  amount: "300", tax: "20", closed: false, ship_via: "FE", total: "320" },
+                { id: "30",  invdate: "2015-09-01", name: "test3",  amount: "400", tax: "30", closed: false, ship_via: "FE", total: "430" },
+                { id: "40",  invdate: "2015-10-04", name: "test4",  amount: "200", tax: "10", closed: true,  ship_via: "TN", total: "210" },
+                { id: "50",  invdate: "2015-10-31", name: "test5",  amount: "300", tax: "20", closed: false, ship_via: "FE", total: "320" },
+                { id: "60",  invdate: "2015-09-06", name: "test6",  amount: "400", tax: "30", closed: false, ship_via: "FE", total: "430" },
+                { id: "70",  invdate: "2015-10-04", name: "test7",  amount: "200", tax: "10", closed: true,  ship_via: "TN", total: "210" },
+                { id: "80",  invdate: "2015-10-03", name: "test8",  amount: "300", tax: "20", closed: false, ship_via: "FE", total: "320" },
+                { id: "90",  invdate: "2015-09-01", name: "test9",  amount: "400", tax: "30", closed: false, ship_via: "TN", total: "430" },
+                { id: "100", invdate: "2015-09-08", name: "test10", amount: "500", tax: "30", closed: true,  ship_via: "TN", total: "530" },
+                { id: "110", invdate: "2015-09-08", name: "test11", amount: "500", tax: "30", closed: false, ship_via: "FE", total: "530" },
+                { id: "120", invdate: "2015-09-10", name: "test12", amount: "500", tax: "30", closed: false, ship_via: "FE", total: "530" }
             ],
             guiStyle: "bootstrap4",
             iconSet: "fontAwesome",

@@ -429,10 +429,10 @@ column properties, which will be typically used together. For example, very comm
 <code class="prettyprint lang-js">formatter: &quot;number&quot;, align: &quot;right&quot;, sorttype: &quot;number&quot;</code> in case of usage numbers as input data. The property <code class="prettyprint lang-js">template: &quot;number&quot;</code>
 is the shortcut, which allows to specify all the options (and some other used for searching and editing) at once. We use
 the template for columns <code class="prettyprint lang-js">amount</code>, <code class="prettyprint lang-js">amount</code> and <code class="prettyprint lang-js">total</code>.</p>
-<p>The column <code class="prettyprint lang-js">closed</code> uses one more template: <code class="prettyprint lang-js">template: &quot;booleanCheckbox&quot;</code>. The template uses <code class="prettyprint lang-js">formatter: &quot;checkboxFontAwesome4&quot;</code>
-available only if we includes CSS of <a href="http://fontawesome.io/">Font Awesome 4.x</a>. The <code class="prettyprint lang-js">template: &quot;booleanCheckbox&quot;</code>
-displays Boolean input data <code class="prettyprint lang-js">true</code> and <code class="prettyprint lang-js">false</code> as <i style="font-size: 14.6667px;" class="fa fa-square-o fa-lg" title="Closed"></i> or
-<i style="font-size: 14.6667px;" class="fa fa-check-square-o fa-lg" title="Closed"></i>. The property <code class="prettyprint lang-js">firstsortorder: &quot;desc&quot;</code>
+<p>The column <code class="prettyprint lang-js">closed</code> uses one more template: <code class="prettyprint lang-js">template: &quot;booleanCheckbox&quot;</code>, which displays Boolean input data <code class="prettyprint lang-js">true</code> and <code class="prettyprint lang-js">false</code>
+as <i style="font-size: 14.6667px;" class="fa fa-square-o fa-lg" title="Closed"></i> or
+<i style="font-size: 14.6667px;" class="fa fa-check-square-o fa-lg" title="Closed"></i> in case of usage <code class="prettyprint lang-js">iconSet: &quot;fontAwesome&quot;</code>.
+The property <code class="prettyprint lang-js">firstsortorder: &quot;desc&quot;</code>
 force to start sorting of the column by descending oder, where the checked items (<code class="prettyprint lang-js">true</code>) will be displayed first. The second
 click on the column header of the column <code class="prettyprint lang-js">closed</code> will invert the sorting order. The property <code class="prettyprint lang-js">firstsortorder: &quot;desc&quot;</code> is practical,
 because one want typecally see checked items if one sort by the column with Bollean data.</p>
@@ -573,17 +573,17 @@ One need to include the full version instead. The resulting code could be the fo
             ],
             data: [
                 { id: &quot;10&quot;,  invdate: &quot;2015-10-01&quot;, name: &quot;test&quot;,   amount: &quot;&quot; },
-                { id: &quot;20&quot;,  invdate: &quot;2015-09-01&quot;, name: &quot;test2&quot;,  amount: &quot;300.00&quot;, tax: &quot;20.00&quot;, closed: false, ship_via: &quot;FE&quot;, total: &quot;320.00&quot; },
-                { id: &quot;30&quot;,  invdate: &quot;2015-09-01&quot;, name: &quot;test3&quot;,  amount: &quot;400.00&quot;, tax: &quot;30.00&quot;, closed: false, ship_via: &quot;FE&quot;, total: &quot;430.00&quot; },
-                { id: &quot;40&quot;,  invdate: &quot;2015-10-04&quot;, name: &quot;test4&quot;,  amount: &quot;200.00&quot;, tax: &quot;10.00&quot;, closed: true,  ship_via: &quot;TN&quot;, total: &quot;210.00&quot; },
-                { id: &quot;50&quot;,  invdate: &quot;2015-10-31&quot;, name: &quot;test5&quot;,  amount: &quot;300.00&quot;, tax: &quot;20.00&quot;, closed: false, ship_via: &quot;FE&quot;, total: &quot;320.00&quot; },
-                { id: &quot;60&quot;,  invdate: &quot;2015-09-06&quot;, name: &quot;test6&quot;,  amount: &quot;400.00&quot;, tax: &quot;30.00&quot;, closed: false, ship_via: &quot;FE&quot;, total: &quot;430.00&quot; },
-                { id: &quot;70&quot;,  invdate: &quot;2015-10-04&quot;, name: &quot;test7&quot;,  amount: &quot;200.00&quot;, tax: &quot;10.00&quot;, closed: true,  ship_via: &quot;TN&quot;, total: &quot;210.00&quot; },
-                { id: &quot;80&quot;,  invdate: &quot;2015-10-03&quot;, name: &quot;test8&quot;,  amount: &quot;300.00&quot;, tax: &quot;20.00&quot;, closed: false, ship_via: &quot;FE&quot;, total: &quot;320.00&quot; },
-                { id: &quot;90&quot;,  invdate: &quot;2015-09-01&quot;, name: &quot;test9&quot;,  amount: &quot;400.00&quot;, tax: &quot;30.00&quot;, closed: false, ship_via: &quot;TN&quot;, total: &quot;430.00&quot; },
-                { id: &quot;100&quot;, invdate: &quot;2015-09-08&quot;, name: &quot;test10&quot;, amount: &quot;500.00&quot;, tax: &quot;30.00&quot;, closed: true,  ship_via: &quot;TN&quot;, total: &quot;530.00&quot; },
-                { id: &quot;110&quot;, invdate: &quot;2015-09-08&quot;, name: &quot;test11&quot;, amount: &quot;500.00&quot;, tax: &quot;30.00&quot;, closed: false, ship_via: &quot;FE&quot;, total: &quot;530.00&quot; },
-                { id: &quot;120&quot;, invdate: &quot;2015-09-10&quot;, name: &quot;test12&quot;, amount: &quot;500.00&quot;, tax: &quot;30.00&quot;, closed: false, ship_via: &quot;FE&quot;, total: &quot;530.00&quot; }
+                { id: &quot;20&quot;,  invdate: &quot;2015-09-01&quot;, name: &quot;test2&quot;,  amount: &quot;300&quot;, tax: &quot;20&quot;, closed: false, ship_via: &quot;FE&quot;, total: &quot;320&quot; },
+                { id: &quot;30&quot;,  invdate: &quot;2015-09-01&quot;, name: &quot;test3&quot;,  amount: &quot;400&quot;, tax: &quot;30&quot;, closed: false, ship_via: &quot;FE&quot;, total: &quot;430&quot; },
+                { id: &quot;40&quot;,  invdate: &quot;2015-10-04&quot;, name: &quot;test4&quot;,  amount: &quot;200&quot;, tax: &quot;10&quot;, closed: true,  ship_via: &quot;TN&quot;, total: &quot;210&quot; },
+                { id: &quot;50&quot;,  invdate: &quot;2015-10-31&quot;, name: &quot;test5&quot;,  amount: &quot;300&quot;, tax: &quot;20&quot;, closed: false, ship_via: &quot;FE&quot;, total: &quot;320&quot; },
+                { id: &quot;60&quot;,  invdate: &quot;2015-09-06&quot;, name: &quot;test6&quot;,  amount: &quot;400&quot;, tax: &quot;30&quot;, closed: false, ship_via: &quot;FE&quot;, total: &quot;430&quot; },
+                { id: &quot;70&quot;,  invdate: &quot;2015-10-04&quot;, name: &quot;test7&quot;,  amount: &quot;200&quot;, tax: &quot;10&quot;, closed: true,  ship_via: &quot;TN&quot;, total: &quot;210&quot; },
+                { id: &quot;80&quot;,  invdate: &quot;2015-10-03&quot;, name: &quot;test8&quot;,  amount: &quot;300&quot;, tax: &quot;20&quot;, closed: false, ship_via: &quot;FE&quot;, total: &quot;320&quot; },
+                { id: &quot;90&quot;,  invdate: &quot;2015-09-01&quot;, name: &quot;test9&quot;,  amount: &quot;400&quot;, tax: &quot;30&quot;, closed: false, ship_via: &quot;TN&quot;, total: &quot;430&quot; },
+                { id: &quot;100&quot;, invdate: &quot;2015-09-08&quot;, name: &quot;test10&quot;, amount: &quot;500&quot;, tax: &quot;30&quot;, closed: true,  ship_via: &quot;TN&quot;, total: &quot;530&quot; },
+                { id: &quot;110&quot;, invdate: &quot;2015-09-08&quot;, name: &quot;test11&quot;, amount: &quot;500&quot;, tax: &quot;30&quot;, closed: false, ship_via: &quot;FE&quot;, total: &quot;530&quot; },
+                { id: &quot;120&quot;, invdate: &quot;2015-09-10&quot;, name: &quot;test12&quot;, amount: &quot;500&quot;, tax: &quot;30&quot;, closed: false, ship_via: &quot;FE&quot;, total: &quot;530&quot; }
             ],
             guiStyle: &quot;bootstrap4&quot;,
             iconSet: &quot;fontAwesome&quot;,
