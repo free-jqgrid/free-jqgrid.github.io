@@ -459,8 +459,8 @@ One need to include the full version instead. The resulting code could be the fo
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Demo which uses Bootstrap 4</title>
     <link rel="stylesheet" crossorigin="anonymous"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-          integrity="sha256-Md8eaeo67OiouuXAi8t/Xpd8t2+IaJezATVTWbZqSOw=">
+          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css"
+          integrity="sha256-zVUlvIh3NEZRYa9X/qpNY8P1aBy0d4FrI7bhfZSZVwc=">
     <link rel="stylesheet" crossorigin="anonymous"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
           integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=">
@@ -472,8 +472,8 @@ One need to include the full version instead. The resulting code could be the fo
     <!-- the next line need be uncommented if you need to use bootstrap.min.js -->
     <!--<script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
             integrity="sha256-98vAGjEDGN79TjHkYWVD4s87rvWkdWLHPs5MC3FvFX4="></script>
-    <script crossorigin="anonymous" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-            integrity="sha256-xaF9RpdtRxzwYMWg4ldJoyPWqyDPCRD0Cv7YEEe6Ie8="></script>-->
+    <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"
+            integrity="sha256-IeI0loa35pfuDxqZbGhQUiZmD2Cywv1/bdqiypGW46o="></script>-->
     <script>
         $.jgrid = $.jgrid || {};
         $.jgrid.no_legacy_api = true;
@@ -528,7 +528,7 @@ One need to include the full version instead. The resulting code could be the fo
 </body>
 </html>
 </pre-id-html>
-<p>See <a href="https://jsfiddle.net/OlegKi/zb61bo15/">JSFiddle demo</a>.</p>
+<p>See <a href="https://jsfiddle.net/OlegKi/w96qn54f/">JSFiddle demo</a>.</p>
 <h3link id="paging_searching_filtering">Paging, searching, filtering</h3link>
 <p>Paging, searching and filtering are extreamly important in case of displaying large set of information.
 One should understand that displaying thousands or rows of the data have no value for the user. The user need to know
