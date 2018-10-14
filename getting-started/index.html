@@ -8,26 +8,26 @@
     <meta name="author" content="Oleg Kiriljuk">
     <title>Getting started free jqGrid</title>
 
-    <link rel="preload" as="script" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ">
-    <link rel="preload" as="script" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" integrity="sha384-YWP9O4NjmcGo4oEJFXvvYSEzuHIvey+LbXkBNJ1Kd0yfugEZN9NCQNpRYBVC1RvA">
+    <link rel="preload" as="script" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    <link rel="preload" as="script" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js">
     
     <link rel="preload" as="image" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694846/sorting-resizing_rkxu2p.gif">
     <link rel="preload" as="image" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694746/grid-internal_mvnjkp.png">
     <link rel="prefetch" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694846/sorting-resizing_rkxu2p.gif">
     <link rel="prefetch" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694746/grid-internal_mvnjkp.png">
-    <link rel="preload" as="font" type="font/woff2" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/fonts/glyphicons-halflings-regular.woff2" integrity="sha384-76YS2IfQ3qmYotbpI+I7mNFgT24iL+SLDOW4TaspSmVaPDmFZnbyDsdGS6ApOdNO" crossorigin="anonymous">
+    <link rel="preload" as="font" type="font/woff2" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/fonts/glyphicons-halflings-regular.woff2" crossorigin="anonymous">
 
     <style>
-    html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}header,nav{display:block}a{background-color:transparent}pre{overflow:auto}code,pre{font-family:monospace,monospace;font-size:1em}button{color:inherit;font:inherit;margin:0}button{overflow:visible}button{text-transform:none}button{-webkit-appearance:button}button::-moz-focus-inner{border:0;padding:0}table{border-collapse:collapse;border-spacing:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#555;background-color:#fff}button{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#2fa4e7;text-decoration:none}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);border:0}h2,h3{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:500;line-height:1.2;color:#317eac}h2,h3{margin-top:20px;margin-bottom:10px}h2{font-size:30px}h3{font-size:24px}p{margin:0 0 10px}ul{margin-top:0;margin-bottom:10px}code,pre{font-family:Menlo,Monaco,Consolas,"Courier New",monospace}code{padding:2px 4px;font-size:90%;color:#c7254e;background-color:#f9f2f4;border-radius:4px}pre{display:block;padding:9.5px;margin:0 0 10px;font-size:13px;line-height:1.42857143;word-break:break-all;word-wrap:break-word;color:#333;background-color:#f5f5f5;border:1px solid #ccc;border-radius:4px}pre code{padding:0;font-size:inherit;color:inherit;white-space:pre-wrap;background-color:transparent;border-radius:0}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}table{background-color:transparent}.collapse{display:none}.nav{margin-bottom:0;padding-left:0;list-style:none}.nav>li{position:relative;display:block}.nav>li>a{position:relative;display:block;padding:10px 15px}.navbar{position:relative;min-height:50px;margin-bottom:20px;border:1px solid transparent}@media (min-width:768px){.navbar{border-radius:4px}}@media (min-width:768px){.navbar-header{float:left}}.navbar-collapse{overflow-x:visible;padding-right:15px;padding-left:15px;border-top:1px solid transparent;-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.1);box-shadow:inset 0 1px 0 rgba(255,255,255,.1);-webkit-overflow-scrolling:touch}@media (min-width:768px){.navbar-collapse{width:auto;border-top:0;-webkit-box-shadow:none;box-shadow:none}.navbar-collapse.collapse{display:block!important;height:auto!important;padding-bottom:0;overflow:visible!important}.navbar-static-top .navbar-collapse{padding-left:0;padding-right:0}}.container>.navbar-collapse,.container>.navbar-header{margin-right:-15px;margin-left:-15px}@media (min-width:768px){.container>.navbar-collapse,.container>.navbar-header{margin-right:0;margin-left:0}}.navbar-static-top{z-index:1000;border-width:0 0 1px}@media (min-width:768px){.navbar-static-top{border-radius:0}}.navbar-brand{float:left;padding:15px 15px;font-size:18px;line-height:20px;height:50px}@media (min-width:768px){.navbar>.container .navbar-brand{margin-left:-15px}}.navbar-toggle{position:relative;float:right;margin-right:15px;padding:9px 10px;margin-top:8px;margin-bottom:8px;background-color:transparent;background-image:none;border:1px solid transparent;border-radius:4px}.navbar-toggle .icon-bar{display:block;width:22px;height:2px;border-radius:1px}.navbar-toggle .icon-bar+.icon-bar{margin-top:4px}@media (min-width:768px){.navbar-toggle{display:none}}.navbar-nav{margin:7.5px -15px}.navbar-nav>li>a{padding-top:10px;padding-bottom:10px;line-height:20px}@media (min-width:768px){.navbar-nav{float:left;margin:0}.navbar-nav>li{float:left}.navbar-nav>li>a{padding-top:15px;padding-bottom:15px}}@media (min-width:768px){.navbar-right{float:right!important;margin-right:-15px}}.navbar-default{background-color:#2fa4e7;border-color:#1995dc}.navbar-default .navbar-brand{color:#fff}.navbar-default .navbar-nav>li>a{color:#fff}.navbar-default .navbar-toggle{border-color:#178acc}.navbar-default .navbar-toggle .icon-bar{background-color:#fff}.navbar-default .navbar-collapse{border-color:#1995dc}.container:after,.container:before,.nav:after,.nav:before,.navbar-collapse:after,.navbar-collapse:before,.navbar-header:after,.navbar-header:before,.navbar:after,.navbar:before{content:" ";display:table}.container:after,.nav:after,.navbar-collapse:after,.navbar-header:after,.navbar:after{clear:both}@-ms-viewport{width:device-width}.navbar{background-image:-webkit-linear-gradient(#54b4eb,#2fa4e7 60%,#1d9ce5);background-image:-o-linear-gradient(#54b4eb,#2fa4e7 60%,#1d9ce5);background-image:-webkit-gradient(linear,left top,left bottom,from(#54b4eb),color-stop(60%,#2fa4e7),to(#1d9ce5));background-image:linear-gradient(#54b4eb,#2fa4e7 60%,#1d9ce5);background-repeat:no-repeat;border-bottom:1px solid #178acc;-webkit-filter:none;filter:none;-webkit-box-shadow:0 1px 10px rgba(0,0,0,.1);box-shadow:0 1px 10px rgba(0,0,0,.1)}.navbar .navbar-nav>li>a,.navbar-brand{text-shadow:0 1px 0 rgba(0,0,0,.1)}pre.prettyprint{padding:2px;border:1px solid #888}@font-face{font-family:FontAwesome;src:url(../../../../Users/Oleg/AppData/Local/fonts/fontawesome-webfont.eot?v=4.7.0);src:url(../../../../Users/Oleg/AppData/Local/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format('embedded-opentype'),url(../../../../Users/Oleg/AppData/Local/fonts/fontawesome-webfont.woff2?v=4.7.0) format('woff2'),url(../../../../Users/Oleg/AppData/Local/fonts/fontawesome-webfont.woff?v=4.7.0) format('woff'),url(../../../../Users/Oleg/AppData/Local/fonts/fontawesome-webfont.ttf?v=4.7.0) format('truetype'),url(../../../../Users/Oleg/AppData/Local/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format('svg');font-weight:400;font-style:normal}.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa-link:before{content:"\f0c1"}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+    .ui-jqgrid{position:relative;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;-ms-touch-action:none;touch-action:manipulation}.ui-jqgrid div{line-height:normal}.ui-jqgrid table{border-collapse:separate;border-spacing:0;border-width:0;border-style:none}.ui-jqgrid table td{padding:0}.ui-jqgrid>.ui-jqgrid-view{position:relative;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;left:0;top:0;padding:0;font-size:11px}.ui-jqgrid>.ui-jqgrid-view *,.ui-jqgrid>.ui-jqgrid-view :after,.ui-jqgrid>.ui-jqgrid-view :before{-webkit-box-sizing:inherit;-moz-box-sizing:inherit;box-sizing:inherit}.ui-jqgrid .ui-jqgrid-errorbar,.ui-jqgrid .ui-jqgrid-titlebar{padding:.3em .3em .3em .3em;position:relative;font-size:12px;border-left:0 none;border-right:0 none;border-top:0 none}.ui-jqgrid-errorbar{max-height:100px;margin-bottom:0;overflow:auto}.ui-jqgrid .ui-jqgrid-caption,.ui-jqgrid .ui-jqgrid-errorbar-ltr{text-align:left}.ui-jqgrid-titlebar>.ui-jqgrid-titlebar-close{vertical-align:middle;text-align:center;text-decoration:none;position:absolute;top:50%;width:1.4em;line-height:1.5em;font-size:12px;margin:-.7em 0 0 0;padding:.2em;border:1px solid transparent;height:1.4em;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-ms-touch-action:manipulation;touch-action:manipulation}.ui-jqgrid .ui-jqgrid-caption .ui-jqgrid-titlebar-close{right:.1em}.ui-jqgrid-titlebar>.ui-jqgrid-titlebar-close{-ms-border-radius:.5em;border-radius:.5em}.ui-jqgrid .ui-jqgrid-caption .ui-jqgrid-title,.ui-jqgrid .ui-jqgrid-errorbar-ltr .ui-jqgrid-error{position:relative;left:.1em}.ui-jqgrid-titlebar>.ui-jqgrid-titlebar-close span{margin-top:0;margin-left:0}.ui-jqgrid-titlebar>.ui-jqgrid-titlebar-close span{display:block}.ui-jqgrid-titlebar>.ui-jqgrid-titlebar-close span.ui-icon{position:relative;top:-2px}.ui-jqgrid .ui-jqgrid-caption .ui-jqgrid-titlebar-close span.ui-icon{right:3.5px}.ui-jqgrid .ui-jqgrid-titlebar>.ui-jqgrid-titlebar-close>span.ui-icon{margin-top:-1px}.ui-jqgrid>.ui-jqgrid-view>.ui-jqgrid-hdiv{position:relative;margin:0;padding:0;overflow:hidden;border-left:0 none;border-top:0 none;border-right:0 none;height:auto}.ui-jqgrid .ui-jqgrid-hbox{float:left;padding-right:20px}.ui-jqgrid .ui-jqgrid-htable{table-layout:fixed;margin:0}.ui-jqgrid .ui-jqgrid-htable th{height:auto;padding:0 2px 0 2px}.ui-jqgrid .ui-jqgrid-htable .ui-jqgrid-labels th div{overflow:hidden;position:relative;height:auto;margin:2px 2px}.ui-jqgrid .ui-jqgrid-labels th.ui-th-column{overflow:hidden;white-space:nowrap;text-align:center}.ui-jqgrid .ui-jqgrid-labels th.ui-th-column{position:relative;vertical-align:middle;border-top:0 none;border-bottom:0 none}.ui-jqgrid .ui-jqgrid-htable th.ui-th-ltr,.ui-th-ltr{border-left:0 none}.ui-jqgrid .ui-jqgrid-labels>.ui-th-column>.ui-jqgrid-resize{top:0;height:100%;width:.3em;position:absolute;-webkit-touch-callout:none;display:inline;overflow:hidden}.ui-jqgrid .ui-grid-ico-sort{overflow:hidden;position:absolute;display:inline}.ui-jqgrid .s-ico{position:relative;width:.87em;height:1.125em;display:inline-block;vertical-align:middle;margin:0 .1em}.ui-jqgrid .s-ico>.ui-grid-ico-sort{display:block;position:relative}.ui-jqgrid .s-ico>.ui-grid-ico-sort.ui-icon{width:12px;margin-top:0}.ui-jqgrid .s-ico>.ui-icon-asc.ui-icon{top:-6px}.ui-jqgrid .s-ico>.ui-icon-desc.ui-icon{top:-16px}.ui-jqgrid .s-ico>.ui-icon-triangle-1-s{background-position:-65px -16px}.ui-jqgrid .s-ico>.ui-icon.ui-sort-ltr{margin-left:-3px}.ui-jqgrid .ui-jqgrid-bdiv{min-height:1px;position:relative;margin:0;padding:0;overflow:auto;text-align:left}.ui-jqgrid .ui-jqgrid-btable{table-layout:fixed;margin:0;outline-style:none;height:1px}.ui-jqgrid tr.jqgrow{outline-style:none}.ui-jqgrid tr.jqgrow>td{overflow:hidden;white-space:pre;vertical-align:middle;text-align:center;height:22px;border-top:0 none;border-bottom-width:1px;border-bottom-style:solid}.ui-jqgrid-jquery-ui.ui-jqgrid tr.jqgrow>td{border-bottom-color:inherit}.ui-jqgrid tr.jqgrow>td{padding:0 2px 0 2px}.ui-jqgrid tr.jqgfirstrow>td{padding:0 2px 0 2px;border-top:0 none;border-left:0 none;height:0;border-right-width:1px;border-right-style:solid;border-bottom:0 none}.ui-jqgrid-jquery-ui.ui-jqgrid tr.jqgfirstrow>td{border-right-color:inherit}.ui-jqgrid tr.jqgrow>td{font-weight:400}.ui-jqgrid .ui-jqgrid-bdiv tr.ui-row-ltr>td{text-align:left;border-left-width:0;border-left-style:none;border-right-width:1px;border-right-style:solid}.ui-jqgrid-jquery-ui.ui-jqgrid .ui-jqgrid-bdiv tr.ui-row-ltr>td{border-color:inherit}.ui-jqgrid>.ui-jqgrid-resize-mark{width:0;left:0;-webkit-touch-callout:none;position:absolute;top:0;overflow:hidden;display:none;border-left-width:1px;border-right-width:1px;z-index:99999}.ui-jqgrid>.loading{position:absolute;top:45%;left:45%;width:auto;z-index:101;padding:6px;margin:5px;text-align:center;font-weight:700;display:none;border-width:2px;font-size:11px}.ui-jqgrid .jqgrid-overlay{display:none;z-index:100}.ui-jqgrid .ui-jqgrid-resize-ltr{right:0;margin:0}.ui-search-toolbar .ui-search-table .ui-search-oper{width:20px;text-align:center}.ui-search-oper{padding:0}.ui-search-clear{text-align:center;padding:0}.ui-jqgrid .s-ico>.ui-grid-ico-sort.glyphicon{font-size:10px}.ui-jqgrid .s-ico>.ui-icon-asc.glyphicon{margin-top:-.23em}.ui-jqgrid .s-ico>.ui-icon-desc.glyphicon{margin-top:-.34em}.ui-jqgrid .s-ico>.ui-grid-ico-sort.fa{width:.63em}.ui-jqgrid .s-ico>.ui-icon-asc.fa{line-height:.81em;top:.07em}.ui-jqgrid .s-ico>.ui-icon-desc.fa{line-height:.81em;top:-.81em}.ui-jqgrid .s-ico>.ui-icon-asc.fa.ui-sort-ltr,.ui-jqgrid .s-ico>.ui-icon-desc.fa.ui-sort-ltr{left:0}.ui-jqgrid .s-ico>.ui-state-disabled.fa{padding:0}.ui-jqgrid.ui-jqgrid-bootstrap .ui-jqgrid-errorbar .ui-jqgrid-error{font-size:16px}.ui-jqgrid.ui-jqgrid-bootstrap>.ui-jqgrid-view .fa{font-size:14px}.modal-backdrop.jqgrid-overlay{-ms-opacity:.35;opacity:.35;-webkit-filter:Alpha(Opacity=35);-moz-filter:Alpha(Opacity=35);-o-filter:Alpha(Opacity=35);filter:Alpha(Opacity=35)}.ui-jqgrid.ui-jqgrid-bootstrap .disabled{opacity:.35;filter:Alpha(Opacity=35)}.ui-jqgrid-bootstrap.ui-jqgrid-resize-mark{border:1px solid #aaa;background-color:#ccc;color:#222;font-weight:700}.ui-jqgrid .jqgfirstrow{border-bottom:0 none;border-top:0 none;height:0}.ui-jqgrid .glyphicon{font-size:12px;top:auto}.ui-jqgrid.ui-jqgrid-bootstrap .glyphicon{font-size:14px;top:auto;height:1em;width:1.28em}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}header,nav{display:block}a{background-color:transparent}pre{overflow:auto}code,pre{font-family:monospace,monospace;font-size:1em}button{color:inherit;font:inherit;margin:0}button{overflow:visible}button{text-transform:none}button{-webkit-appearance:button}button::-moz-focus-inner{border:0;padding:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}@font-face{font-family:'Glyphicons Halflings';src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/glyphicons-halflings-regular.eot);src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/glyphicons-halflings-regular.woff2) format('woff2'),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/glyphicons-halflings-regular.woff) format('woff'),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')}.glyphicon{position:relative;top:1px;display:inline-block;font-family:'Glyphicons Halflings';font-style:normal;font-weight:400;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.glyphicon-triangle-bottom:before{content:"\e252"}.glyphicon-triangle-top:before{content:"\e253"}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#555;background-color:#fff}button{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#2fa4e7;text-decoration:none}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);border:0}h2,h3{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:500;line-height:1.2;color:#317eac}h2,h3{margin-top:20px;margin-bottom:10px}h2{font-size:30px}h3{font-size:24px}p{margin:0 0 10px}ul{margin-top:0;margin-bottom:10px}code,pre{font-family:Menlo,Monaco,Consolas,"Courier New",monospace}code{padding:2px 4px;font-size:90%;color:#c7254e;background-color:#f9f2f4;border-radius:4px}pre{display:block;padding:9.5px;margin:0 0 10px;font-size:13px;line-height:1.42857143;word-break:break-all;word-wrap:break-word;color:#333;background-color:#f5f5f5;border:1px solid #ccc;border-radius:4px}pre code{padding:0;font-size:inherit;color:inherit;white-space:pre-wrap;background-color:transparent;border-radius:0}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}table{background-color:transparent}th{text-align:left}.table>tbody>tr>td{padding:8px;line-height:1.42857143;vertical-align:top;border-top:1px solid #ddd}.table-condensed>tbody>tr>td{padding:5px}.table-bordered>tbody>tr>td{border:1px solid #ddd}.collapse{display:none}.nav{margin-bottom:0;padding-left:0;list-style:none}.nav>li{position:relative;display:block}.nav>li>a{position:relative;display:block;padding:10px 15px}.navbar{position:relative;min-height:50px;margin-bottom:20px;border:1px solid transparent}@media (min-width:768px){.navbar{border-radius:4px}}@media (min-width:768px){.navbar-header{float:left}}.navbar-collapse{overflow-x:visible;padding-right:15px;padding-left:15px;border-top:1px solid transparent;-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.1);box-shadow:inset 0 1px 0 rgba(255,255,255,.1);-webkit-overflow-scrolling:touch}@media (min-width:768px){.navbar-collapse{width:auto;border-top:0;-webkit-box-shadow:none;box-shadow:none}.navbar-collapse.collapse{display:block!important;height:auto!important;padding-bottom:0;overflow:visible!important}.navbar-static-top .navbar-collapse{padding-left:0;padding-right:0}}.container>.navbar-collapse,.container>.navbar-header{margin-right:-15px;margin-left:-15px}@media (min-width:768px){.container>.navbar-collapse,.container>.navbar-header{margin-right:0;margin-left:0}}.navbar-static-top{z-index:1000;border-width:0 0 1px}@media (min-width:768px){.navbar-static-top{border-radius:0}}.navbar-brand{float:left;padding:15px 15px;font-size:18px;line-height:20px;height:50px}@media (min-width:768px){.navbar>.container .navbar-brand,.navbar>.container-fluid .navbar-brand{margin-left:-15px}}.navbar-toggle{position:relative;float:right;margin-right:15px;padding:9px 10px;margin-top:8px;margin-bottom:8px;background-color:transparent;background-image:none;border:1px solid transparent;border-radius:4px}.navbar-toggle .icon-bar{display:block;width:22px;height:2px;border-radius:1px}.navbar-toggle .icon-bar+.icon-bar{margin-top:4px}@media (min-width:768px){.navbar-toggle{display:none}}.navbar-nav{margin:7.5px -15px}.navbar-nav>li>a{padding-top:10px;padding-bottom:10px;line-height:20px}@media (min-width:768px){.navbar-nav{float:left;margin:0}.navbar-nav>li{float:left}.navbar-nav>li>a{padding-top:15px;padding-bottom:15px}}@media (min-width:768px){.navbar-right{float:right!important;margin-right:-15px}}.navbar-default{background-color:#2fa4e7;border-color:#1995dc}.navbar-default .navbar-brand{color:#fff}.navbar-default .navbar-nav>li>a{color:#fff}.navbar-default .navbar-toggle{border-color:#178acc}.navbar-default .navbar-toggle .icon-bar{background-color:#fff}.navbar-default .navbar-collapse{border-color:#1995dc}.alert{padding:15px;margin-bottom:20px;border:1px solid transparent;border-radius:4px}.alert-info{background-color:#d9edf7;border-color:#bce8f1;color:#3a87ad}.alert-danger{background-color:#f2dede;border-color:#eed3d7;color:#b94a48}.modal-backdrop{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1040;background-color:#000}.container-fluid:after,.container-fluid:before,.container:after,.container:before,.nav:after,.nav:before,.navbar-collapse:after,.navbar-collapse:before,.navbar-header:after,.navbar-header:before,.navbar:after,.navbar:before{content:" ";display:table}.container-fluid:after,.container:after,.nav:after,.navbar-collapse:after,.navbar-header:after,.navbar:after{clear:both}@-ms-viewport{width:device-width}.navbar{background-image:-webkit-linear-gradient(#54b4eb,#2fa4e7 60%,#1d9ce5);background-image:-o-linear-gradient(#54b4eb,#2fa4e7 60%,#1d9ce5);background-image:-webkit-gradient(linear,left top,left bottom,from(#54b4eb),color-stop(60%,#2fa4e7),to(#1d9ce5));background-image:linear-gradient(#54b4eb,#2fa4e7 60%,#1d9ce5);background-repeat:no-repeat;border-bottom:1px solid #178acc;-webkit-filter:none;filter:none;-webkit-box-shadow:0 1px 10px rgba(0,0,0,.1);box-shadow:0 1px 10px rgba(0,0,0,.1)}.navbar .navbar-nav>li>a,.navbar-brand{text-shadow:0 1px 0 rgba(0,0,0,.1)}.pln{color:#000}@media screen{.str{color:#080}.kwd{color:#008}.com{color:#800}.lit{color:#066}.pun{color:#660}.tag{color:#008}}@media print,projection{.kwd,.tag{font-weight:700}.str{color:#060}.kwd{color:#006}.com{color:#600;font-style:italic}.lit{color:#044}.pun{color:#440}.tag{color:#006}}pre.prettyprint{padding:2px;border:1px solid #888}.ui-helper-clearfix:after,.ui-helper-clearfix:before{content:"";display:table;border-collapse:collapse}.ui-helper-clearfix:after{clear:both}.ui-helper-clearfix{min-height:0}.ui-icon{display:block;text-indent:-99999px;overflow:hidden;background-repeat:no-repeat}.ui-widget-overlay{position:fixed;top:0;left:0;width:100%;height:100%}.ui-datepicker{width:17em;padding:.2em .2em 0;display:none}.ui-widget{font-family:Lucida Grande,Lucida Sans,Arial,sans-serif;font-size:1.1em}.ui-widget-content{border:1px solid #a6c9e2;background:#fcfdfd url(https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_inset-hard_100_fcfdfd_1x100.png) 50% bottom repeat-x;color:#222}.ui-widget-content a{color:#222}.ui-widget-header{border:1px solid #4297d7;background:#5c9ccc url(https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png) 50% 50% repeat-x;color:#fff;font-weight:700}.ui-widget-header a{color:#fff}.ui-state-default,.ui-widget-content .ui-state-default{border:1px solid #c5dbec;background:#dfeffc url(https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_glass_85_dfeffc_1x400.png) 50% 50% repeat-x;font-weight:700;color:#2e6e9e}.ui-state-active,.ui-widget-content .ui-state-active{border:1px solid #79b7e7;background:#f5f8f9 url(https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_inset-hard_100_f5f8f9_1x100.png) 50% 50% repeat-x;font-weight:700;color:#e17009}.ui-state-error,.ui-widget-content .ui-state-error{border:1px solid #cd0a0a;background:#fef1ec url(https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_glass_95_fef1ec_1x400.png) 50% 50% repeat-x;color:#cd0a0a}.ui-state-disabled,.ui-widget-content .ui-state-disabled{opacity:.35;filter:Alpha(Opacity=35);background-image:none}.ui-icon{width:16px;height:16px}.ui-icon,.ui-widget-content .ui-icon{background-image:url(https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-icons_469bdd_256x240.png)}.ui-widget-header .ui-icon{background-image:url(https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-icons_d8e7f3_256x240.png)}.ui-state-default .ui-icon{background-image:url(https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-icons_6da8d5_256x240.png)}.ui-icon-triangle-1-n{background-position:0 -16px}.ui-icon-triangle-1-s{background-position:-64px -16px}.ui-icon-circle-triangle-n{background-position:-96px -192px}.ui-corner-all,.ui-corner-top{border-top-left-radius:5px}.ui-corner-all,.ui-corner-top{border-top-right-radius:5px}.ui-corner-all,.ui-corner-bottom{border-bottom-left-radius:5px}.ui-corner-all,.ui-corner-bottom{border-bottom-right-radius:5px}.ui-widget-overlay{background:#aaa url(https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x;opacity:.3;filter:Alpha(Opacity=30)}@font-face{font-family:FontAwesome;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0);src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format('embedded-opentype'),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0) format('woff2'),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0) format('woff'),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0) format('truetype'),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format('svg');font-weight:400;font-style:normal}.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa-lg{font-size:1.33333333em;line-height:.75em;vertical-align:-15%}.fa-link:before{content:"\f0c1"}.fa-sort-desc:before{content:"\f0dd"}.fa-sort-asc:before{content:"\f0de"}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
 </style>
-<link rel="preload" as="style" crossorigin="anonymous" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/css/ui.jqgrid.min.css" integrity="sha384-vBKkTM2sE5bWw2KGTiBIEQGHlqzRzRr4OMUTLDCzrImvhbP9FuGIISwTqRfatPEE">
-    <noscript><link rel="stylesheet" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/css/ui.jqgrid.min.css" integrity="sha384-vBKkTM2sE5bWw2KGTiBIEQGHlqzRzRr4OMUTLDCzrImvhbP9FuGIISwTqRfatPEE"></noscript>
-    <link rel="preload" as="script" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/modules/min/grid.base.js" integrity="sha384-cu+wbSOgc8MpLUPypupZ9rv7AzrVVJM+ICRZXdqX/9IiF+dVT9/gLnbZFDwStXqV">
-    <link rel="preload" as="script" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/modules/min/jquery.fmatter.js" integrity="sha384-JH3D+VY+biV1jBrEDXr5q1lxH8dfKXmcZIMcI9nHErufkCqsW9+BmyHezKcOn70S">
-    <link rel="preload" as="script" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/modules/min/grid.common.js" integrity="sha384-j8qMpLuPE7SqEglwfVFL5y74DFg/ybPeC8tQNnOEmsGMm/fmsON0ivgw5/KrWVTJ">
-    <link rel="preload" as="script" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/modules/min/jqdnr.js" integrity="sha384-EP7mlAM6r/i1iINvjKFbECu9gxHUPV6cA0/owe+jRO8ydHG5X9vs0NyjF4NX0jUj">
-    <link rel="preload" as="script" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/modules/min/jqmodal.js" integrity="sha384-xyuHfJ0yNMSFEdgj2wHwDB/DuZdrdL/YqOqOaOg8vn9ZUygryhAMhknDE7PB7ICX">
-    <link rel="preload" as="script" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/modules/min/grid.custom.js" integrity="sha384-E4k2E7o05AvJZd1BE7sAgXzglCZMUWw99tbZLp4cjWqksBpN0KaQwmze3Rlu/bv2">
+<link rel="preload" as="style" crossorigin="anonymous" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/css/ui.jqgrid.min.css">
+    <noscript><link rel="stylesheet" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/css/ui.jqgrid.min.css" integrity="sha384-vBKkTM2sE5bWw2KGTiBIEQGHlqzRzRr4OMUTLDCzrImvhbP9FuGIISwTqRfatPEE"></noscript>
+    <link rel="preload" as="script" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/modules/min/grid.base.js">
+    <link rel="preload" as="script" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/modules/min/jquery.fmatter.js">
+    <link rel="preload" as="script" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/modules/min/grid.common.js">
+    <link rel="preload" as="script" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/modules/min/jqdnr.js">
+    <link rel="preload" as="script" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/modules/min/jqmodal.js">
+    <link rel="preload" as="script" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/modules/min/grid.custom.js">
 
 <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
@@ -39,23 +39,23 @@
 <link rel="preconnect" href="https://www.google-analytics.com/" crossorigin="anonymous">
 <link rel="preconnect" href="https://res.cloudinary.com/" crossorigin="anonymous">
 
-<link rel="preload" as="style" crossorigin="anonymous" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/cerulean/bootstrap.min.css" integrity="sha384-zF4BRsG/fLiTGfR9QL82DrilZxrwgY/+du4p/c7J72zZj+FLYq4zY00RylP9ZjiT">
+<link rel="preload" as="style" crossorigin="anonymous" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/cerulean/bootstrap.min.css">
 <noscript><link rel="stylesheet" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/cerulean/bootstrap.min.css" integrity="sha384-zF4BRsG/fLiTGfR9QL82DrilZxrwgY/+du4p/c7J72zZj+FLYq4zY00RylP9ZjiT"></noscript>
 
 <link rel="preload" as="style" crossorigin="anonymous" onload="this.rel='stylesheet'" href="https://cdn.rawgit.com/google/code-prettify/master/loader/prettify.css">
 <noscript><link rel="stylesheet" crossorigin="anonymous" href="https://cdn.rawgit.com/google/code-prettify/master/loader/prettify.css"></noscript>
 
-<link rel="preload" as="style" crossorigin="anonymous" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css" integrity="sha384-q4zwqX6xMjL3hNjZkHM8B6Sz6QYZDG+AdOTD2tmX4D5/5HoV4v/lG8en4I6Pbx4m">
+<link rel="preload" as="style" crossorigin="anonymous" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css">
 <noscript><link rel="stylesheet" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css" integrity="sha384-q4zwqX6xMjL3hNjZkHM8B6Sz6QYZDG+AdOTD2tmX4D5/5HoV4v/lG8en4I6Pbx4m"></noscript>
-<link rel="preload" as="style" crossorigin="anonymous" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN">
+<link rel="preload" as="style" crossorigin="anonymous" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <noscript><link rel="stylesheet" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"></noscript>
 
-<link rel="preload" as="script" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js" integrity="sha384-hxmy0cotCVDcwxUPioaFiCsYBruB49o00SQ+o2TynFXfSHC2aPZNkNHv6Iylzgeb">
+<link rel="preload" as="script" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js">
 <link rel="preload" as="script" crossorigin="anonymous" href="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js">
 <link rel="preload" as="script" href="https://www.google-analytics.com/analytics.js">
 <link rel="preload" as="script" href="require.config.min.js">
 
-<link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0" integrity="sha384-wmfasCsFE3p9BgQSCciiJ0R6GvOSsKKZJMXBvTiCuWa3ypa5yXGVjSdzuU/ON6P6">
+<link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0">
 <link rel="preload" as="image" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_flat_0_aaaaaa_40x100.png">
 <link rel="preload" as="image" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_flat_55_fbec88_40x100.png">
 <link rel="preload" as="image" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/ui-bg_glass_75_d0e5f5_1x400.png">
@@ -140,7 +140,7 @@ h2 a:focus, h2 a:active,
 h3 a:focus, h3 a:active,
 h4 a:focus, h4 a:active,
 h5 a:focus, h5 a:active,
-h6 a:focus, h6 a:active, {
+h6 a:focus, h6 a:active {
     display: block;
     outline: none;
 }
@@ -168,31 +168,33 @@ div.my-bootstrap-style .ui-jqgrid.ui-jqgrid-bootstrap .ui-jqgrid-hdiv {
 </head>
 <body>
 <header class="navbar navbar-static-top bs-docs-nav" id="top">
-	<nav class="navbar navbar-default">
-		<div class="container">
-			<div class="navbar-header">
-				<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a href="../index.html" class="navbar-brand">free jqGrid</a>
+	<div class="container-fluid">
+		<nav class="navbar navbar-default" style="margin: 0 -15px;">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="../index.html" class="navbar-brand">free jqGrid</a>
+				</div>
+				<nav id="bs-navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="../getting-started/index.html">Getting started</a></li>
+						<!--<li><a href="../api-documentation/index.html">API documentation</a></li>-->
+						<li><a href="../examples/index.html">Examples</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="https://github.com/free-jqgrid/jqGrid/wiki">Wiki</a></li>
+						<li><a href="https://github.com/free-jqgrid/jqGrid/issues">Issues</a></li>
+						<li><a href="https://github.com/free-jqgrid/jqGrid"><span class="mega-octicon octicon-mark-github"></span>GitHub</a></li>
+					</ul>
+				</nav>
 			</div>
-			<nav id="bs-navbar" class="collapse navbar-collapse">
-				<ul class="nav navbar-nav">
-					<li><a href="../getting-started/index.html">Getting started</a></li>
-					<!--<li><a href="../api-documentation/index.html">API documentation</a></li>-->
-					<li><a href="../examples/index.html">Examples</a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="https://github.com/free-jqgrid/jqGrid/wiki">Wiki</a></li>
-					<li><a href="https://github.com/free-jqgrid/jqGrid/issues">Issues</a></li>
-					<li><a href="https://github.com/free-jqgrid/jqGrid"><span class="mega-octicon octicon-mark-github"></span>GitHub</a></li>
-				</ul>
-			</nav>
-		</div>
-	</nav>
+		</nav>
+	</div>
 </header>
 
 <div class="container">
@@ -252,9 +254,9 @@ For example, the code below</p>
     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;
     &lt;title&gt;Your page title&lt;/title&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css&quot;&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/css/ui.jqgrid.min.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/css/ui.jqgrid.min.css&quot;&gt;
     &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/jquery.jqgrid.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/jquery.jqgrid.min.js&quot;&gt;&lt;/script&gt;
     &lt;script&gt;
     //&lt;![CDATA[
     $(function () {
@@ -281,7 +283,7 @@ For example, the code below</p>
 &lt;/body&gt;
 &lt;/html&gt;
 </code></a></pre></div>
-<p>You can try the example on <a href="https://jsfiddle.net/OlegKi/e6hu02z4/">JSFiddle</a>.</p>
+<p>You can try the example on <a href="https://jsfiddle.net/OlegKi/muL3eckr/">JSFiddle</a>.</p>
 <p>It's important to understand that the empty <code class="prettyprint lang-html">&lt;table&gt;</code> will be converted to relatively complex
 structure of divs and tables. One can use, for example, Chrome developer tools to examine the grid after creating:</p>
 <div id="grid-internal-div"><a class="anchor" href="#grid-internal-div"><span class="fa fa-link"></span></a>
@@ -324,7 +326,7 @@ One can use <code class="prettyprint lang-js">sorttype: &quot;number&quot;</code
 use additionally property <code class="prettyprint lang-js">formatter: &quot;number&quot;</code> to display the number using decimal and thousands separator
 specific for the current locale. The default locale included in <code class="prettyprint lang-html">jquery.jqgrid.min.js</code> is en-US. There are
 38 locales included in <code class="prettyprint lang-html">i18n</code> folder. To include German locale one needs for example just include</p>
-<pre class="prettyprint lang-html"><code>&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/i18n/min/grid.locale-de.js&quot;&gt;&lt;/script&gt;
+<pre class="prettyprint lang-html"><code>&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/i18n/min/grid.locale-de.js&quot;&gt;&lt;/script&gt;
 </code></pre>
 <p>in the head of the page (before of after <code class="prettyprint lang-html">jquery.jqgrid.min.js</code>).</p>
 <p>Below is an example of the JavaScript code, which uses some features described above:</p>
@@ -337,9 +339,9 @@ specific for the current locale. The default locale included in <code class="pre
     &lt;title&gt;Your page title&lt;/title&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css&quot;&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/css/ui.jqgrid.min.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/css/ui.jqgrid.min.css&quot;&gt;
     &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/jquery.jqgrid.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/jquery.jqgrid.min.js&quot;&gt;&lt;/script&gt;
     &lt;script&gt;
     //&lt;![CDATA[
     $(function () {
@@ -386,7 +388,7 @@ specific for the current locale. The default locale included in <code class="pre
 &lt;/body&gt;
 &lt;/html&gt;
 </code></a></pre></div>
-<p>You can try the example on <a href="https://jsfiddle.net/OlegKi/j3hj8rsw/">JSFiddle</a>. </p>
+<p>You can try the example on <a href="https://jsfiddle.net/OlegKi/L417gcwf/">JSFiddle</a>. </p>
 <p>The above code uses <code class="prettyprint lang-js">iconSet: &quot;fontAwesome&quot;</code> and includes <a href="http://fontawesome.io/">Font Awesome 4.x</a>
 <code class="prettyprint lang-js">font-awesome.min.css</code> additionally to CSSs included in the previous examples. You can see the resulting grid below:</p>
 <table id="grid1"></table>
@@ -449,10 +451,10 @@ to add <code class="prettyprint lang-js">guiStyle: &quot;bootstrap&quot;</code> 
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot;&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css&quot;&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/css/ui.jqgrid.min.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/css/ui.jqgrid.min.css&quot;&gt;
     &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/jquery.jqgrid.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/jquery.jqgrid.min.js&quot;&gt;&lt;/script&gt;
     &lt;script&gt;
     //&lt;![CDATA[
     $(function () {
@@ -531,30 +533,30 @@ One need to include the full version instead. The resulting code could be the fo
     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;
     &lt;title&gt;Demo which uses Bootstrap 4&lt;/title&gt;
     &lt;link rel=&quot;stylesheet&quot; crossorigin=&quot;anonymous&quot;
-          href=&quot;https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css&quot;
-          integrity=&quot;sha256-zVUlvIh3NEZRYa9X/qpNY8P1aBy0d4FrI7bhfZSZVwc=&quot;&gt;
+          href=&quot;https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css&quot;
+          integrity=&quot;sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=&quot;&gt;
     &lt;link rel=&quot;stylesheet&quot; crossorigin=&quot;anonymous&quot;
           href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;
           integrity=&quot;sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=&quot;&gt;
     &lt;link rel=&quot;stylesheet&quot; crossorigin=&quot;anonymous&quot;
-          href=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/css/ui.jqgrid.min.css&quot;
-          integrity=&quot;sha256-gY7w+ZzYjTPCx5Gx1YexizMJigg1YYwcQ3fAnWgAUTE=&quot;&gt;
+          href=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/css/ui.jqgrid.min.css&quot;
+          integrity=&quot;sha256-3oIi71IMpsoA+8ctSTIM+6ScXYjyZEV06q6bbK6CjsM=&quot;&gt;
     &lt;script crossorigin=&quot;anonymous&quot; src=&quot;https://code.jquery.com/jquery-3.3.1.min.js&quot;
             integrity=&quot;sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=&quot;&gt;&lt;/script&gt;
     &lt;!-- the next line need be uncommented if you need to use bootstrap.min.js --&gt;
     &lt;!--&lt;script crossorigin=&quot;anonymous&quot;
-                src=&quot;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js&quot;
-                integrity=&quot;sha256-98vAGjEDGN79TjHkYWVD4s87rvWkdWLHPs5MC3FvFX4=&quot;&gt;&lt;/script&gt;
+            src=&quot;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js&quot;
+            integrity=&quot;sha256-98vAGjEDGN79TjHkYWVD4s87rvWkdWLHPs5MC3FvFX4=&quot;&gt;&lt;/script&gt;
     &lt;script crossorigin=&quot;anonymous&quot;
-            src=&quot;https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js&quot;
-            integrity=&quot;sha256-IeI0loa35pfuDxqZbGhQUiZmD2Cywv1/bdqiypGW46o=&quot;&gt;&lt;/script&gt;--&gt;
+            src=&quot;https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js&quot;
+            integrity=&quot;sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=&quot;&gt;&lt;/script&gt;--&gt;
     &lt;script&gt;
         $.jgrid = $.jgrid || {};
         $.jgrid.no_legacy_api = true;
     &lt;/script&gt;
     &lt;script crossorigin=&quot;anonymous&quot;
-            src=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/jquery.jqgrid.min.js&quot;
-            integrity=&quot;sha256-GN28v8v0UEhIeH35OHeGh9LoP5liiKMRbiIFVQ5flTo=&quot;&gt;&lt;/script&gt;
+            src=&quot;https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/jquery.jqgrid.min.js&quot;
+            integrity=&quot;sha256-ELi2cs17gL2MqNzkRkogxZsVLmL+oWfeVOwZQLcp8ek=&quot;&gt;&lt;/script&gt;
     &lt;script&gt;
     //&lt;![CDATA[
     $(function () {
@@ -602,7 +604,7 @@ One need to include the full version instead. The resulting code could be the fo
 &lt;/body&gt;
 &lt;/html&gt;
 </code></a></pre></div>
-<p>See <a href="https://jsfiddle.net/OlegKi/w96qn54f/">JSFiddle demo</a>.</p>
+<p>See <a href="https://jsfiddle.net/OlegKi/07ousnfk/">JSFiddle demo</a>.</p>
 <h3 id="paging_searching_filtering"><a class="anchor" href="#paging_searching_filtering"><span class="fa fa-link"></span></a><a href="#paging_searching_filtering">Paging, searching, filtering</a></h3>
 <p>Paging, searching and filtering are extreamly important in case of displaying large set of information.
 One should understand that displaying thousands or rows of the data have no value for the user. The user need to know
