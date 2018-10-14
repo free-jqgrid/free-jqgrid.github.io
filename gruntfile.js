@@ -67,10 +67,16 @@ module.exports = function (grunt) {
 					"./index.html"
 				],
 				overwrite: true,
-				replacements: [{
-					from: /url\(\.\.\/\.\.\/fonts\/fontawesome-/g,
-					to: "url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-"
-				}]
+				replacements: [
+					{
+						from: /url\(\.\.\/\.\.\/\.\.\/\.\.\/Users\/Oleg\/AppData\/Local\/fonts\//g,
+						to: "url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/"
+					},
+					{
+						from: /url\(\.\.\/\.\.\/\.\.\/\.\.\/Users\/Oleg\/AppData\/Local\/Temp\/images\//g,
+						to: "url(https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/images/"
+					}
+				]
 			}
 		},
 		sitebuild: {
