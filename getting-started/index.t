@@ -9,11 +9,9 @@
     <title>Getting started free jqGrid</title>
 
     <link rel="preload" as="script" crossorigin="anonymous"
-        href="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
-        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ">
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js">
     <link rel="preload" as="script" crossorigin="anonymous"
-        href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"
-        integrity="sha384-YWP9O4NjmcGo4oEJFXvvYSEzuHIvey+LbXkBNJ1Kd0yfugEZN9NCQNpRYBVC1RvA">
+        href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js">
     
     <link rel="preload" as="image" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694846/sorting-resizing_rkxu2p.gif">
     <link rel="preload" as="image" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694746/grid-internal_mvnjkp.png">
@@ -21,33 +19,25 @@
     <link rel="prefetch" href="https://res.cloudinary.com/ok-soft-gmbh/image/upload/v1458694746/grid-internal_mvnjkp.png">
     <link rel="preload" as="font" type="font/woff2"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/fonts/glyphicons-halflings-regular.woff2"
-        integrity="sha384-76YS2IfQ3qmYotbpI+I7mNFgT24iL+SLDOW4TaspSmVaPDmFZnbyDsdGS6ApOdNO"
         crossorigin="anonymous">
 
     <link rel="preload" as="style" crossorigin="anonymous" onload="this.rel='stylesheet'"
-        href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/css/ui.jqgrid.min.css"
-        integrity="sha384-vBKkTM2sE5bWw2KGTiBIEQGHlqzRzRr4OMUTLDCzrImvhbP9FuGIISwTqRfatPEE">
+        href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/css/ui.jqgrid.min.css">
     <noscript><link rel="stylesheet" crossorigin="anonymous"
-        href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/css/ui.jqgrid.min.css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/css/ui.jqgrid.min.css"
         integrity="sha384-vBKkTM2sE5bWw2KGTiBIEQGHlqzRzRr4OMUTLDCzrImvhbP9FuGIISwTqRfatPEE"></noscript>
     <link rel="preload" as="script" crossorigin="anonymous"
-        href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/modules/min/grid.base.js"
-        integrity="sha384-cu+wbSOgc8MpLUPypupZ9rv7AzrVVJM+ICRZXdqX/9IiF+dVT9/gLnbZFDwStXqV">
+        href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/modules/min/grid.base.js">
     <link rel="preload" as="script" crossorigin="anonymous"
-        href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/modules/min/jquery.fmatter.js"
-        integrity="sha384-JH3D+VY+biV1jBrEDXr5q1lxH8dfKXmcZIMcI9nHErufkCqsW9+BmyHezKcOn70S">
+        href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/modules/min/jquery.fmatter.js">
     <link rel="preload" as="script" crossorigin="anonymous"
-        href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/modules/min/grid.common.js"
-        integrity="sha384-j8qMpLuPE7SqEglwfVFL5y74DFg/ybPeC8tQNnOEmsGMm/fmsON0ivgw5/KrWVTJ">
+        href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/modules/min/grid.common.js">
     <link rel="preload" as="script" crossorigin="anonymous"
-        href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/modules/min/jqdnr.js"
-        integrity="sha384-EP7mlAM6r/i1iINvjKFbECu9gxHUPV6cA0/owe+jRO8ydHG5X9vs0NyjF4NX0jUj">
+        href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/modules/min/jqdnr.js">
     <link rel="preload" as="script" crossorigin="anonymous"
-        href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/modules/min/jqmodal.js"
-        integrity="sha384-xyuHfJ0yNMSFEdgj2wHwDB/DuZdrdL/YqOqOaOg8vn9ZUygryhAMhknDE7PB7ICX">
+        href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/modules/min/jqmodal.js">
     <link rel="preload" as="script" crossorigin="anonymous"
-        href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/modules/min/grid.custom.js"
-        integrity="sha384-E4k2E7o05AvJZd1BE7sAgXzglCZMUWw99tbZLp4cjWqksBpN0KaQwmze3Rlu/bv2">
+        href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/modules/min/grid.custom.js">
 
 <!--@@commonHeadIncludes-->
 <style>
@@ -95,7 +85,7 @@ h2 a:focus, h2 a:active,
 h3 a:focus, h3 a:active,
 h4 a:focus, h4 a:active,
 h5 a:focus, h5 a:active,
-h6 a:focus, h6 a:active, {
+h6 a:focus, h6 a:active {
     display: block;
     outline: none;
 }
@@ -180,9 +170,9 @@ For example, the code below</p>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Your page title</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/css/ui.jqgrid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/css/ui.jqgrid.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/jquery.jqgrid.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/jquery.jqgrid.min.js"></script>
     <script>
     //<![CDATA[
     $(function () {
@@ -209,7 +199,7 @@ For example, the code below</p>
 </body>
 </html>
 </pre-id-html>
-<p>You can try the example on <a href="https://jsfiddle.net/OlegKi/e6hu02z4/">JSFiddle</a>.</p>
+<p>You can try the example on <a href="https://jsfiddle.net/OlegKi/muL3eckr/">JSFiddle</a>.</p>
 <p>It's important to understand that the empty <l-html><table></l-html> will be converted to relatively complex
 structure of divs and tables. One can use, for example, Chrome developer tools to examine the grid after creating:</p>
 <div id="grid-internal-div"><a class="anchor" href="#grid-internal-div"><span class="fa fa-link"></span></a>
@@ -252,7 +242,7 @@ One can use `sorttype: "number"` in the column which holds numbers to change the
 use additionally property `formatter: "number"` to display the number using decimal and thousands separator
 specific for the current locale. The default locale included in <l-html>jquery.jqgrid.min.js</l-html> is en-US. There are
 38 locales included in <l-html>i18n</l-html> folder. To include German locale one needs for example just include</p>
-<pre-html><script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/i18n/min/grid.locale-de.js"></script>
+<pre-html><script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/i18n/min/grid.locale-de.js"></script>
 </pre-html>
 <p>in the head of the page (before of after <l-html>jquery.jqgrid.min.js</l-html>).</p>
 <p>Below is an example of the JavaScript code, which uses some features described above:</p>
@@ -265,9 +255,9 @@ specific for the current locale. The default locale included in <l-html>jquery.j
     <title>Your page title</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/css/ui.jqgrid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/css/ui.jqgrid.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/jquery.jqgrid.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/jquery.jqgrid.min.js"></script>
     <script>
     //<![CDATA[
     $(function () {
@@ -314,7 +304,7 @@ specific for the current locale. The default locale included in <l-html>jquery.j
 </body>
 </html>
 </pre-id-html>
-<p>You can try the example on <a href="https://jsfiddle.net/OlegKi/j3hj8rsw/">JSFiddle</a>. </p>
+<p>You can try the example on <a href="https://jsfiddle.net/OlegKi/L417gcwf/">JSFiddle</a>. </p>
 <p>The above code uses `iconSet: "fontAwesome"` and includes <a href="http://fontawesome.io/">Font Awesome 4.x</a>
 `font-awesome.min.css` additionally to CSSs included in the previous examples. You can see the resulting grid below:</p>
 <table id="grid1"></table>
@@ -377,10 +367,10 @@ to add `guiStyle: "bootstrap"` option. The code posted in the previous section c
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/css/ui.jqgrid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/css/ui.jqgrid.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/jquery.jqgrid.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/jquery.jqgrid.min.js"></script>
     <script>
     //<![CDATA[
     $(function () {
@@ -459,30 +449,30 @@ One need to include the full version instead. The resulting code could be the fo
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Demo which uses Bootstrap 4</title>
     <link rel="stylesheet" crossorigin="anonymous"
-          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css"
-          integrity="sha256-zVUlvIh3NEZRYa9X/qpNY8P1aBy0d4FrI7bhfZSZVwc=">
+          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=">
     <link rel="stylesheet" crossorigin="anonymous"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
           integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=">
     <link rel="stylesheet" crossorigin="anonymous"
-          href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/css/ui.jqgrid.min.css"
-          integrity="sha256-gY7w+ZzYjTPCx5Gx1YexizMJigg1YYwcQ3fAnWgAUTE=">
+          href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/css/ui.jqgrid.min.css"
+          integrity="sha256-3oIi71IMpsoA+8ctSTIM+6ScXYjyZEV06q6bbK6CjsM=">
     <script crossorigin="anonymous" src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="></script>
     <!-- the next line need be uncommented if you need to use bootstrap.min.js -->
     <!--<script crossorigin="anonymous"
-                src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-                integrity="sha256-98vAGjEDGN79TjHkYWVD4s87rvWkdWLHPs5MC3FvFX4="></script>
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha256-98vAGjEDGN79TjHkYWVD4s87rvWkdWLHPs5MC3FvFX4="></script>
     <script crossorigin="anonymous"
-            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"
-            integrity="sha256-IeI0loa35pfuDxqZbGhQUiZmD2Cywv1/bdqiypGW46o="></script>-->
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ="></script>-->
     <script>
         $.jgrid = $.jgrid || {};
         $.jgrid.no_legacy_api = true;
     </script>
     <script crossorigin="anonymous"
-            src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.4/jquery.jqgrid.min.js"
-            integrity="sha256-GN28v8v0UEhIeH35OHeGh9LoP5liiKMRbiIFVQ5flTo="></script>
+            src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/jquery.jqgrid.min.js"
+            integrity="sha256-ELi2cs17gL2MqNzkRkogxZsVLmL+oWfeVOwZQLcp8ek="></script>
     <script>
     //<![CDATA[
     $(function () {
@@ -530,7 +520,7 @@ One need to include the full version instead. The resulting code could be the fo
 </body>
 </html>
 </pre-id-html>
-<p>See <a href="https://jsfiddle.net/OlegKi/w96qn54f/">JSFiddle demo</a>.</p>
+<p>See <a href="https://jsfiddle.net/OlegKi/07ousnfk/">JSFiddle demo</a>.</p>
 <h3link id="paging_searching_filtering">Paging, searching, filtering</h3link>
 <p>Paging, searching and filtering are extreamly important in case of displaying large set of information.
 One should understand that displaying thousands or rows of the data have no value for the user. The user need to know

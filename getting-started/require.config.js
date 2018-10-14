@@ -2,10 +2,10 @@
 require.config({
 	paths: {
 		"free-jqgrid": [
-			"https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/modules/min/"
+			"https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/modules/min"
 		],
 		"free-jqgrid-plugins": [
-			"https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.1/plugins/min"
+			"https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/plugins/min"
 		],
 		jquery: [
 			"https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min"
